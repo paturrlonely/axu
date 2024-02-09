@@ -1,8 +1,7 @@
 import fetch from 'node-fetch';
-
 let handler = async (m, { conn, text, usedPrefix, command }) => {
     if (!text) throw `*🚩 Example:* ${usedPrefix}${command} https://krakenfiles.com/view/neTIvR1wIz/file.html`
-    let data = await (await fetch(`https://api.betabotz.eu.org/api/download/kraken?url=${text}&apikey=${global.lann}`)).json()
+    let data = await (await fetch(`https://api.botcahx.eu.org/api/download/kraken?url=${text}&apikey=${btc}`)).json()
     let msg = `乂 *K R A K E N  D O W N L O A D E R*\n\n`
     msg += ` ◦ *Name :* ${data.result.fileName}`
     msg += ` ◦ *View :* ${data.result.views}\n`
@@ -19,7 +18,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 
 handler.help = ['krakendownload'].map(v => v + ' <url>');
 handler.tags = ['downloader'];
-handler.command =  /^(krakendl|krakendownload)$/i
+handler.command =  /^(krakendl2|krakendownload2)$/i
 handler.limit = true;
 handler.register = false;
 handler.premium = false;

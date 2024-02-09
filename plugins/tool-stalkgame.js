@@ -11,8 +11,8 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {
     
     if (command == 'stalkfreefire') {
         if (!text) throw `Example: ${usedPrefix + command} 570098876`
-        let result = await( await fetch(`https://api.lolhuman.xyz/api/freefire/${text}?apikey=${global.lolkey}`)).json()
-        let cap = `*Nickname:* ${result.result}
+        let result = await( await fetch(`https://api.betabotz.eu.org/api/stalk/ff?id=${text}&apikey=${global.lann}`)).json()
+        let cap = `*Nickname:* ${result.userNameGame}
 *User ID:* ${text}`
         m.reply(cap)
     }
@@ -46,8 +46,8 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {
     if (command == 'stalkml') {
         let [id, zoneId] = text.split(',');
         if (!id || !zoneId) throw `Example: ${usedPrefix + command} 84830127,2169`
-        let result = await( await fetch(`https://api.lolhuman.xyz/api/mobilelegend/${id}/${zoneId}?apikey=${global.lolkey}`)).json()
-        let cap = `*Nickname:* ${result.result}
+        let result = await( await fetch(`https://api.betabotz.eu.org/api/stalk/ml?id=${id}&server=${zoneid}&apikey=${global.lann}`)).json()
+        let cap = `*Nickname:* ${result.userName}
 *User ID:* ${text}`
         m.reply(cap)
     }

@@ -1,24 +1,20 @@
 
-import api from "api-dylux";
+import fetch from "node-fetch";
 
-let handler = async (m, { conn, text, command, usedPrefix }) => {
-    let chat = db.data.chats[m.chat]
-    if (!text) throw `url nya mana?\n\ncontoh:\n${usedPrefix + command} https://www.xnxx.com/video-wdsipd3/jealous_mother_blows_son_uncensored`
-    if (!/^https?:\/\/(www\.)?xnxx\.com/.test(text)) throw `url salah!\n\ncontoh:\n${usedPrefix + command} https://www.xnxx.com/video-wdsipd3/jealous_mother_blows_son_uncensored`
-    let res = await api.xnxxdl(text)
-     conn.sendMessage(m.chat, {
-		react: {
-			text: '⏳',
-			key: m.key,
-		}
-	})
-    let capt = `*INFO DATA*
-    
-Judul: ${res.title}
-Durasi: ${res.duration}
-Kualitas: ${res.quality}
-Ukuran: ${res.size}`
-    conn.sendFile(m.chat, res.url_dl, "mtype.mp4", capt, m)
+var handler = async (m, {
+ text, 
+ usedPrefix, 
+ command
+ }) => {
+if (!text) throw 'Masukkan Query Link!'
+ try {
+let anu = await fetch(`https://api.betabotz.eu.org/api/download/xnxxdl?url=${text}&apikey=${global.lann}`)
+let hasil = await anu.json() 
+
+conn.sendMessage(m.chat, { video: { url: hasil.result.url }, fileName: 'xnxx.mp4', mimetype: 'video/mp4' }, { quoted: m })
+ } catch (e) {
+ throw `*Server error!*`
+ }
 }
 handler.help = ['xnxxdl'].map(v => v + ' <url>')
 handler.tags = ['nsfw', 'downloader']

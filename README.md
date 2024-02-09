@@ -9,7 +9,7 @@
 
  ## SCRIPT MENGGUNAKAN WEB API DI BAWAH INI
   
-- BetaBotz API [`RestApi`](https://api.betabotz.org) ```WAJIB```
+- BetaBotz API [`RestApi`](https://api.betabotz.eu.org) ```WAJIB```
   
 - Botcahx API [`RestApi`](https://api.botcahx.eu.org) ```WAJIB```
 

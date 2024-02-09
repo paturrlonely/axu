@@ -1,1 +1,26 @@
-const _0x16acb3=_0x5789;(function(_0x102f1c,_0x38352b){const _0x17135b=_0x5789,_0x19fccf=_0x102f1c();while(!![]){try{const _0x407e4e=-parseInt(_0x17135b(0x202))/0x1*(-parseInt(_0x17135b(0x1f0))/0x2)+parseInt(_0x17135b(0x1ff))/0x3*(-parseInt(_0x17135b(0x200))/0x4)+-parseInt(_0x17135b(0x1fa))/0x5*(-parseInt(_0x17135b(0x206))/0x6)+parseInt(_0x17135b(0x207))/0x7+-parseInt(_0x17135b(0x1f6))/0x8+-parseInt(_0x17135b(0x20b))/0x9+-parseInt(_0x17135b(0x1f2))/0xa;if(_0x407e4e===_0x38352b)break;else _0x19fccf['push'](_0x19fccf['shift']());}catch(_0x1c9413){_0x19fccf['push'](_0x19fccf['shift']());}}}(_0x7055,0xb5923));import _0xaf9678 from'betabotz-tools';let handler=async(_0x32a900,{conn:_0x1ead7a,args:_0x50fdba,usedPrefix:_0x1b0b7a,command:_0x5692e2})=>{const _0x42b297=_0x5789;if(!_0x50fdba[0x0])throw'Linknya\x20Mana?...\x0a*Contoh\x20:*\x20'+_0x1b0b7a+_0x5692e2+_0x42b297(0x201);try{var _0x2c6fae=await _0xaf9678[_0x42b297(0x1f5)](_0x50fdba[0x0]);_0x1ead7a[_0x42b297(0x1f3)](_0x32a900[_0x42b297(0x1fc)],{'react':{'text':'⏳','key':_0x32a900[_0x42b297(0x20a)]}}),_0x1ead7a[_0x42b297(0x1f9)](_0x32a900[_0x42b297(0x1fc)],_0x2c6fae['result'][_0x42b297(0x209)],_0x42b297(0x208),_0x42b297(0x1f8),_0x32a900);}catch(_0x193fc8){console[_0x42b297(0x1f4)](_0x193fc8),_0x32a900[_0x42b297(0x1fb)](_0x42b297(0x203));}};function _0x5789(_0x326b47,_0x473fb1){const _0x70556e=_0x7055();return _0x5789=function(_0x5789fc,_0x50a034){_0x5789fc=_0x5789fc-0x1f0;let _0x2e4a0a=_0x70556e[_0x5789fc];return _0x2e4a0a;},_0x5789(_0x326b47,_0x473fb1);}function _0x7055(){const _0x5d31eb=['limit','map','1784907wEvVtg','4HYtNBe','\x20https://www.facebook.com/100034398106754/posts/pfbid02LRjmLBf4PfbUJ67TNWGY8oZwmPJg18BmBK3E9sZ6Hup6jhAZJoHVRWkRGdPUuPMUl/?app=fbl','2NfcIjQ','*Server\x20YuLa\x20Down*','\x20<url>','downloader','3602310xpBMzi','8154489nMcbVd','t.mp4','hd_q','key','3812229WdSrop','1156292SLqqfb','command','3304720LjXAHl','sendMessage','log','facebook','6630936gdactl','help','*FACEBOOK\x20DOWNLOADER*\x0a\x0a_Reso\x20:\x20HD_','sendFile','5ChCtZN','reply','chat'];_0x7055=function(){return _0x5d31eb;};return _0x7055();}handler[_0x16acb3(0x1f7)]=[_0x16acb3(0x1f5)][_0x16acb3(0x1fe)](_0x4730d4=>_0x4730d4+_0x16acb3(0x204)),handler['tags']=[_0x16acb3(0x205)],handler[_0x16acb3(0x1f1)]=/^(fb|facebook|fbdl?)$/i,handler[_0x16acb3(0x1fd)]=!![];export default handler;
+import fetch from 'node-fetch'
+
+let handler = async (m, { conn, args, usedPrefix, command }) => {
+    if (!args[0]) throw `Linknya Mana?...\n*Contoh :* ${usedPrefix}${command} https://www.facebook.com/100034398106754/posts/pfbid02LRjmLBf4PfbUJ67TNWGY8oZwmPJg18BmBK3E9sZ6Hup6jhAZJoHVRWkRGdPUuPMUl/?app=fbl`
+    try {
+    var data = await( await fetch(`https://api.betabotz.eu.org/api/download/fbdown?url=${args[0]}&apikey=${args[0]}`)).json()
+    conn.sendMessage(m.chat, {
+		react: {
+			text: '⏳',
+			key: m.key,
+		}
+	})
+conn.sendFile(m.chat, data.result.HD, 't.mp4', '*FACEBOOK DOWNLOADER*\n\n_Reso : HD_', m)
+//conn.sendFile(m.chat, api.result.sd_q, 't.mp4', '*FACEBOOK DOWNLOADER*\n\n_Reso : SD_', m)
+  } catch (e) {
+		console.log(e)
+		m.reply(`*Server YuLa Down*`)
+	}
+}
+handler.help = ['facebook'].map(v => v + ' <url>')
+handler.tags = ['downloader']
+
+handler.command = /^(fb|facebook|fbdl?)$/i
+handler.limit = true
+
+export default handler

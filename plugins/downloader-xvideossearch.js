@@ -1,36 +1,28 @@
-import fetch from 'node-fetch';
-import api from 'api-dylux';
+import axios from 'axios';
 
-let handler = async (m, { conn, text, command, usedprefix }) => {
-    let chat = db.data.chats[m.chat]
-    if (!text) throw `text nya mana?\n\ncontoh:\n*.xnxxsearch jepang*`
-    let maxim = await api.xvideosSearch(text)
-     conn.sendMessage(m.chat, {
-		react: {
-			text: '⏳',
-			key: m.key,
-		}
-	})
-    let capt = `
-*18+ CONTENT*
+var handler = async (m, { text, usedPrefix, command }) => {
+  if (!text) {
+    throw `Contoh:\n${usedPrefix + command} boobs`;
+  }
+  try {
+  const search = await axios.get(
+    `https://api.betabotz.eu.org/api/search/xvideos?query=${text}&apikey=${lann}`)
 
-${maxim.map(v => `*Name:* ${v.title}\n*Duration:* ${v.duration}\n\n*Link:* ${v.url}\n======================`).join`\n\n`}
-    `.trim()
-    conn.sendMessage(m.chat, {
-                text: capt,
-                contextInfo: {
-                    externalAdReply: {
-                        title: "XVIDEOS Search",
-                        body: "Powered by Maximus",
-                        thumbnailUrl: "https://telegra.ph/file/cc76b2489d0d070e82870.jpg",
-                        sourceUrl: "",
-                        mediaType: 1,
-                        showAdAttribution: true,
-                        renderLargerThumbnail: true
-                    }
-                }
-            })
-}
+  const hasil = search.data.result;
+
+  let teks = `*XVIDEOS RESULTS* \n\n🔍 *KEYWORDS*: *${text}*\n\n`;
+  let no = 1;
+
+  for (let i of hasil) {
+    teks += `📑 *No* : ${no++}\n📚 *Title* : ${i.title}\n⏱️ *Duration* : ${i.duration}\n🔗 *URL* ${i.url}\n\n─────────────────\n\n`;
+  }
+
+  await conn.sendMessage(m.chat, { react: { text: `⏱️`, key: m.key }});
+  await conn.sendMessage(m.chat, { image: { url: hasil[0].thumb }, caption: teks }, { quoted: m });
+  } catch (e) {
+  throw `*Server error*`
+  }
+ };
 handler.help = ['xvideos'].map(v => v + ' <query>')
 handler.tags = ['nsfw', 'downloader']
 handler.command = /^xvideos$/i

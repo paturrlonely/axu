@@ -4,7 +4,7 @@ const handler = async (m, { conn, args, text, usedPrefix, command }) => {
   if (!text) throw `Example: ${usedPrefix}${command} eula
   
 *-= LIST CHARACTERS =-*
-albedo, alhaitham, aloy, amber, anemo, arataki itto, baizhu, barbara, beidou, bennett, candace, charlotte, chevreuse, chongyun, collei, cyno, dehya, dendro, diluc, diona, dori, eula, faruzan, fischl, freminet, furina, ganyu, geo, gorou, hydro, hu tao, jean, kaedehara kazuha, kaeya, kamisato ayaka, kamisato ayato, kaveh, keqing, kirara, klee, kujou sara, kuki shinobu, layla, lisa, lynette, lyney, mika, mona, nahida, navia, neuvillette, nilou, ningguang, noelle, qiqi, raiden shogun, razor, rosaria, sangonomiya kokomi, sayu, shenhe, shikanoin heizou, sucrose, tartaglia, thoma, tighnari, venti, wanderer, wriothesley, xiangling, xiao, xingqiu, xinyan, yae miko, yanfei, yaoyao, yelan, yoimiya, yun jin, zhongli
+albedo, alhaitham, aloy, amber, anemo, arataki itto, baizhu, barbara, beidou, bennett, candace, charlotte, chevreuse, chongyun, collei, cyno, dehya, dendro, diluc, diona, dori, eula, faruzan, fischl, freminet, furina, ganyu, gaming, geo, gorou, hydro, hu tao, jean, kaedehara kazuha, kaeya, kamisato ayaka, kamisato ayato, kaveh, keqing, kirara, klee, kujou sara, kuki shinobu, layla, lisa, lynette, lyney, mika, mona, nahida, navia, neuvillette, nilou, ningguang, noelle, qiqi, raiden shogun, razor, rosaria, sangonomiya kokomi, sayu, shenhe, shikanoin heizou, sucrose, tartaglia, thoma, tighnari, venti, wanderer, wriothesley, xiangling, xianyun, xiao, xingqiu, xinyan, yae miko, yanfei, yaoyao, yelan, yoimiya, yun jin, zhongli
 `
   let Maximus;
   
@@ -113,6 +113,9 @@ albedo, alhaitham, aloy, amber, anemo, arataki itto, baizhu, barbara, beidou, be
       break;
        case 'furina':
       Maximus = 'Furina';
+      break;
+       case 'gaming':
+      Maximus = 'Gaming';
       break;
        case 'ganyu':
       Maximus = 'Ganyu';
@@ -260,6 +263,9 @@ albedo, alhaitham, aloy, amber, anemo, arataki itto, baizhu, barbara, beidou, be
        case 'xiangling':
       Maximus = 'Xiangling';
       break;
+       case 'xianyun':
+      Maximus = 'Xianyun';
+      break;
        case 'xiao':
       Maximus = 'Xiao';
       break;
@@ -300,7 +306,7 @@ albedo, alhaitham, aloy, amber, anemo, arataki itto, baizhu, barbara, beidou, be
 
 *-= LIST CHARACTERS =-*
 
-albedo, alhaitham, aloy, amber, anemo, arataki itto, baizhu, barbara, beidou, bennett, candace, charlotte, chevreuse, chongyun, collei, cyno, dehya, dendro, diluc, diona, dori, eula, faruzan, fischl, freminet, furina, ganyu, geo, gorou, hydro, hu tao, jean, kaedehara kazuha, kaeya, kamisato ayaka, kamisato ayato, kaveh, keqing, kirara, klee, kujou sara, kuki shinobu, layla, lisa, lynette, lyney, mika, mona, nahida, navia, neuvillette, nilou, ningguang, noelle, qiqi, raiden shogun, razor, rosaria, sangonomiya kokomi, sayu, shenhe, shikanoin heizou, sucrose, tartaglia, thoma, tighnari, venti, wanderer, wriothesley, xiangling, xiao, xingqiu, xinyan, yae miko, yanfei, yaoyao, yelan, yoimiya, yun jin, zhongli
+albedo, alhaitham, aloy, amber, anemo, arataki itto, baizhu, barbara, beidou, bennett, candace, charlotte, chevreuse, chongyun, collei, cyno, dehya, dendro, diluc, diona, dori, eula, faruzan, fischl, freminet, furina, ganyu, gaming, geo, gorou, hydro, hu tao, jean, kaedehara kazuha, kaeya, kamisato ayaka, kamisato ayato, kaveh, keqing, kirara, klee, kujou sara, kuki shinobu, layla, lisa, lynette, lyney, mika, mona, nahida, navia, neuvillette, nilou, ningguang, noelle, qiqi, raiden shogun, razor, rosaria, sangonomiya kokomi, sayu, shenhe, shikanoin heizou, sucrose, tartaglia, thoma, tighnari, venti, wanderer, wriothesley, xiangling, xianyun, xiao, xingqiu, xinyan, yae miko, yanfei, yaoyao, yelan, yoimiya, yun jin, zhongli
 `
 }
   let data = await cari(Maximus)
@@ -344,7 +350,7 @@ export default handler;
 
 async function cari(text) {
 	try {
-		const database = await (await fetch('https://raw.githubusercontent.com/ketchupmaze/AssistenYulaDB/main/genshin/maximus-gibuild.json')).json();
+		const database = await (await fetch('https://raw.githubusercontent.com/XM4ZE/DATABASE/master/genshin/maximus-gibuild.json')).json();
 		const dataArray = Object.values(database);
 		const result = dataArray.find(character => character.name === text);
 		if (!result) throw 'Character not found';

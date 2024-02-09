@@ -11,7 +11,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 		}
 	})
 conn.sendFile(m.chat, data.result.Normal_video, 't.mp4', '*FACEBOOK DOWNLOADER*\n\n_Reso : SD_', m)
-//conn.sendFile(m.chat, data.result.HD, 't.mp4', '*FACEBOOK DOWNLOADER*\n\n_Reso : HD_', m)
+conn.sendFile(m.chat, data.result.HD, 't.mp4', '*FACEBOOK DOWNLOADER*\n\n_Reso : HD_', m)
   } catch (e) {
 		console.log(e)
 		m.reply(`*Server YuLa Down*`)

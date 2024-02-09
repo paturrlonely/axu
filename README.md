@@ -7,15 +7,15 @@
 - Use QR Code: ```node .```
 - Penambahan Fitur ```Store, Banned, Giveaway```
 
- ## WAJIB MENGGUNAKAN WEB API DI BAWAH
+ ## SCRIPT MENGGUNAKAN WEB API DI BAWAH INI
   
-- BetaBotz API [`RestApi`](https://api.betabotz.org)
+- BetaBotz API [`RestApi`](https://api.betabotz.org) (WAJIB)
   
-- Botcahx API [`RestApi`](https://api.botcahx.eu.org)
+- Botcahx API [`RestApi`](https://api.botcahx.eu.org) (WAJIB)
 
-- LolHuman API [`RestApi`](https://api.lolhuman.xyz)
+- LolHuman API [`RestApi`](https://api.lolhuman.xyz) (WAJIB)
 
-- Itsrose API [`RestApi`](https://docs.itsrose.life)
+- Itsrose API [`RestApi`](https://docs.itsrose.life) (OPSIONAL)
 
 ## GRUP & NOMOR SAYA
 - Owner Bot [`Chat Saya`](https://wa.me/6281283516246)

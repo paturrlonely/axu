@@ -7,7 +7,7 @@ import { fileURLToPath } from 'url'
 global.btc = 'apikeylu'
 global.lolkey = 'apikeylu'
 global.rose = 'apikeylu'
-global.neoxr = 'apikeylu'
+global.lann = 'apikeylu'
 
 /*============== NOMOR ==============*/
 global.info = {
@@ -30,7 +30,7 @@ global.APIs = {
   lol: 'https://api.lolhuman.xyz',
   rose: 'https://api.itsrose.life',
   TioXD: 'https://api.botcahx.eu.org',
-  lann: 'https://api.betabotz.org',
+  lann: 'https://api.betabotz.eu.org',
 } 
 
 global.APIKeys = {

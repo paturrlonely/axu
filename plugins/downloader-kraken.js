@@ -1,27 +1,20 @@
 import fetch from 'node-fetch';
 
-const handler = async (m, { conn, args, usedPrefix, command }) => {
-  if (!args[0]) throw `
-*example:* ${usedPrefix}${command} https://krakenfiles.com/view/jumGvugviY/file.html
-`
-
-      let apis = await fetch(`https://api.neoxr.eu/api/kraken?url=${args[0]}&apikey=${global.neoxr}`)
-      let result = await apis.json()
-      let { filename, type, size, views, downloads, last_download, upload_at, url } = result.data
-      let caption = `
-*💌 Name:* ${filename}
-*👁️ View:* ${views}
-*📊 Size:* ${size}
-*🗂️ Type:* ${type}
-*📨 Uploaded:* ${upload_at}
-*⬇️ Download:* ${downloads}
-*⏳ Last Download:* ${last_download}
-
-*kalau mau download sendiri bisa kok :v*
-${url}
-`.trim()
-       m.reply(caption)
-       conn.sendFile(m.chat, url, `data.${type}`, '', m)
+let handler = async (m, { conn, text, usedPrefix, command }) => {
+    if (!text) throw `*🚩 Example:* ${usedPrefix}${command} https://krakenfiles.com/view/neTIvR1wIz/file.html`
+    let data = await (await fetch(`https://api.betabotz.eu.org/api/download/kraken?url=${text}&apikey=${global.lann}`)).json()
+    let msg = `乂 *K R A K E N  D O W N L O A D E R*\n\n`
+    msg += ` ◦ *Name :* ${data.result.fileName}`
+    msg += ` ◦ *View :* ${data.result.views}\n`
+    msg += ` ◦ *Size :* ${data.result.fileSize}\n`
+    msg += ` ◦ *Type :* ${data.result.fileType}\n`
+    msg += ` ◦ *Uploaded :* ${data.result.uploadDate}\n`
+    msg += ` ◦ *Download :* ${data.result.downloads}\n`
+    msg += ` ◦ *Last Download :* ${data.result.lastDownloadDate}\n`
+    msg += ` ◦ *Link :* ${data.result.urlDownload}`
+    msg += `\n`
+    await conn.sendFile(m.chat, 'https://krakenfiles.com/images/kf_logo_dark.png', 'thumb_.png', msg, m)
+    await conn.sendMessage(m.chat, { document: { url: data.result.urlDownload }, fileName: data.result.fileName, mimetype: data.result.fileType }, { quoted: m })
 }
 
 handler.help = ['krakendownload'].map(v => v + ' <url>');

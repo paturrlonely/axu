@@ -1,29 +1,19 @@
-import api from 'api-dylux';
+import fetch from "node-fetch"
+var handler = async (m, {
+ text, 
+ usedPrefix, 
+ command
+ }) => {
+if (!text) throw 'Masukkan Query Link!'
+ try {
+let anu = await fetch(`https://api.betabotz.eu.org/api/download/xvideosdl?url=${text}&apikey=${lann}`)
+let hasil = await anu.json() 
 
-let handler = async (m, { conn, args, command, usedprefix }) => {
-    let chat = db.data.chats[m.chat]
-    if (!args[0]) throw `*Linknya Mana?*`
-     try {
-    let maxim = await api.xvideosdl(args[0])
-     conn.sendMessage(m.chat, {
-		react: {
-			text: '⏳',
-			key: m.key,
-		}
-	})
-    let capt = `
-*INFO FILE*
-
-Name: ${maxim.title}
-Views: ${maxim.views}
-Vote: ${maxim.vote}
-Like/Dislike: ${maxim.likes}/${maxim.deslikes}
-Size: ${maxim.size}`
-    await conn.sendFile(m.chat, maxim.url_dl, null, capt, m)
-        } catch (e) {
-        throw `*Server Down!*`
-    }
+conn.sendMessage(m.chat, { video: { url: hasil.result.url }, fileName: 'xnxx.mp4', mimetype: 'video/mp4' }, { quoted: m })
+} catch (e) {
+throw `*Server Error!*`
 }
+  }                                                    
 handler.help = ['xvideosdl <url>']
 handler.tags = ['nsfw', 'downloader']
 handler.command = /^xvideosdl$/i

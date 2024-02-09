@@ -1,37 +1,29 @@
 
 import fetch from 'node-fetch';
-import api from 'api-dylux';
 
-let handler = async (m, { conn, text, command, usedprefix }) => {
-    let chat = db.data.chats[m.chat]
-    if (!text) throw `Text Nya Mana?\n\nContoh:\n*.xnxx jepang*`
-    let maxim = await api.xnxxSearch(text)
-     conn.sendMessage(m.chat, {
-		react: {
-			text: '⏳',
-			key: m.key,
-		}
-	})
-    let capt = `
-*18+ CONTENT*
+var handler = async (m, { text, usedPrefix, command }) => {
+  if (!text) {
+    throw `Contoh:\n${usedPrefix + command} boobs`;
+  }
+  try {
+  const search = await fetch(
+    `https://api.betabotz.eu.org/api/search/xnxx?query=${text}&apikey=${global.lann}`
+  );
+  const hasil = await search.json();
 
-${maxim.result.map(v => `*Name:* ${v.title}\n*Link:* ${v.link}\n======================`).join`\n\n`}
-    `.trim()
-    conn.sendMessage(m.chat, {
-                text: capt,
-                contextInfo: {
-                    externalAdReply: {
-                        title: "XNXX Search",
-                        body: "Powered by Maximus",
-                        thumbnailUrl: "https://telegra.ph/file/cc76b2489d0d070e82870.jpg",
-                        sourceUrl: "",
-                        mediaType: 1,
-                        showAdAttribution: true,
-                        renderLargerThumbnail: true
-                    }
-                }
-            })
+  let teks = `*XNXX RESULTS* \n\n🔍 *KEYWORDS* *${text}*\n\n`;
+  let no = 1;
+
+  for (let i of hasil.result) {
+    teks += `📑 *No* : ${no++}\n📚 *Title* : ${i.title}\n⏱️ *Duration* : ${i.duration}\n🔗 *URL* ${i.link}\n\n─────────────────\n\n`;
+  }
+
+  await conn.sendMessage(m.chat, { react: { text: `⏱️`, key: m.key }});
+  await conn.sendMessage(m.chat, { image: { url: hasil.result[0].thumb }, caption: teks }, { quoted: m });
+} catch (e) {
+throw `Can't find data!`
 }
+ };
 handler.help = ['xnxx'].map(v => v + ' <query>')
 handler.tags = ['nsfw', 'downloader']
 handler.command = /^xnxx$/i

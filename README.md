@@ -15,7 +15,7 @@
 
 - LolHuman API [`RestApi`](https://api.lolhuman.xyz) ```WAJIB```
 
-- Itsrose API [`RestApi`](https://docs.itsrose.life) ```OPSIONAL```
+- Itsrose API [`RestApi`](https://docs.itsrose.life) ```AI IMAGE APIKEY (Opsional)```
 
 ## GRUP & NOMOR SAYA
 - Owner Bot [`Chat Saya`](https://wa.me/6281283516246)

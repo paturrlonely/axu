@@ -46,7 +46,7 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {
     if (command == 'stalkml') {
         let [id, zoneId] = text.split(',');
         if (!id || !zoneId) throw `Example: ${usedPrefix + command} 84830127,2169`
-        let result = await( await fetch(`https://api.betabotz.eu.org/api/stalk/ml?id=${id}&server=${zoneid}&apikey=${global.lann}`)).json()
+        let result = await( await fetch(`https://api.betabotz.eu.org/api/stalk/ml?id=${id}&server=${zoneId}&apikey=${global.lann}`)).json()
         let cap = `*Nickname:* ${result.userName}
 *User ID:* ${text}`
         m.reply(cap)

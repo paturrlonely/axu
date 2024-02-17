@@ -75,9 +75,10 @@ let handler = async(m, { conn, text, usedPrefix, command}) => {
 - Price: Rp. 115.000 IDR
 `;
   };
-    let maximus = `*TAHAP-TAHAP*\n*1.* Silahkan SCAN QRIS ini dengan nominal orderanmu\n*2.* Silahkan Kirim bukti pembayaran ke nomor Owner\n*Owner:* wa.me/6281283516246\n\n\n*— YULA JOIN GROUP*\n\n*7 Day join the group*\n- Price: Rp. 7.000 IDR\n\n*30 Day join the group*\n- Price: Rp. 15.000 IDR\n\n*365 Day join the group*\n- Price: Rp. 110.000 IDR\n\n\n*— PREMIUM USER*\n\n*3 Day premium*\n- Price: Rp. 5.000 IDR\n\n*7 Day premium*\n- Price: Rp. 10.000 IDR\n\n*30 Day premium*\n- Price: Rp. 15.000 IDR\n\n*60 Day premium*\n- Price: Rp. 30.000 IDR\n\n*90 Day premium*\n- Price: Rp. 40.000 IDR\n\n*365 Day premium*\n- Price: Rp. 115.000 IDR`
-    conn.sendFile(m.sender, 'https://telegra.ph/file/af40d0199185e6ef2c479.jpg', 'maxim.jpg', maximus, m)
+    let maximus = `*TAHAP-TAHAP*\n*1.* Silahkan SCAN QRIS ini dengan nominal orderanmu\n*2.* Silahkan Kirim bukti pembayaran ke nomor ini wa.me/${global.info.nomorown}\n\n\n*— YULA JOIN GROUP*\n\n*7 Day join the group*\n- Price: Rp. 7.000 IDR\n\n*30 Day join the group*\n- Price: Rp. 15.000 IDR\n\n*365 Day join the group*\n- Price: Rp. 110.000 IDR\n\n\n*— PREMIUM USER*\n\n*3 Day premium*\n- Price: Rp. 5.000 IDR\n\n*7 Day premium*\n- Price: Rp. 10.000 IDR\n\n*30 Day premium*\n- Price: Rp. 15.000 IDR\n\n*60 Day premium*\n- Price: Rp. 30.000 IDR\n\n*90 Day premium*\n- Price: Rp. 40.000 IDR\n\n*365 Day premium*\n- Price: Rp. 115.000 IDR`
+    conn.sendFile(m.sender, global.qris, 'maxim.jpg', maximus, m)
     conn.reply(m.chat, '✔️ *PESANANMU TELAH DI BUAT*\n\nSaya telah mengirim pembayarannya melalu private chat silahkan di baca dan ikuti tahap-tahap pembayaran. Terimakasih', m)
+    conn.reply(global.info.nomorown + '@s.whatsapp.net', `${m.sender.split('@')[0]} Sedang dalam pembayaran`, m)
 }
 handler.help = ['order'];
 handler.tags = ['info'];

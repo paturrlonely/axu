@@ -12,7 +12,7 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {
     if (command == 'stalkfreefire') {
         if (!text) throw `Example: ${usedPrefix + command} 570098876`
         let result = await( await fetch(`https://api.betabotz.eu.org/api/stalk/ff?id=${text}&apikey=${global.lann}`)).json()
-        let cap = `*Nickname:* ${result.userNameGame}
+        let cap = `*Nickname:* ${result.result.userNameGame}
 *User ID:* ${text}`
         m.reply(cap)
     }

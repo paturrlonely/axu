@@ -4,9 +4,12 @@ const handler = async (m, { conn, args, text, usedPrefix, command }) => {
   if (!text) throw `Example: ${usedPrefix}${command} arlan
   
 *C H A R A C T E R S  L I S T*
+
+» acheron
 » argenti
 » arlan
 » asta
+» aventurine
 » bailu
 » blackswan
 » blade
@@ -17,6 +20,7 @@ const handler = async (m, { conn, args, text, usedPrefix, command }) => {
 » drratio
 » firetrailblazer
 » fuxuan
+» gallagher
 » gepard
 » guinaifen
 » hanya
@@ -52,6 +56,9 @@ const handler = async (m, { conn, args, text, usedPrefix, command }) => {
   let Maximus;
 
   switch(text) {
+       case 'acheron':
+      Maximus = '1308';
+      break;
        case 'argenti':
       Maximus = '1302';
       break;
@@ -60,6 +67,9 @@ const handler = async (m, { conn, args, text, usedPrefix, command }) => {
       break;
        case 'asta':
       Maximus = '1009';
+      break;
+       case 'aventurine':
+      Maximus = '1304';
       break;
        case 'bailu':
       Maximus = '1211';
@@ -90,6 +100,9 @@ const handler = async (m, { conn, args, text, usedPrefix, command }) => {
       break;
        case 'fuxuan':
       Maximus = '1208';
+      break;
+       case 'gallagher':
+      Maximus = '1301';
       break;
        case 'gepard':
       Maximus = '1104';
@@ -188,9 +201,11 @@ const handler = async (m, { conn, args, text, usedPrefix, command }) => {
       throw `*CHARACTERS* Tidak ada. Silahkan Tulis dengan Benar.
 
 *C H A R A C T E R S  L I S T*
+» acheron
 » argenti
 » arlan
 » asta
+» aventurine
 » bailu
 » blackswan
 » blade
@@ -201,6 +216,7 @@ const handler = async (m, { conn, args, text, usedPrefix, command }) => {
 » drratio
 » firetrailblazer
 » fuxuan
+» gallagher
 » gepard
 » guinaifen
 » hanya

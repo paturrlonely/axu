@@ -11,7 +11,6 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     if (!url.ok) throw await url.text()
     let json = await url.json()
     if (!json.results) throw 'Error!'
-    let ztick = fs.readFileSync(`./media//thumbnail.jpg`)
     try {
     	let res = json.results[0].url
     	let stiker = await createSticker(res, false, stickpack, stickauth)

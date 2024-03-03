@@ -1,6 +1,6 @@
 let handler = async (m, { conn, participants, groupMetadata }) => {
     const pp = await conn.profilePictureUrl(m.chat, 'image').catch(_ => null) || './src/avatar_contact.png'
-    const { isBanned, welcome, pembatasan, sWelcome, sBye, sPromote, isDetect, sDemote, antiLink, antiVirtex, antiBadword, antiLinkWa, viewonce, nsfw, rpg, game, delete: del } = global.db.data.chats[m.chat]
+    const { isBanned, welcome, pembatasan, sWelcome, sBye, sPromote, isDetect, sDemote, antiLinkkick, antiLinkdelete, antiVirtex, antiBadword, antiLinkWa, viewonce, nsfw, rpg, game, delete: del } = global.db.data.chats[m.chat]
     const groupAdmins = participants.filter(p => p.admin)
     const listAdmin = groupAdmins.map((v, i) => `${i + 1}. @${v.id.split('@')[0]}`).join('\n')
     const owner = groupMetadata.owner || groupAdmins.find(p => p.admin === 'superadmin')?.id || m.chat.split`-`[0] + '@s.whatsapp.net'
@@ -22,7 +22,8 @@ ${isDetect ? '✅' : '❌'} Detect
 ${welcome ? '✅' : '❌'} Welcome
 ${pembatasan ? '✅' : '❌'} Restrict
 ${del ? '❌' : '✅'} Anti Delete
-${antiLink ? '✅' : '❌'} Anti Link
+${antiLinkkick ? '✅' : '❌'} Anti Link
+${antiLinkdelete ? '✅' : '❌'} Anti Link delete
 ${antiVirtex ? '✅' : '❌'} Anti Virtex
 ${antiBadword ? '✅' : '❌'} Anti BadWord
 ${antiLinkWa ? '✅' : '❌'} Anti LinkWa

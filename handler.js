@@ -465,7 +465,7 @@ export async function handler(chatUpdate) {
                 if (!('antiLinkkick' in chat)) 
                     chat.antiLinkgc = false 
                 if (!('antiLinkdelete' in chat))
-                    chat.antiLinkNk = false
+                    chat.antiLinkdelete = false
                 if (!('pembatasan' in chat))
                     chat.pembatasan = false
                 if (!('antiSticker' in chat))
@@ -506,7 +506,7 @@ export async function handler(chatUpdate) {
                 listStr: {},
                 delete: true,
                 antiLinkgc: false,
-                antiLinkNk: false,
+                antiLinkdelete: false,
                 pembatasan: false,
                 antiLinkWa: false,
                 antiSticker: false,

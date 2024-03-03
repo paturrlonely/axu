@@ -11,7 +11,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
     isUser = false
     let caption = `
 \`\`\`A D M I N  F E A T U R E\`\`\`
-*• antilink*
+*• antilinkkick*
 *• antilinkdelete*
 *• antilinkwa* 
 *• antitoxic* 
@@ -150,7 +150,7 @@ case 'antifoto':
             }
             global.opts['self'] = !isEnable
             break
-        case 'antilink':
+        case 'antilinkkick':
             if (m.isGroup) {
                 if (!(isAdmin || isOwner)) {
                     global.dfail('admin', m, conn)

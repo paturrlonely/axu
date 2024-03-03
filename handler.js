@@ -463,9 +463,9 @@ export async function handler(chatUpdate) {
                 if (!('delete' in chat))
                     chat.delete = false
                 if (!('antiLinkkick' in chat)) 
-                    chat.antiLinkgc = false 
+                    chat.antiLinkkick = false 
                 if (!('antiLinkdelete' in chat))
-                    chat.antiLinkNk = false
+                    chat.antiLinkdelete = false
                 if (!('pembatasan' in chat))
                     chat.pembatasan = false
                 if (!('antiSticker' in chat))
@@ -505,8 +505,8 @@ export async function handler(chatUpdate) {
                 sDemote: '',
                 listStr: {},
                 delete: true,
-                antiLinkgc: false,
-                antiLinkNk: false,
+                antiLinkkick: false,
+                antiLinkdelete: false,
                 pembatasan: false,
                 antiLinkWa: false,
                 antiSticker: false,

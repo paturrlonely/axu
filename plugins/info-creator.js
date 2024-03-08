@@ -1,6 +1,13 @@
+
 function handler(m) {
-  const data = global.owner.filter(([id, isCreator]) => id && isCreator)
-  this.sendContact(m.chat, data.map(([id, name]) => [id, name]), m)
+  
+  const kontak = {
+	"displayName": `${global.nameown}`,
+	vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;;;;\nFN: ${global.nameown}\nitem1.TEL;waid=${global.info.nomorown}:${global.info.nomorown}\nitem1.X-ABLabel:\nMy Owner\nURL;Email Owner: ${global.mail}\nORG: Powered by XM4ZE\nEND:VCARD`
+}
+
+conn.sendMessage(m.chat, { contacts: { contacts: [kontak] }}, { quoted: m })
+  
 }
 handler.help = ['owner', 'creator']
 handler.tags = ['info']

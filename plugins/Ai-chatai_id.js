@@ -23,9 +23,9 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
     }
 };
 
-handler.help = ['caisearch'];
+handler.help = ['chatai_id'];
 handler.tags = ['ai'];
-handler.command = /^(caisearch)$/i
+handler.command = /^(chatai_id)$/i
 handler.limit = true;
 handler.register = false;
 handler.premium = false;

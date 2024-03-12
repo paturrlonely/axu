@@ -8,7 +8,7 @@ let handler = async (m, { text, usedPrefix, command }) => {
         `
         return conn.sendFile(m.chat, x.result.profilePicHD, 'pp.png', caption, m)
     } catch (e) {
-        m.reply('Sistem Sedang Bermasalah!')
+        m.reply(eror)
     }
 }
 

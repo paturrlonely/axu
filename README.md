@@ -1,7 +1,7 @@
 ## New Update
 
 <div id="header" align="center">
-  <img src="https://raw.githubusercontent.com/XM4ZE/DATABASE/blob/master/wallpaper/3d2470d056100ddb151b3bb30f9ec277_2149578633960802861.gif" width="200" height="200"/>
+  <img src="https://github.com/XM4ZE/DATABASE/blob/master/wallpaper/3d2470d056100ddb151b3bb30f9ec277_2149578633960802861.gif?raw=true" width="200" height="200"/>
 </div>
 
 **Pembaruan :**

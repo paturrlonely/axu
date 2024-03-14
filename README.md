@@ -15,12 +15,12 @@
 
 - LolHuman API [`RestApi`](https://api.lolhuman.xyz) ```WAJIB```
 
-- Itsrose API [`RestApi`](https://docs.itsrose.life) ```AI IMAGE APIKEY (Opsional)```
+- Itsrose API [`RestApi`](https://docs.itsrose.life) ```WAJIB```
 
 ## GRUP & NOMOR SAYA
-- Owner Bot [`Chat Saya`](https://wa.me/6281283516246)
+- Owner [`Chat Saya`](https://wa.me/6281283516246)
 
-- Group Bot [`Join`](https://chat.whatsapp.com/FJRtTzRKxP8A2wT6fcCW3s)
+- Group [`Join`](https://chat.whatsapp.com/FJRtTzRKxP8A2wT6fcCW3s)
 
 - Group Genshin [`Join`](https://chat.whatsapp.com/LZCnnSQFPkF3C6zrDcH5n8)
 

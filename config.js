@@ -3,7 +3,7 @@ import chalk from 'chalk'
 import { fileURLToPath } from 'url'
 
 
-/*============== GLOBAL APIKEY ==============*/
+/*========= GLOBAL APIKEY ==========*/
 global.btc = 'apikeylu'
 global.lolkey = 'apikeylu'
 global.rose = 'apikeylu'
@@ -21,10 +21,10 @@ global.info = {
 global.owner = [
 ['6281283516246', 'Maximus', 'true']
 ]
-global.mods = []
-global.prems = []
+global.mods = ['6281283516246']
+global.prems = ['6281283516246']
 
-/*============== API ==============*/
+/*=============== API ===============*/
 global.APIs = {
   neoxr: 'https://api.neoxr.eu.org',
   lol: 'https://api.lolhuman.xyz',
@@ -40,7 +40,7 @@ global.APIKeys = {
   'https://api.itsrose.life': 'memek-apikeylu',
 }
 
-/*============== WATERMARK ==============*/
+/*============= WATERMARK =============*/
 global.wm = 'Maximus'
 global.author = '© ᴀssɪsᴛᴇɴ ʏᴜʟᴀ 💕'
 global.stickpack = 'Maximus'

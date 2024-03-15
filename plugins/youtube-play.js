@@ -1,72 +1,3 @@
-//https://github.com/BrunoSobrino/TheMystic-Bot-MD/blob/master/lib/ytdll.js#L46
-
-/*let { youtubedl, youtubedlv2, youtubeSearch } = require('@bochilteam/scraper');
-
-var handler = async (m, { conn, command, text, usedPrefix }) => {
-  try {
-    if (!text) {
-      return conn.reply(m.chat, `Use an example: ${usedPrefix}${command} eula song`, m);
-    }
-
-    conn.sendMessage(m.chat, {
-		react: {
-			text: '▶️',
-			key: m.key,
-		}
-	});
-
-    let search = await youtubeSearch(text);
-
-    if (!search || !search.video || !search.video[0]) {
-      throw 'Video Tidak Ditemukan, Coba Judul Lain';
-    }
-
-    let vid = search.video[0];
-    let { authorName, title, thumbnail, duration, durationS, viewH, publishedTime, url } = vid;
-    let caption = `» *Duration:* ${duration}
-» *Views:* ${viewH}
-» *Uploads:* ${publishedTime}
-
-YTdl by *https://github.com/BochilTeam/scraper*
-Search by *https://github.com/BochilTeam/scraper*
-Send by *Assisten YuLa*`;
-
-    await conn.sendMessage(m.chat, {
-text: caption,
-contextInfo: {
-externalAdReply: {
-title: 'AUDIO SEDANG DI KIRIM',
-body: 'Youtube Play by Assisten YuLa',
-thumbnailUrl: thumbnail,
-sourceUrl: "https://youtube.com",
-mediaType: 1,
-renderLargerThumbnail: true
-}}})
-    if (durationS > 1200) return m.reply(`_Duration: *( ${duration} )*_\n_Tidak dapat mengirim, maksimal durasi 20Menit *( 20:00 )*_`);
-    const yt = await youtubedl(url).catch(async (_) => await youtubedlv2(url));
-    const link = await yt.audio['128kbps'].download();
-    let doc = {
-      audio: {
-        url: link,
-      },
-      mimetype: 'audio/mp4',
-      fileName: `${title}`,
-    };
-    
-    return conn.sendMessage(m.chat, doc, { quoted: m });
-  } catch (error) {
-    console.error(error);
-    conn.reply(m.chat, 'Terjadi kesalahan. Silakan coba lagi dengan benar....', m);
-  }
-};
-
-handler.help = ['youtubeplay'].map((v) => v + ' <name>');
-handler.tags = ['downloader'];
-handler.command = /^(ytplay|play|youtubeplay|music)$/i;
-handler.limit = true;
-
-module.exports = handler*/
-
 import ytdl from 'ytdl-core';
 import fs from 'fs';
 import ffmpeg from 'fluent-ffmpeg';
@@ -110,23 +41,28 @@ let handler = async (m, { conn, text }) => {
   
 YTdl By https://github.com/fent/node-ytdl-core
 Search By https://github.com/talmobi/yt-search
-Sent By Assistant Yula💕`;
+Sent By Assistant ${global.info.namebot}`;
 
-    var pesan = conn.relayMessage(m.chat, {
-                extendedTextMessage:{
-                text: infoText, 
-                contextInfo: {
-                     externalAdReply: {
-                        title: "AUDIO SEDANG DI KIRIM",
-                        body: "Youtube Play by Assisten Yula",
-                        mediaType: 1,
-                        previewType: 0,
-                        renderLargerThumbnail: true,
-                        thumbnailUrl: thumbnailUrl,
-                        sourceUrl: "https://youtube.com"
-                    }
-                }, mentions: [m.sender]
-}}, {});
+    var pesan = conn.sendMessage(m.chat, {
+            text: infoText,
+            contextInfo: {
+                forwardingScore: 9999,
+                isForwarded: true,
+                   forwardedNewsletterMessageInfo: {
+                   newsletterJid: global.info.channel,
+                   serverMessageId: null,
+                   newsletterName: global.info.namechannel,
+                   },
+                   externalAdReply: {
+                   title: "AUDIO SEDANG DI KIRIM",
+                   body: `Youtube Play by Assisten ${global.info.namebot}`,
+                   thumbnailUrl: thumbnailUrl,
+                   sourceUrl: "https://youtube.com",
+                   mediaType: 1,
+                   renderLargerThumbnail: true
+                   },
+                },
+            }, {});
 
     audio.pipe(fs.createWriteStream(inputFilePath)).on('finish', async () => {
       ffmpeg(inputFilePath)

@@ -73,6 +73,8 @@ let handler = async (m, { conn, usedPrefix, __dirname }) => {
     let image = elainajpg.getRandom()
     let user = global.db.data.users[m.sender]
     let limit = user.premiumTime >= 1 ? 'Unlimited' : user.limit
+    let premium = global.db.data.users[m.sender].premiumTime
+    let prems = `${premium > 0 ? 'Yes': 'No'}`
     let name = `${user.registered ? user.name : conn.getName(m.sender)}`
     let status = `${m.sender.split`@`[0] == info.nomorown ? 'Developer' : user.premiumTime >= 1 ? 'Premium User' : user.level >= 1000 ? 'Elite User' : 'Free User'}`
     let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
@@ -162,7 +164,7 @@ let handler = async (m, { conn, usedPrefix, __dirname }) => {
       totalexp: exp,
       xp4levelup: max - exp,
       github: _package.homepage ? _package.homepage.url || _package.homepage : '[unknown github url]',
-      level, limit, name, weton, week, date, dateIslamic, time, totalreg, rtotalreg, role, tag, status, wib, 
+      level, limit, prems, name, weton, week, date, dateIslamic, time, totalreg, rtotalreg, role, tag, status, wib, 
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])

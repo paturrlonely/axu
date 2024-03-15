@@ -7,12 +7,7 @@ let name = await conn.getName(who)
 let q = m.quoted ? m.quoted : m
 let mime = (q.msg || q).mimetype || ''
 if (!mime) throw `*reply/send ur image with .${command}*`
-conn.sendMessage(m.chat, {
-		react: {
-			text: '⏳',
-			key: m.key,
-		}
-	})
+m.reply(wait)
 let media = await q.download()
 let url = await uploadImage(media)
 let api = `https://api.itsrose.life/image/stable/prompter?url=${url}`

@@ -1,1 +1,244 @@
-function _0x2cc5(){const _0x3dfecc=['\x20epicrealism|thai_teacher_uniform|a\x20woman\x20taking\x20a\x20picture\x20of\x20herself\x20in\x20a\x20mirror,\x20ulzzang,\x20lalisa\x20manobal,\x20cute\x20top,\x20polka\x20dot,\x20wearing\x20a\x20cute\x20top,\x20petite,\x20dots,\x20lalisa\x20manoban\x20of\x20blackpink,\x20polkadots,\x20mirror\x20selfie,\x20cute\x20outfit,\x20black\x20dots,\x20bralette,\x20suki,\x20outfit\x20photo,\x20wearing\x20a\x20camisole,\x20slender\x20waist\x0a','steps','register','camelliamix_nsfw','frieren_c','curly-slider','response','7027678FeskFa','meinapastel','\x0a*init_image*:\x20','shojo-vibe','1974910fjSNxQ','camelliamix_line','*M\x20O\x20D\x20E\x20L\x20S\x20\x20T\x20Y\x20P\x20E*\x0a»\x20realisian\x0a»\x20dream_shaper_v8\x0a»\x20redshift_diffusion\x0a»\x20realistic_vision_v13\x0a»\x20realistic_vision_v20\x0a»\x20hyperrealism\x0a\x0a\x0a*L\x20O\x20R\x20A\x20\x20T\x20Y\x20P\x20E*\x0a»\x20more_details\x0a»\x20more_details_xl\x0a»\x20frieren\x0a»\x20frieren_c\x0a»\x20yaemiko\x0a»\x20microwaist\x0a»\x20shojo_vibe\x0a»\x20curly_slider\x0a»\x20skin_slider\x0a»\x20velvia_30\x0a\x0a','_Preparing\x20','\x0a*H*:\x20','split','command','dark-sushi-25d','download','toFixed','dream_shaper_8797','shojo_vibe','log','rev-animated','help','model_id','scheduler','dark_sushi_25d','\x20Model|Lora|prompt\x0a\x0a*example:*\x20','guidance_scale','more_details','21027039eVLHBf','1928zmvtiE','velvia_30','\x0a*strength*:\x20','29444EsVFpZ','*Generating\x20Time*:\x20','frieren','reply','11871LQRYNA','198rCsvgD','rev_animated','30lEldYo','limit','tags','1ERrCrl','6505dZRdaW','quoted','generation_time','\x20second\x0a*prompt*:\x20','majic_mix_sombrev2','chat','UniPC','camelliamix-25d','majicmixrealisticv6','*LoRa*\x20yang\x20dipilih\x20tidak\x20tersedia,\x20Silahkan\x20pilih\x20*LoRa*\x20di\x20bawah.\x0a\x0a*L\x20O\x20R\x20A\x20\x20T\x20Y\x20P\x20E*\x0a»\x20more_details\x0a»\x20more_details_xl\x0a»\x20frieren\x0a»\x20frieren_c\x0a»\x20yaemiko\x0a»\x20microwaist\x0a»\x20shojo_vibe\x0a»\x20curly_slider\x0a»\x20skin_slider\x0a»\x20velvia_30\x0a','bro623jbfe32','yes','meina-appfactory','dongman','*Models*\x20yang\x20dipilih\x20tidak\x20tersedia,\x20Silahkan\x20pilih\x20*Models*\x20di\x20bawah.\x0a\x0a*M\x20O\x20D\x20E\x20L\x20S\x20\x20T\x20Y\x20P\x20E*\x0a»\x20bro623jbfe32\x0a»\x20camelliamix_line\x0a»\x20camelliamix_nsfw\x0a»\x20camelliamix_25d\x0a»\x20meina_appfactory\x0a»\x20meinamix\x0a»\x20rev_animated\x0a»\x20majic_mix_sombrev1\x0a»\x20majic_mix_sombrev2\x0a»\x20majicmixrealisticv6\x0a»\x20dark_sushi_25d\x0a»\x20dream_shaper_8797\x0a»\x20meinaalter\x0a»\x20meinapastel\x0a»\x20dongman\x0a','\x0a*seed*:\x20','\x0a*W*:\x20','catch','\x20diffusion..._','\x0a*Results*:\x20','meinamix','meina_appfactory','yaemiko','post','majic_mix_sombrev1','majic-mix-sombrev2','https://api.itsrose.life/image/diffusion/img2img','seed','184502SOSnfp','init_image','jisoo','\x0a*scheduler*:\x20','microwaist','\x0a*guidance_scale*:\x20','premium'];_0x2cc5=function(){return _0x3dfecc;};return _0x2cc5();}const _0x5719c0=_0x2b6f;(function(_0x816750,_0x3bfa7a){const _0x33242e=_0x2b6f,_0x1ad5ae=_0x816750();while(!![]){try{const _0x58429f=-parseInt(_0x33242e(0x123))/0x1*(-parseInt(_0x33242e(0x140))/0x2)+-parseInt(_0x33242e(0x120))/0x3*(-parseInt(_0x33242e(0x119))/0x4)+parseInt(_0x33242e(0x124))/0x5*(-parseInt(_0x33242e(0x11e))/0x6)+-parseInt(_0x33242e(0x14e))/0x7+parseInt(_0x33242e(0x116))/0x8*(-parseInt(_0x33242e(0x11d))/0x9)+-parseInt(_0x33242e(0x152))/0xa+parseInt(_0x33242e(0x115))/0xb;if(_0x58429f===_0x3bfa7a)break;else _0x1ad5ae['push'](_0x1ad5ae['shift']());}catch(_0x4cd4b4){_0x1ad5ae['push'](_0x1ad5ae['shift']());}}}(_0x2cc5,0x7dc51));import _0x1e6e49 from'axios';import _0x18e65a from'node-fetch';import _0x2772f8 from'../lib/uploadImage.js';const handler=async(_0x22b606,{conn:_0x3ceb5d,text:_0x5654ff,usedPrefix:_0x2df97b,command:_0x5cc56d})=>{const _0x494a92=_0x2b6f;let _0x4da404=_0x22b606[_0x494a92(0x125)]?_0x22b606[_0x494a92(0x125)]:_0x22b606;if(!_0x5654ff)throw _0x494a92(0x154)+_0x2df97b+_0x5cc56d+_0x494a92(0x112)+_0x2df97b+_0x5cc56d+_0x494a92(0x147);let [_0x2e08be,_0x1fdd95,_0x228a8f]=_0x5654ff[_0x494a92(0x157)]('|'),_0x1603d0=await _0x4da404[_0x494a92(0x15a)](),_0xbc2b65=await _0x2772f8(_0x1603d0),_0x59fb5d;switch(_0x2e08be){case _0x494a92(0x12e):_0x59fb5d=_0x494a92(0x12e);break;case _0x494a92(0x153):_0x59fb5d='camelliamix-line';break;case _0x494a92(0x14a):_0x59fb5d='camelliamix-nsfw';break;case'camelliamix_25d':_0x59fb5d=_0x494a92(0x12b);break;case _0x494a92(0x139):_0x59fb5d=_0x494a92(0x130);break;case _0x494a92(0x138):_0x59fb5d=_0x494a92(0x138);break;case _0x494a92(0x11f):_0x59fb5d=_0x494a92(0x15f);break;case _0x494a92(0x13c):_0x59fb5d='majic-mix-sombrev1';break;case _0x494a92(0x128):_0x59fb5d=_0x494a92(0x13d);break;case _0x494a92(0x12c):_0x59fb5d=_0x494a92(0x12c);break;case _0x494a92(0x111):_0x59fb5d=_0x494a92(0x159);break;case _0x494a92(0x15c):_0x59fb5d='dream-shaper-8797';break;case'meinaalter':_0x59fb5d='meinaalter';break;case _0x494a92(0x14f):_0x59fb5d=_0x494a92(0x14f);break;case _0x494a92(0x131):_0x59fb5d='dongman';break;default:throw _0x494a92(0x132);};let _0x539127;switch(_0x1fdd95){case _0x494a92(0x114):_0x539127=_0x494a92(0x114);break;case'more_details_xl':_0x539127='more_details_XL';break;case'frieren':_0x539127=_0x494a92(0x11b);break;case _0x494a92(0x14b):_0x539127='frieren-c';break;case _0x494a92(0x13a):_0x539127=_0x494a92(0x13a);break;case _0x494a92(0x144):_0x539127=_0x494a92(0x144);break;case _0x494a92(0x15d):_0x539127=_0x494a92(0x151);break;case'curly_slider':_0x539127=_0x494a92(0x14c);break;case'skin_slider':_0x539127='skin-slider';break;case _0x494a92(0x117):_0x539127='velvia-30';break;case'\x20':_0x539127='\x20';break;default:throw _0x494a92(0x12d);};const _0x571a35={'server_name':_0x494a92(0x142),'prompt':''+_0x228a8f,'negative_prompt':'wm,\x20watermark,\x20missing\x20fingers,missing\x20arms,missing\x20legs,extra\x20digit,\x20extra\x20arms,\x20extra\x20leg,\x20extra\x20foot,\x20sketches,\x20(worst\x20quality:2),\x20(low\x20quality:2),\x20(normal\x20quality:2),\x20lowres,\x20normal\x20quality,\x20((monochrome)),\x20((grayscale)),\x20skin\x20spots,\x20acnes,\x20skin\x20blemishes,\x20bad\x20anatomy,(fat:1.2),facing\x20away,\x20looking\x20away,tilted\x20head,\x20lowres,bad\x20anatomy,bad\x20hands,\x20text,\x20error,\x20missing\x20fingers,extra\x20digit,\x20fewer\x20digits,\x20cropped,\x20worstquality,\x20low\x20quality,\x20normal\x20quality,jpegartifacts,signature,\x20watermark,\x20username,blurry,bad\x20feet,cropped,poorly\x20drawn\x20hands,poorly\x20drawn\x20face,mutation,deformed,worst\x20quality,low\x20quality,normal\x20quality,jpeg\x20artifacts,signature,watermark,extra\x20fingers,fewer\x20digits,extra\x20limbs,extra\x20arms,extra\x20legs,malformed\x20limbs,fused\x20fingers,too\x20many\x20fingers,long\x20neck,cross-eyed,mutated\x20hands,polar\x20lowres,bad\x20body,bad\x20proportions,gross\x20proportions,text,error,','init_image':_0xbc2b65,'strength':0.55,'width':0x200,'height':0x300,'steps':0x1e,'model_id':''+_0x59fb5d,'sampler':_0x494a92(0x12a),'cfg':7.5,'seed':null,'enhance_prompt':_0x494a92(0x12f),'image_num':0x1,'safety_checker':'no','lora_model':''+_0x539127,'lora_strength':0.5,'embeddings_model':'','webhook':null};_0x22b606[_0x494a92(0x11c)](_0x494a92(0x155)+_0x5cc56d+_0x494a92(0x136));const {data:_0x4607ad}=await _0x1e6e49[_0x494a92(0x13b)](_0x494a92(0x13e),_0x571a35,{'headers':{'Authorization':''+global['rose']}})[_0x494a92(0x135)](_0x2fb417=>_0x2fb417?.[_0x494a92(0x14d)]),{status:_0x858ebe,message:_0x4029fa,result:_0x84b92b}=_0x4607ad;if(!_0x858ebe)console[_0x494a92(0x15e)](_0x4029fa);else{const {images:_0x2ea42a,metadata:_0x449651,generation_time:_0x4cd8e1}=_0x84b92b;let _0x4415ca=_0x84b92b[_0x494a92(0x126)][_0x494a92(0x15b)](),_0x45d2fd=_0x449651[_0x494a92(0x161)],_0x7548eb=_0x449651[_0x494a92(0x110)],_0x4c7d07=_0x449651['safety_checker'],_0xc3353f=_0x449651['W'],_0x48c56d=_0x449651['H'],_0x118b41=_0x449651[_0x494a92(0x113)],_0x23dedd=_0x449651[_0x494a92(0x148)],_0xda920=_0x449651[_0x494a92(0x13f)],_0x205c28=_0x449651['strength'],_0x2c5d99=_0x449651[_0x494a92(0x141)],_0x112d5d=_0x494a92(0x11a)+_0x4415ca+_0x494a92(0x127)+_0x5654ff+'\x0a*model_id*:\x20'+_0x45d2fd+_0x494a92(0x143)+_0x7548eb+'\x0a*safety_checker*:\x20'+_0x4c7d07+_0x494a92(0x134)+_0xc3353f+_0x494a92(0x156)+_0x48c56d+_0x494a92(0x145)+_0x118b41+'\x0a*steps*:\x20'+_0x23dedd+_0x494a92(0x133)+_0xda920+_0x494a92(0x118)+_0x205c28+_0x494a92(0x150)+_0x2c5d99+_0x494a92(0x137)+_0x2ea42a;_0x22b606[_0x494a92(0x11c)](_0x112d5d);for(const _0x1a2a58 of _0x2ea42a){await new Promise(_0x1ec852=>{setTimeout(async()=>{const _0x37a5d2=_0x2b6f;await _0x3ceb5d['sendMessage'](_0x22b606[_0x37a5d2(0x129)],{'image':{'url':_0x1a2a58}}),_0x1ec852();},_0x4cd8e1*0x3e8);});}}};handler[_0x5719c0(0x160)]=['img2img\x20<models|lora|prompt>'],handler[_0x5719c0(0x122)]=['ai'],handler[_0x5719c0(0x158)]=/(img2img|i2i|image2image)/i,handler[_0x5719c0(0x121)]=!![],handler[_0x5719c0(0x149)]=![],handler[_0x5719c0(0x146)]=![];function _0x2b6f(_0x27743e,_0x44085b){const _0x2cc5da=_0x2cc5();return _0x2b6f=function(_0x2b6fc4,_0x4a283f){_0x2b6fc4=_0x2b6fc4-0x110;let _0x5e6be8=_0x2cc5da[_0x2b6fc4];return _0x5e6be8;},_0x2b6f(_0x27743e,_0x44085b);}export default handler;
+import axios from 'axios';
+import fetch from 'node-fetch';
+import uploadImage from '../lib/uploadImage.js';
+
+const handler = async (m, { conn, text, usedPrefix, command }) => {
+  let q = m.quoted ? m.quoted : m;
+  if (!text) throw `*M O D E L S  T Y P E*
+» bro623jbfe32
+» camelliamix_line
+» camelliamix_nsfw
+» camelliamix_25d
+» meina_appfactory
+» meinamix
+» rev_animated
+» majic_mix_sombrev1
+» majic_mix_sombrev2
+» majicmixrealisticv6
+» dark_sushi_25d
+» dream_shaper_8797
+» meinaalter
+» meinapastel
+» dongman
+
+
+*L O R A  T Y P E*
+» more_details
+» more_details_xl
+» frieren
+» frieren_c
+» yaemiko
+» microwaist
+» shojo_vibe
+» curly_slider
+» skin_slider
+» velvia_30
+
+${usedPrefix}${command} Model|Lora|prompt
+
+*example:* ${usedPrefix}${command} epicrealism|thai_teacher_uniform|a woman taking a picture of herself in a mirror, ulzzang, lalisa manobal, cute top, polka dot, wearing a cute top, petite, dots, lalisa manoban of blackpink, polkadots, mirror selfie, cute outfit, black dots, bralette, suki, outfit photo, wearing a camisole, slender waist
+`
+  
+  let [ style, lora, prompt ] = text.split('|');
+  let media = await q.download();
+  let url = await uploadImage(media);
+  let setStyle;
+
+  switch(style) {
+       case 'bro623jbfe32':
+      setStyle = 'bro623jbfe32';
+      break;
+       case 'camelliamix_line':
+      setStyle = 'camelliamix-line';
+      break;
+       case 'camelliamix_nsfw':
+      setStyle = 'camelliamix-nsfw';
+      break;
+       case 'camelliamix_25d':
+      setStyle = 'camelliamix-25d';
+      break;
+       case 'meina_appfactory':
+      setStyle = 'meina-appfactory';
+      break;
+       case 'meinamix':
+      setStyle = 'meinamix';
+      break;
+       case 'rev_animated':
+      setStyle = 'rev-animated';
+      break;
+       case 'majic_mix_sombrev1':
+      setStyle = 'majic-mix-sombrev1';
+      break;
+       case 'majic_mix_sombrev2':
+      setStyle = 'majic-mix-sombrev2';
+      break;
+       case 'majicmixrealisticv6':
+      setStyle = 'majicmixrealisticv6';
+      break;
+       case 'dark_sushi_25d':
+      setStyle = 'dark-sushi-25d';
+      break;
+       case 'dream_shaper_8797':
+      setStyle = 'dream-shaper-8797';
+      break;
+       case 'meinaalter':
+      setStyle = 'meinaalter';
+      break;
+       case 'meinapastel':
+      setStyle = 'meinapastel';
+      break;
+       case 'dongman':
+      setStyle = 'dongman';
+      break;
+      default:
+      throw `*Models* yang dipilih tidak tersedia, Silahkan pilih *Models* di bawah.
+
+*M O D E L S  T Y P E*
+» bro623jbfe32
+» camelliamix_line
+» camelliamix_nsfw
+» camelliamix_25d
+» meina_appfactory
+» meinamix
+» rev_animated
+» majic_mix_sombrev1
+» majic_mix_sombrev2
+» majicmixrealisticv6
+» dark_sushi_25d
+» dream_shaper_8797
+» meinaalter
+» meinapastel
+» dongman
+`;
+  };
+  
+  let setLora;
+
+  switch(lora) {
+       case 'more_details':
+      setLora = 'more_details';
+      break;
+       case 'more_details_xl':
+      setLora = 'more_details_XL';
+      break;
+       case 'frieren':
+      setLora = 'frieren';
+      break;
+       case 'frieren_c':
+      setLora = 'frieren-c';
+      break;
+       case 'yaemiko':
+      setLora = 'yaemiko';
+      break;
+       case 'microwaist':
+      setLora = 'microwaist';
+      break;
+       case 'shojo_vibe':
+      setLora = 'shojo-vibe';
+      break;
+       case 'curly_slider':
+      setLora = 'curly-slider';
+      break;
+       case 'skin_slider':
+      setLora = 'skin-slider';
+      break;
+       case 'velvia_30':
+      setLora = 'velvia-30';
+      break;
+       case ' ':
+      setLora = ' ';
+      break;
+      default:
+      throw `*LoRa* yang dipilih tidak tersedia, Silahkan pilih *LoRa* di bawah.
+
+*L O R A  T Y P E*
+» more_details
+» more_details_xl
+» frieren
+» frieren_c
+» yaemiko
+» microwaist
+» shojo_vibe
+» curly_slider
+» skin_slider
+» velvia_30
+`;
+  };
+  
+  const payload = {
+    server_name: "jisoo",
+    prompt: `${prompt}`,
+    negative_prompt: "wm, watermark, missing fingers,missing arms,missing legs,extra digit, extra arms, extra leg, extra foot, sketches, (worst quality:2), (low quality:2), (normal quality:2), lowres, normal quality, ((monochrome)), ((grayscale)), skin spots, acnes, skin blemishes, bad anatomy,(fat:1.2),facing away, looking away,tilted head, lowres,bad anatomy,bad hands, text, error, missing fingers,extra digit, fewer digits, cropped, worstquality, low quality, normal quality,jpegartifacts,signature, watermark, username,blurry,bad feet,cropped,poorly drawn hands,poorly drawn face,mutation,deformed,worst quality,low quality,normal quality,jpeg artifacts,signature,watermark,extra fingers,fewer digits,extra limbs,extra arms,extra legs,malformed limbs,fused fingers,too many fingers,long neck,cross-eyed,mutated hands,polar lowres,bad body,bad proportions,gross proportions,text,error,",
+    init_image: url,
+    strength: 0.55,
+    width: 512,
+    height: 768,
+    steps: 30,
+    model_id: `${setStyle}`,
+    sampler: "UniPC",
+    cfg: 7.5,
+    seed: null,
+    enhance_prompt: "yes",
+    image_num: 1,  
+    safety_checker: "no",
+    lora_model: `${setLora}`,
+    lora_strength: 0.5,
+    embeddings_model: "",
+    webhook: null,
+  };
+m.reply(`_Preparing ${command} diffusion..._`)
+  const { data } = await axios.post("https://api.itsrose.life/image/diffusion/img2img", payload, {
+    headers: { Authorization: `${global.rose}` }
+  }).catch((e) => e?.response);
+
+  const { status, message, result } = data;
+
+  if (!status) {
+    console.log(message); 
+  } else {
+    const { images, metadata, generation_time } = result;
+    let second = result.generation_time.toFixed()
+    let model = metadata.model_id;
+    let schedule = metadata.scheduler;
+    let ceker = metadata.safety_checker;
+    let w = metadata.W;
+    let h = metadata.H;
+    let cfg = metadata.guidance_scale;
+    let step = metadata.steps;
+    let seed = metadata.seed;
+    let streng = metadata.strength;
+    let initImg = metadata.init_image;
+    
+    let medata = `*Generating Time*: ${second} second
+*prompt*: ${text}
+*model_id*: ${model}
+*scheduler*: ${schedule}
+*safety_checker*: ${ceker}
+*W*: ${w}
+*H*: ${h}
+*guidance_scale*: ${cfg}
+*steps*: ${step}
+*seed*: ${seed}
+*strength*: ${streng}
+*init_image*: ${initImg}
+*Results*: ${images}`;
+m.reply(medata)
+    for (const image of images) {
+      await new Promise((resolve) => {
+        setTimeout(async () => {
+          await conn.sendMessage(m.chat, { image: { url: image } });
+          resolve();
+        }, generation_time * 1000);
+      });
+    }
+  }
+};
+
+handler.help = ['img2img <models|lora|prompt>'];
+handler.tags = ['ai'];
+handler.command =  /(img2img|i2i|image2image)/i
+handler.limit = true;
+handler.register = false;
+handler.premium = false;
+
+export default handler

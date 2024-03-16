@@ -39,9 +39,9 @@ await conn.sendMessage(m.chat, { audio: { url: url.audio }, mimetype: 'audio/mpe
 		m.reply(`*Sistem YuLa ERROR*`)
 	}
 }
-handler.help = ['douyin2'].map(v => v + ' <url>')
+handler.help = ['douyin'].map(v => v + ' <url>')
 handler.tags = ['downloader']
-handler.command = /^(douyin2|douyindl2)$/i
+handler.command = /^(douyin|douyindl)$/i
 
 handler.limit = true
 

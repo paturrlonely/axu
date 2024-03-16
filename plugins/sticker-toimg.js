@@ -1,46 +1,43 @@
-import * as fs from 'fs'
-import { exec } from 'child_process'
+import sharp from 'sharp';
 
-let handler = async (m, { conn }) => {
-	if (m.quoted && /sticker/.test(m.quoted.mtype) && !m.quoted.isAnimated) {
-		let img = await m.quoted.download()
-		await conn.sendMessage(m.chat, { image: img, jpegThumbnail: img }, { quoted: m })
-	} else if (m.quoted && /sticker/.test(m.quoted.mtype) && m.quoted.isAnimated) {
-		let img = await m.quoted.download()
-		let out = await webpToVideo(img)
-		await conn.sendMessage(m.chat, { video: out, gifPlayback: /gif/i.test(m.text), gifAttribution: ~~(Math.random() * 2) }, { quoted: m })
-	} else throw 'Reply a sticker!'
-}
-handler.help = ['toimg', 'tovideo']
-handler.tags = ['tools']
-handler.command = /^(to(img|gif|video))$/i
-handler.register = false
-handler.premium = false
-handler.limit = true
+const TIMEOUT = 10000; // 10 detik
 
-export default handler
+let handler = async (m, { conn, usedPrefix, command }) => {
+  const notStickerMessage = `Reply sticker dengan command *${usedPrefix + command}*`;
 
-function webpToVideo(bufferImage) {
-	return new Promise((resolve, reject) => {
-		try {
-			let pathFile = "./tmp/" + ~~(Math.random() * 1000000 + 1) + ".webp"
-			fs.writeFileSync(pathFile, bufferImage)
-			exec(`convert ${pathFile} ${pathFile}.gif`, (error, stdout, stderr) => {
-				exec(`ffmpeg -i ${pathFile}.gif -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" ${pathFile}.mp4`, (error, stdout, stderr) => {
-					if (!fs.existsSync(pathFile + ".gif") || !fs.existsSync(pathFile + ".mp4")) {
-						reject("Failed convert file!")
-						fs.unlinkSync(pathFile)
-						return
-					}
-					let videoBuffer = fs.readFileSync(pathFile + ".mp4")
-					fs.unlinkSync(pathFile)
-					fs.unlinkSync(pathFile + ".gif")
-					fs.unlinkSync(pathFile + ".mp4")
-					resolve(videoBuffer)
-				})
-			})
-		} catch(e) {
-			reject(e)
-		}
-	})
-}
+  if (!m.quoted) throw notStickerMessage;
+
+  const q = m.quoted || m;
+  const mime = q.mimetype || '';
+
+  if (!/image\/webp/.test(mime)) throw notStickerMessage;
+
+  try {
+    // Download sticker
+    const media = await q.download();
+
+    // Dekoding WebP tanpa webp-js
+    const decodedBuffer = await sharp(media).toFormat('png').toBuffer();
+
+    // Send PNG image
+    if (decodedBuffer.length > 0) {
+      await conn.sendFile(m.chat, decodedBuffer, 'out.png', wm, m);
+    } else {
+      throw `${global.eror}`;
+    }
+  } catch (error) {
+    console.error(error);
+    if (error.message === 'Timeout of 10000ms exceeded') {
+      m.reply('Proses konversi terlalu lama. Silakan coba lagi.');
+    } else {
+      m.reply(global.eror);
+    }
+  }
+};
+
+handler.help = ['toimg'];
+handler.tags = ['sticker'];
+handler.command = ['toimg', 'toimage'];
+handler.limit = true;
+
+export default handler;

@@ -25,28 +25,13 @@ var handler = async (m, {
             let stiker = await sticker(false, res, stickpack, stickauth)
     if (stiker) await conn.sendFile(m.chat, stiker, '', author, m, null)
         }
-        else if (command == 'stickerdog' || command == 'sdog') {
-        const res = `https://api.lolhuman.xyz/api/sticker/anjing?apikey=${global.lolkey}`
-            let stiker = await sticker(false, res, stickpack, stickauth)
-    if (stiker) await conn.sendFile(m.chat, stiker, '', author, m, null)
-        }
-        else if (command == 'stickerpatrick' || command == 'spatrick') {
-        const res = `https://api.lolhuman.xyz/api/sticker/patrick?apikey=${global.lolkey}`
-            let stiker = await sticker(false, res, stickpack, stickauth)
-    if (stiker) await conn.sendFile(m.chat, stiker, '', author, m, null)
-        }
-        else if (command == 'stickeramongus' || command == 'samongus') {
-        const res = `https://api.lolhuman.xyz/api/sticker/amongus?apikey=${global.lolkey}`
-            let stiker = await sticker(false, res, stickpack, stickauth)
-    if (stiker) await conn.sendFile(m.chat, stiker, '', author, m, null)
-        }
     } catch (e) {
         console.log(e)
         await conn.sendFile(m.chat, error, 'error.webp', '', m)
     }
 }
 
-handler.command = handler.help = ['dinokuning', 'spongebob', 'manusialidi', 'sdino', 'sspongebob', 'smanusialidi', 'stickergenshin', 'sgenshin', 'stickerdog', 'sdog', 'stickerpatrick', 'spatrick', 'stickeramongus', 'samongus']
+handler.command = handler.help = ['dinokuning', 'spongebob', 'manusialidi', 'sdino', 'sspongebob', 'smanusialidi', 'stickergenshin', 'sgenshin']
 handler.tags = ['sticker']
 handler.register = false
 handler.limit = true

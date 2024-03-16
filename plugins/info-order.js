@@ -1,88 +1,74 @@
 let handler = async(m, { conn, text, usedPrefix, command}) => {
-    if (!text) return conn.reply(m.chat, `*— YULA JOIN GROUP*\n\n*7 Day join the group*\n- OrderID: G7\n- Price: Rp. 7.000 IDR\n\n*30 Day join the group*\n- OrderID: G30\n- Price: Rp. 15.000 IDR\n\n*365 Day join the group*\n- OrderID: G365\n- Price: Rp. 110.000 IDR\n\n\n*— PREMIUM USER*\n\n*3 Day premium*\n- OrderID: 3\n- Price: Rp. 5.000 IDR\n\n*7 Day premium*\n- OrderID: 7\n- Price: Rp. 10.000 IDR\n\n*30 Day premium*\n- OrderID: 30\n- Price: Rp. 15.000 IDR\n\n*60 Day premium*\n- OrderID: 60\n- Price: Rp. 30.000 IDR\n\n*90 Day premium*\n- OrderID: 90\n- Price: Rp. 40.000 IDR\n\n*365 Day premium*\n- OrderID: 365\n- Price: Rp. 115.000 IDR\n\n${usedPrefix + command} <OrderID>\nexample: ${usedPrefix + command} 30`, m)
+    if (!text) return conn.reply(m.chat, `*— YULA JOIN GROUP*\n\n*7 Day join the group*\n- Harga: Rp. 7.000 IDR\n- ID Pesanan: G7\n\n*30 Day join the group*\n- Harga: Rp. 15.000 IDR\n- ID Pesanan: G30\n\n*60 Day join the group*\n- Harga: Rp. 30.000 IDR\n- ID Pesanan: G60\n\n\n*— PREMIUM USER*\n\n*3 Day premium*\n- Harga: Rp. 5.000 IDR\n- ID Pesanan: 3day\n\n*7 Day premium*\n- Harga: Rp. 10.000 IDR\n- ID Pesanan: 7day\n\n*30 Day premium*\n- Harga: Rp. 15.000 IDR\n- ID Pesanan: 30day\n\n*60 Day premium*\n- Harga: Rp. 30.000 IDR\n- ID Pesanan: 60day\n\n\n*Example:* ${usedPrefix + command} <ID Pembayaran>\n*Example:* ${usedPrefix + command} 30day`, m)
     let orderID;
 
   switch(text) {
-      case '3':
-      orderID = '3';
+      case '3day':
+      orderID = '5.000 IDR';
       break;
-      case '7':
-      orderID = '7';
+      case '7day':
+      orderID = '10.000 IDR';
       break;
-      case '30':
-      orderID = '30';
+      case '30day':
+      orderID = '15.000 IDR';
       break;
-      case '60':
-      orderID = '60';
-      break;
-       case '90':
-      orderID = '90';
-      break;
-       case '365':
-      orderID = '365';
+      case '60day':
+      orderID = '30.000 IDR';
       break;
       case 'G7':
-      orderID = 'G7';
+      orderID = '7.000 IDR';
       break;
       case 'G30':
-      orderID = 'G30';
+      orderID = '15.000 IDR';
       break;
-      case 'G365':
-      orderID = 'G365';
+      case 'G60':
+      orderID = '30.000 IDR';
       break;
       default:
-      throw `*OrderID* yang dipilih tidak tersedia, Silahkan pilih *OrderID* di bawah.
+      throw `*ID Pesanan* yang dipilih tidak tersedia, Silahkan pilih *ID Pesanan* di bawah ini.
       
 *— YULA JOIN GROUP*
 
 *7 Day join the group*
-- OrderID: G7
-- Price: Rp. 7.000 IDR
+- Harga: Rp. 7.000 IDR
+- ID Pesanan: G7
 
 *30 Day join the group*
-- OrderID: G30
-- Price: Rp. 15.000 IDR
+- Harga: Rp. 15.000 IDR
+- ID Pesanan: G30
 
-*365 Day join the group*
-- OrderID: G365
-- Price: Rp. 110.000 IDR
+*60 Day join the group*
+- Harga: Rp. 30.000 IDR
+- ID Pesanan: G60
 
 
 *— PREMIUM USER*
 
 *3 Day premium*
-- OrderID: 3
-- Price: Rp. 5.000 IDR
+- Harga: Rp. 5.000 IDR
+- ID Pesanan: 3day
 
 *7 Day premium*
-- OrderID: 7
-- Price: Rp. 10.000 IDR
+- Harga: Rp. 10.000 IDR
+- ID Pesanan: 7day
 
 *30 Day premium*
-- OrderID: 30
-- Price: Rp. 15.000 IDR
+- Harga: Rp. 15.000 IDR
+- ID Pesanan: 30day
 
 *60 Day premium*
-- OrderID: 60
-- Price: Rp. 30.000 IDR
-
-*90 Day premium*
-- OrderID: 90
-- Price: Rp. 40.000 IDR
-
-*365 Day premium*
-- OrderID: 365
-- Price: Rp. 115.000 IDR
+- Harga: Rp. 30.000 IDR
+- ID Pesanan: 60day
 `;
   };
-    let maximus = `*TAHAP-TAHAP*\n*1.* Silahkan SCAN QRIS ini dengan nominal orderanmu\n*2.* Silahkan Kirim bukti pembayaran ke nomor ini wa.me/${global.info.nomorown}\n\n\n*— YULA JOIN GROUP*\n\n*7 Day join the group*\n- Price: Rp. 7.000 IDR\n\n*30 Day join the group*\n- Price: Rp. 15.000 IDR\n\n*365 Day join the group*\n- Price: Rp. 110.000 IDR\n\n\n*— PREMIUM USER*\n\n*3 Day premium*\n- Price: Rp. 5.000 IDR\n\n*7 Day premium*\n- Price: Rp. 10.000 IDR\n\n*30 Day premium*\n- Price: Rp. 15.000 IDR\n\n*60 Day premium*\n- Price: Rp. 30.000 IDR\n\n*90 Day premium*\n- Price: Rp. 40.000 IDR\n\n*365 Day premium*\n- Price: Rp. 115.000 IDR`
+    let maximus = `*Y U L A  O R D E R*\n\n*• Status:* _🟡 Pending_\n*• ID Pembelian:* ${text}\n*• Nominal:* ${orderID}\n*• Payment:* QRIS\n\n\n*TAHAP-TAHAP Pembayaran*\n*1.* Silahkan SCAN QRIS ini dengan M-Banking/E-Wallet kamu\n*2.* Masukan Nominal: ${orderID}\n*3.* Silahkan Kirim bukti pembayaran ke nomor ini wa.me/${global.info.nomorown}`
     conn.sendFile(m.sender, global.qris, 'maxim.jpg', maximus, m)
     conn.reply(m.chat, '✔️ *PESANANMU TELAH DI BUAT*\n\nSaya telah mengirim pembayarannya melalu private chat silahkan di baca dan ikuti tahap-tahap pembayaran. Terimakasih', m)
-    conn.reply(global.info.nomorown + '@s.whatsapp.net', `${m.sender.split('@')[0]} Sedang dalam pembayaran`, m)
+    conn.reply(global.info.nomorown + '@s.whatsapp.net', `@${m.sender.split('@')[0]} Sedang dalam pembayaran nominal ${orderID}`, m, { contextInfo: { mentionedJid: [m.sender] }})
 }
-handler.help = ['order'];
+handler.help = ['order', 'sewa'];
 handler.tags = ['info'];
-handler.command =  /(order|sewa)/i
+handler.command =  /(order|sewa|premium)/i
 handler.register = false;
 handler.premium = false;
 

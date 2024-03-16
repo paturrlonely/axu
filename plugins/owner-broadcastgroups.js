@@ -1,20 +1,28 @@
-let handler = async (m, { conn, isROwner, text }) => {
-    const delay = time => new Promise(res => setTimeout(res, time))
-    let getGroups = await conn.groupFetchAllParticipating()
-    let groups = Object.entries(getGroups).slice(0).map(entry => entry[1])
-    let anu = groups.map(v => v.id)
-    var pesan = m.quoted && m.quoted.text ? m.quoted.text : text
-    if(!pesan) throw 'teksnya?'
-    m.reply(`Mengirim Broadcast Ke ${anu.length} Chat, Waktu Selesai ${anu.length * 0.5 } detik`)
-    for (let i of anu) {
-    await conn.copyNForward(id, conn.cMods(m.chat, cc, /bc|broadcast/i.test(teks) ? teks : teks ), true).catch(_ => _)
-await delay(2000)
-    }
-  m.reply(`Sukses Mengirim Broadcast Ke ${anu.length} Group`)
+let handler = async (m, { conn, text, usedPrefix, command, participants }) => {
+	let chats = Object.entries(conn.chats).filter(([jid, chat]) => jid.endsWith('@g.us') && chat.isChats && !chat.metadata?.read_only && !chat.metadata?.announce).map(v => v[0])
+	let img, q = m.quoted ? m.quoted : m
+	let mime = (q.msg || q).mimetype || q.mediaType || q.mtype || ''
+	if (!text) throw `teks nya mana ?`
+	if (mime) img = await q.download?.()
+	conn.reply(m.chat, `_Mengirim pesan broadcast ke ${chats.length} chat_`, m)
+	let teks = command.includes('meme') ? `${text}` : `${text}`
+	for (let id of chats) {
+		try {
+			if (/image|video|viewOnce/g.test(mime)) {
+				if (command.includes('meme')) await conn.sendFile(id, img, '', teks)
+				else await conn.sendFile(id, img, '', teks)
+			} else await conn.sendMessage(id, teks)
+		} catch (e) {
+			console.log(e)
+		}
+		await delay(3000)
+	}
+	await m.reply('Selesai Broadcast All Group Chat :)')
 }
-handler.help = ['bcgcbot <teks>']
-handler.tags = ['owner']
-handler.command = /^((broadcast|bc)gc)$/i
+
+handler.menuowner = ['bcgroup']
+handler.tagsowner = ['owner']
+handler.command = /^((bc|broadcast)(gc|gro?ups?)(meme)?)$/i
 
 handler.owner = true
 

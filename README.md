@@ -17,8 +17,6 @@
   
 - Botcahx API [`RestApi`](https://api.botcahx.eu.org) ```WAJIB```
 
-- LolHuman API [`RestApi`](https://api.lolhuman.xyz) ```WAJIB```
-
 - Itsrose API [`RestApi`](https://docs.itsrose.life) ```WAJIB```
 
 ## GRUP & NOMOR SAYA

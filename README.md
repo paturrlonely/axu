@@ -34,8 +34,8 @@
 * Unduh & Instal ImageMagick [`Klik Disini`](https://imagemagick.org/script/download.php)
 
 ```bash
-git clone https://github.com/ketchupmaze/MXYULA-MD
-cd MXYULA
+git clone https://github.com/XM4ZE/XMYULA-MD
+cd MXYULA-MD
 npm install
 npm start
 ```

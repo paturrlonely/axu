@@ -70,6 +70,8 @@ global.doc = {
     pdf: 'application/pdf',
     rtf: 'text/rtf'
 }
+global.audiomenu = 'https://github.com/Neder11ndeu/Music2/blob/main/Yula%20intro.mp3?raw=true'
+global.videomenu = 'https://telegra.ph/file/4e36d9178c7b893f5c4bd.mp4'
 
 /*========== HIASAN ===========*/
 global.decor = {

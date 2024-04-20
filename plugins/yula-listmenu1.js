@@ -60,7 +60,7 @@ const defaultMenu = {
   after: 'ɢᴇɴꜱʜɪɴ ɪᴍᴘᴀᴄᴛ ᴅɪꜱᴄᴜꜱꜱɪᴏɴ',
 }
 
-let vn = "https://github.com/Neder11ndeu/Music2/blob/main/Yula%20intro.mp3?raw=true"
+let vn = `${global.audiomenu}`
 
 let handler = async (m, { conn, usedPrefix, __dirname }) => {
   try {
@@ -172,7 +172,7 @@ conn.sendFile(m.chat, vn, "ehee.mp3", null, m, true, {
 type: "audioMessage",
 ptt: true,
 });
-conn.sendMessage(m.chat, { video: { url: "https://telegra.ph/file/4e36d9178c7b893f5c4bd.mp4" }, gifPlayback: true, gifAttribution: ~~(Math.random() * 2), caption: text, contextInfo: { mentionedJid: [m.sender], externalAdReply: { showAdAttribution: false, title: 'Assisten YuLa 💕', body: 'Jangan Lupa Sewa', thumbnailUrl: 'https://telegra.ph/file/788304dc51334f8d5d8b8.jpg', mediaType: 1, sourceUrl: 'https://chat.whatsapp.com/LZCnnSQFPkF3C6zrDcH5n8', renderLargerThumbnail: false }}}, { quoted: m })
+conn.sendMessage(m.chat, { video: { url: global.videomenu }, gifPlayback: true, gifAttribution: ~~(Math.random() * 2), caption: text, contextInfo: { mentionedJid: [m.sender], externalAdReply: { showAdAttribution: false, title: 'Assisten YuLa 💕', body: 'Jangan Lupa Sewa', thumbnailUrl: 'https://telegra.ph/file/788304dc51334f8d5d8b8.jpg', mediaType: 1, sourceUrl: 'https://chat.whatsapp.com/LZCnnSQFPkF3C6zrDcH5n8', renderLargerThumbnail: false }}}, { quoted: m })
           
   } catch (e) {
     throw e

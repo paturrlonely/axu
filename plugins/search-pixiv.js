@@ -1,13 +1,13 @@
 import axios from 'axios';
 
-let handler = async (m, { conn, text, usedPrefix, command }) => {
+let handler = async (m, { conn, text, args, usedPrefix, command }) => {
   try {
-if (!text) throw `Contoh : \n.pixiv Eula Lawrence`
+if (!args[0]) throw `Contoh : \n.pixiv Eula Lawrence`
 
 const payloads = {
-  query: `${text}`,
+  query: `${args[0]}`,
   enable_nsfw: true,
-  num_length: pickRandom(['1', '2', '3', '4', '5', '6', '7', '8']),
+  num_length: 20,
   tag: ""
 };
 
@@ -28,7 +28,3 @@ handler.limit = true
 handler.nsfw = true
 
 export default handler
-
-function pickRandom(list) {
-  return list[Math.floor(Math.random() * list.length)]
-}

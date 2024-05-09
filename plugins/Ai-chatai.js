@@ -42,7 +42,7 @@ const handler = async (m, { conn, args, text, usedPrefix, command, isOwner }) =>
   //const mmk = await( await fetch(`https://api.lolhuman.xyz/api/translate/auto/en?apikey=${global.lolkey}&text=${text}`)).json()
   const updatedPayloads = { ...payloads, message: mmk.text.toString() };
   const { data } = await axios.request({
-    baseURL: "https://api.itsrose.life",
+    baseURL: "https://api.itsrose.rest",
     url: "/cai/chat",
     method: "POST",
     headers: { Authorization: `${global.rose}` },

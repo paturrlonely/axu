@@ -11,7 +11,7 @@ const payloads = {
   tag: ""
 };
 
-const { data } = await axios.post(`https://api.itsrose.life/pixiv/search/`, payloads, {
+const { data } = await axios.post(`https://api.itsrose.rest/pixiv/search/`, payloads, {
     headers: { Authorization: `${global.rose}` }
   }).catch((e) => e?.response);
 let img = data.result.results[Math.floor(Math.random() * data.result.results.length)].url;

@@ -12,7 +12,7 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
   strip_markdown: false
 };
   m.reply(global.wait)
-  const { data } = await axios.post("https://api.itsrose.life/chatGPT/bing_chat", payload, {
+  const { data } = await axios.post("https://api.itsrose.rest/chatGPT/bing_chat", payload, {
       headers: { Authorization: `${global.rose}` },
   }).catch((e) => e?.response);
 

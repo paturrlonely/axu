@@ -187,7 +187,7 @@ ${usedPrefix}${command} Model|Lora|prompt
     webhook: null,
   };
 m.reply(`_Preparing ${command} diffusion..._`)
-  const { data } = await axios.post("https://api.itsrose.life/image/diffusion/img2img", payload, {
+  const { data } = await axios.post("https://api.itsrose.rest/image/diffusion/img2img", payload, {
     headers: { Authorization: `${global.rose}` }
   }).catch((e) => e?.response);
 

@@ -2,7 +2,7 @@ import axios from 'axios';
 
 let handler = async (m, { conn, text, command, usedPrefix }) => {
     if (!text) throw `Nama AnimeH-nya Mana?\n\ncontoh:\n${usedPrefix + command} isekai harem`
-    const { data } = await axios.get(`https://api.itsrose.life/dewasa/nekopoi/search?query=${text}`, {
+    const { data } = await axios.get(`https://api.itsrose.rest/dewasa/nekopoi/search?query=${text}`, {
     headers: { Authorization: `${global.rose}` }
   }).catch((e) => e?.response);
     if (data.status != true) throw `*Pencarian tidak ditemukan*`;

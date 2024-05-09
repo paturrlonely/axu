@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 let handler = async (m, { conn, command, usedPrefix }) => {
-    let api = `https://api.itsrose.life/sovits/tts/get_models`
+    let api = `https://api.itsrose.rest/sovits/tts/get_models`
     conn.sendMessage(m.chat, {
 		react: {
 			text: '⏳',

@@ -42,7 +42,7 @@ STONEAGE
     init_image: url,
   };
 
-  const { data } = await axios.post("https://api.itsrose.life/image/deforum", payload, {
+  const { data } = await axios.post("https://api.itsrose.rest/image/deforum", payload, {
     headers: { Authorization: `${global.rose}` }
   }).catch((e) => e?.response);
 

@@ -28,7 +28,7 @@ const handler = async (m, { conn, args, text, usedPrefix, command }) => {
     webhook: null,
   };
 
-  const { data } = await axios.post("https://api.itsrose.life/image/diffusion/txt2img", payload, {
+  const { data } = await axios.post("https://api.itsrose.rest/image/diffusion/txt2img", payload, {
     headers: { Authorization: `${global.rose}` }
   }).catch((e) => e?.response);
 

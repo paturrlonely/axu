@@ -6,7 +6,7 @@ let handler = async (m, { conn, text }) => {
 
   m.reply(wait)
   try {
-    let api = `https://api.itsrose.life/image/diffusion/get_all_models?server_name=${text}`;
+    let api = `https://api.itsrose.rest/image/diffusion/get_all_models?server_name=${text}`;
     let { data } = await axios.get(api, { headers: { Authorization: `${global.rose}` }});
 
     if (!data.status) {

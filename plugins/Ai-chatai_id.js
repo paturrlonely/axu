@@ -7,7 +7,7 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
   const payload = {
   query: `${text}`
   };
-  const { data } = await axios.post("https://api.itsrose.life/cai/search_characters", payload, {
+  const { data } = await axios.post("https://api.itsrose.rest/cai/search_characters", payload, {
     headers: { Authorization: `${global.rose}` }
   }).catch((e) => e?.response);
 

@@ -10,7 +10,7 @@ const handler = async (m, { conn, args, text, usedPrefix, command, isOwner }) =>
 try {
   const updatedPayloads = { ...payloads, prompt: text };
   const { data } = await axios.request({
-    baseURL: "https://api.itsrose.life",
+    baseURL: "https://api.itsrose.rest",
     url: "/chatGPT/completions",
     method: "POST",
     headers: { Authorization: `${global.rose}` },

@@ -10,7 +10,7 @@ if (!mime) throw `*reply/send ur image with .${command}*`
 m.reply(wait)
 let media = await q.download()
 let url = await uploadImage(media)
-let api = `https://api.itsrose.life/image/stable/prompter?url=${url}`
+let api = `https://api.itsrose.rest/image/stable/prompter?url=${url}`
   const { data } = await axios.get(api, { headers: { Authorization: `${global.rose}` }});
   let cap = `${data.result.prompt}`
   m.reply(cap)

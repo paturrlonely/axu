@@ -28,7 +28,7 @@ global.prems = ['6281283516246']
 global.APIs = {
   neoxr: 'https://api.neoxr.eu.org',
   lol: 'https://api.lolhuman.xyz',
-  rose: 'https://api.itsrose.life',
+  rose: 'https://api.itsrose.rest',
   TioXD: 'https://api.botcahx.eu.org',
   lann: 'https://api.betabotz.eu.org',
 } 
@@ -37,7 +37,7 @@ global.APIKeys = {
   'https://api.neoxr.eu.org': 'apikeylu',
   'https://api.lolhuman.xyz': 'apikeylu',
   'https://api.botcahx.eu.org': 'apikeylu',
-  'https://api.itsrose.life': 'memek-apikeylu',
+  'https://api.itsrose.rest': 'memek-apikeylu',
 }
 
 /*============= WATERMARK =============*/

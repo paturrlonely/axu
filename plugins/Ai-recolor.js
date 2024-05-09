@@ -6,7 +6,7 @@ async function handler(m, { conn, usedPrefix, command }) {
     const q = m.quoted ? m.quoted : m;
       const img = await q.download();
       const out = await uploadImage(img);
-      const api = `https://api.itsrose.life/image/recolor?url=${out}&accept=false`
+      const api = `https://api.itsrose.rest/image/recolor?url=${out}&accept=false`
       const { data } = await axios.get(api, { headers: { Authorization: `${global.rose}` }, responseType: 'arraybuffer' });
       const caption = `Sudah jadi, tuan!`;
       conn.sendFile(m.chat, Buffer.from(data), 'result.jpg',   caption, m);

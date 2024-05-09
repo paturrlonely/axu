@@ -18,7 +18,7 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
   init_image: url
 };
 
-  const { data } = await axios.post("https://api.itsrose.life/image/outpainting", payload, {
+  const { data } = await axios.post("https://api.itsrose.rest/image/outpainting", payload, {
     headers: { Authorization: `${global.rose}` }
   }).catch((e) => e?.response);
 

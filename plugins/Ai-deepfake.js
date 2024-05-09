@@ -1138,7 +1138,7 @@ yellow_filter_not
     style: text,
   };
 
-  const { data } = await axios.post("https://api.itsrose.life/deep_fake/video", payload, {
+  const { data } = await axios.post("https://api.itsrose.rest/deep_fake/video", payload, {
     headers: { Authorization: `${global.rose}` }
   }).catch((e) => e?.response);
 

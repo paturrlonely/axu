@@ -1,3 +1,9 @@
+/*
+KASIH LINK GITHUB SAYA SAJA KALAU MAU DI BUAT KONTEN
+
+JANGAN GAK KALAU KETAHUAN SAYA BERI GANJARANNYA.
+*/
+
 import { smsg } from './lib/simple.js'
 import { format } from 'util'
 import { fileURLToPath } from 'url'
@@ -49,7 +55,7 @@ export async function handler(chatUpdate) {
                 if (!isNumber(user.exp))
                     user.exp = 0
                 if (!isNumber(user.limit))
-                    user.limit = 20
+                    user.limit = 10
                 if (!isNumber(user.freelimit))
                     user.freelimit = 0
                 if (!isNumber(user.lastclaim))
@@ -320,7 +326,7 @@ export async function handler(chatUpdate) {
                 global.db.data.users[m.sender] = {
                 money: 0,
                 exp: 0,
-                limit: 20,
+                limit: 10,
                 freelimit: 0,
                 lastclaim: 0,
                 skata: 0,
@@ -756,7 +762,17 @@ export async function handler(chatUpdate) {
                 else
                     m.exp += xp
                 if (!isPrems && plugin.limit && _user.limit < plugin.limit * 1) {
-                        function _0xb831(_0x57785a,_0x36c98d){var _0x338bdd=_0x338b();return _0xb831=function(_0xb83186,_0x40d604){_0xb83186=_0xb83186-0x197;var _0x2813e7=_0x338bdd[_0xb83186];return _0x2813e7;},_0xb831(_0x57785a,_0x36c98d);}var _0x29f1dc=_0xb831;function _0x338b(){var _0xaef65d=['683973gxtyQB','pricelist','40cHXxtX','29194srpBuy','17120gpBmcq','1873785SrGPPw','641815yfJDqI','4iSZNFe','8755334zojbxW','206484RfPzBU','2659080wxvtiq','relayMessage','chat','150vZukrF'];_0x338b=function(){return _0xaef65d;};return _0x338b();}(function(_0x3c44cc,_0x769015){var _0x1aae9c=_0xb831,_0x259fe8=_0x3c44cc();while(!![]){try{var _0x51d616=parseInt(_0x1aae9c(0x1a0))/0x1+parseInt(_0x1aae9c(0x1a4))/0x2+parseInt(_0x1aae9c(0x19f))/0x3*(parseInt(_0x1aae9c(0x1a1))/0x4)+parseInt(_0x1aae9c(0x199))/0x5*(parseInt(_0x1aae9c(0x1a3))/0x6)+parseInt(_0x1aae9c(0x1a2))/0x7+parseInt(_0x1aae9c(0x19c))/0x8*(parseInt(_0x1aae9c(0x19a))/0x9)+-parseInt(_0x1aae9c(0x19e))/0xa*(parseInt(_0x1aae9c(0x19d))/0xb);if(_0x51d616===_0x769015)break;else _0x259fe8['push'](_0x259fe8['shift']());}catch(_0x10c88c){_0x259fe8['push'](_0x259fe8['shift']());}}}(_0x338b,0xaeacd),this[_0x29f1dc(0x197)](m[_0x29f1dc(0x198)],{'liveLocationMessage':{'degreesLatitude':42.923901,'degreesLongitude':143.196106,'accuracyInMeters':0x0,'degreesClockwiseFromMagneticNorth':0x2,'caption':global[_0x29f1dc(0x19b)],'sequenceNumber':0x2,'timeOffset':0x3,'contextInfo':m}},{}));
+                        this.relayMessage(m.chat, 
+                            { liveLocationMessage: {
+                                  degreesLatitude: 42.923901,
+                                  degreesLongitude: 143.196106,
+                                  accuracyInMeters: 0,
+                                degreesClockwiseFromMagneticNorth: 2,
+                                caption: global.pricelist,
+                                sequenceNumber: 2,
+                                timeOffset: 3,
+                                contextInfo: m,
+                                }}, {})
                     continue
                 }
                 if (plugin.level > _user.level) {
@@ -767,11 +783,11 @@ export async function handler(chatUpdate) {
                 	this.reply(m.chat, `[💬] Umurmu harus diatas ${plugin.age} Tahun untuk menggunakan fitur ini...`, m)	
                     continue
                 }
-                let isCmddd =/^[°•π÷×¶∆£¢€¥®™+✓_=|~!?@#$%^&.©^]/gi.test(m.text)
+                /*let isCmddd =/^[°•π÷×¶∆£¢€¥®™+✓_=|~!?@#$%^&.©^]/gi.test(m.text)
                 if ( isCmddd && !isPrems && !m.isGroup ) {
-                    var _0x292eab=_0x191c;(function(_0x55b69d,_0x3117ab){var _0x4aafe1=_0x191c,_0x265a3e=_0x55b69d();while(!![]){try{var _0x578188=-parseInt(_0x4aafe1(0xea))/0x1*(-parseInt(_0x4aafe1(0xe3))/0x2)+parseInt(_0x4aafe1(0xec))/0x3+parseInt(_0x4aafe1(0xdc))/0x4+parseInt(_0x4aafe1(0xe5))/0x5+parseInt(_0x4aafe1(0xe9))/0x6*(-parseInt(_0x4aafe1(0xe8))/0x7)+-parseInt(_0x4aafe1(0xe1))/0x8+-parseInt(_0x4aafe1(0xe6))/0x9*(parseInt(_0x4aafe1(0xe0))/0xa);if(_0x578188===_0x3117ab)break;else _0x265a3e['push'](_0x265a3e['shift']());}catch(_0x705c66){_0x265a3e['push'](_0x265a3e['shift']());}}}(_0x5ede,0x451b8),this[_0x292eab(0xdf)](m[_0x292eab(0xe2)],{'text':_0x292eab(0xde)+global[_0x292eab(0xe7)]['nomorown']+_0x292eab(0xe4),'contextInfo':{'mentionedJid':[m[_0x292eab(0xeb)]],'externalAdReply':{'title':'','body':'','thumbnailUrl':_0x292eab(0xdd),'sourceUrl':'','mediaType':0x1,'renderLargerThumbnail':!![]}}}));function _0x191c(_0x2b5c25,_0x4d9ebe){var _0x5edecb=_0x5ede();return _0x191c=function(_0x191c9d,_0x33130f){_0x191c9d=_0x191c9d-0xdc;var _0x4a076f=_0x5edecb[_0x191c9d];return _0x4a076f;},_0x191c(_0x2b5c25,_0x4d9ebe);}function _0x5ede(){var _0x4b20c6=['330216UpoadF','\x0a\x0aThank\x20you\x20for\x20using\x20our\x20bot\x20#MaximusStore','1437800mfRpAP','18NRzDAM','info','1549107aNyNoY','12ZMVZaJ','1ckjBuP','sender','1627239wZbQtf','196388DaAJki','https://telegra.ph/file/0b32e0a0bb3b81fef9838.jpg','⚠️\x20Menggunakan\x20bot\x20dalam\x20obrolan\x20pribadi\x20hanya\x20untuk\x20pengguna\x20premium.\x0a\x0a*PREMIUM\x20USER\x20PRICE\x20LIST*\x0a\x0a*3\x20Day\x20premium*\x0a-\x20OrderID:\x203\x0a-\x20Price:\x20Rp.\x205.000\x20IDR\x0a\x0a*7\x20Day\x20premium*\x0a-\x20OrderID:\x207\x0a-\x20Price:\x20Rp.\x2010.000\x20IDR\x0a\x0a*30\x20Day\x20premium*\x0a-\x20OrderID:\x2030\x0a-\x20Price:\x20Rp.\x2015.000\x20IDR\x0a\x0a*60\x20Day\x20premium*\x0a-\x20OrderID:\x2060\x0a-\x20Price:\x20Rp.\x2030.000\x20IDR\x0a\x0a*90\x20Day\x20premium*\x0a-\x20OrderID:\x2090\x0a-\x20Price:\x20Rp.\x2040.000\x20IDR\x0a\x0a*365\x20Day\x20premium*\x0a-\x20OrderID:\x20365\x0a-\x20Price:\x20Rp.\x20115.000\x20IDR\x0a\x0aTolong\x20ikuti\x20cara\x20pembayaran\x20ini.\x0a\x0aSilahkan\x20tulis\x20seperti\x20ini\x20:\x20*.order\x20<OrderID>*\x0aContoh:\x20*.order\x2030*\x0a\x0aJika\x20anda\x20terlalu\x20bodoh.\x20anda\x20bisa\x20langsung\x20menghubungi\x20nomor\x20owner\x20kami\x20melalui\x20link\x20di\x20bawah\x20ini:\x0awa.me/','sendMessage','737210rFojPf','1368560FXphrx','chat'];_0x5ede=function(){return _0x4b20c6;};return _0x5ede();}
+                    this.sendMessage(m.chat, { text: `⚠️ Menggunakan bot dalam obrolan pribadi hanya untuk pengguna premium.\n\n*PREMIUM USER PRICE LIST*\n\n*3 Day premium*\n- OrderID: 3\n- Price: Rp. 5.000 IDR\n\n*7 Day premium*\n- OrderID: 7\n- Price: Rp. 10.000 IDR\n\n*30 Day premium*\n- OrderID: 30\n- Price: Rp. 15.000 IDR\n\n*60 Day premium*\n- OrderID: 60\n- Price: Rp. 30.000 IDR\n\n*90 Day premium*\n- OrderID: 90\n- Price: Rp. 40.000 IDR\n\n*365 Day premium*\n- OrderID: 365\n- Price: Rp. 115.000 IDR\n\nTolong ikuti cara pembayaran ini.\n\nSilahkan tulis seperti ini : *.order <OrderID>*\nContoh: *.order 30*\n\nJika anda terlalu bodoh. anda bisa langsung menghubungi nomor owner kami melalui link di bawah ini:\nwa.me/${global.info.nomorown}\n\nThank you for using our bot #MaximusStore`, contextInfo: { mentionedJid: [m.sender], externalAdReply: { title: '', body: '', thumbnailUrl: "https://telegra.ph/file/0b32e0a0bb3b81fef9838.jpg", sourceUrl: "", mediaType: 1, renderLargerThumbnail: true }} })
                     continue
-                }
+                }*/
                 let extra = {
                     match,
                     usedPrefix,
@@ -893,7 +909,57 @@ export async function handler(chatUpdate) {
 * Handle groups participants update
 * @param {import('@adiwajshing/baileys').BaileysEventMap<unknown>['group-participants.update']} groupsUpdate
 */
-function _0x4ced(_0x19ad75,_0x808e8d){const _0xf00ab5=_0xf00a();return _0x4ced=function(_0x4cede1,_0x4e7cec){_0x4cede1=_0x4cede1-0x6c;let _0x327a2f=_0xf00ab5[_0x4cede1];return _0x327a2f;},_0x4ced(_0x19ad75,_0x808e8d);}function _0xf00a(){const _0x4f2ab5=['bye','8265618KJDqQg','add','@subject','readFileSync','getName','𝙶𝚛𝚘𝚞𝚙\x20𝙽𝚘𝚝𝚒𝚏𝚒𝚌𝚊𝚝𝚒𝚘𝚗','@desc','@user\x20```is\x20now\x20Admin```','sDemote','split','sPromote','sBye','desc','https://telegra.ph/file/6922e4375c183c8d1cfcb.jpg','remove','sWelcome','Bye,\x20@user!','1933036iskEvB','./src/avatar_contact.png','3sfankE','18008020Lvjvek','profilePictureUrl','5BPQpbv','sdemote','fromCharCode','repeat','demote','sendMessage','102877oUqiGS','88DBQwNL','6529698ayrxSS','promote','https://telegra.ph/file/8c7792e78ed015a7d0a59.jpg','@user','spromote','replace','data','groupMetadata','metadata','295786mHQyoZ','623588DPbiCQ','welcome','image','chats','@user\x20```is\x20no\x20longer\x20Admin```'];_0xf00a=function(){return _0x4f2ab5;};return _0xf00a();}(function(_0x2328bc,_0xa36189){const _0x5bd0b1=_0x4ced,_0x48fae8=_0x2328bc();while(!![]){try{const _0x566951=parseInt(_0x5bd0b1(0x80))/0x1+-parseInt(_0x5bd0b1(0x8b))/0x2*(parseInt(_0x5bd0b1(0x77))/0x3)+parseInt(_0x5bd0b1(0x75))/0x4*(-parseInt(_0x5bd0b1(0x7a))/0x5)+parseInt(_0x5bd0b1(0x92))/0x6+-parseInt(_0x5bd0b1(0x8c))/0x7*(-parseInt(_0x5bd0b1(0x81))/0x8)+parseInt(_0x5bd0b1(0x82))/0x9+-parseInt(_0x5bd0b1(0x78))/0xa;if(_0x566951===_0xa36189)break;else _0x48fae8['push'](_0x48fae8['shift']());}catch(_0x574646){_0x48fae8['push'](_0x48fae8['shift']());}}}(_0xf00a,0xb8134));export async function participantsUpdate({id:_0x4e9dc1,participants:_0x576501,action:_0x2c8055}){const _0x5150b3=_0x4ced;if(opts['self'])return;if(this['isInit'])return;let _0x15ba20=global['db'][_0x5150b3(0x88)][_0x5150b3(0x8f)][_0x4e9dc1]||{},_0x206164='';switch(_0x2c8055){case _0x5150b3(0x93):case _0x5150b3(0x72):if(_0x15ba20[_0x5150b3(0x8d)]){let _0x29d480=await this[_0x5150b3(0x89)](_0x4e9dc1)||(conn[_0x5150b3(0x8f)][_0x4e9dc1]||{})[_0x5150b3(0x8a)];for(let _0x5eb666 of _0x576501){let _0x45fce0=fs[_0x5150b3(0x95)](_0x5150b3(0x76));try{_0x45fce0=await this[_0x5150b3(0x79)](_0x5eb666,_0x5150b3(0x8e));}catch(_0x53de13){}finally{_0x206164=(_0x2c8055==='add'?(_0x15ba20[_0x5150b3(0x73)]||this[_0x5150b3(0x8d)]||conn[_0x5150b3(0x8d)]||'Welcome,\x20@user!')['replace'](_0x5150b3(0x94),await this[_0x5150b3(0x96)](_0x4e9dc1))[_0x5150b3(0x87)](_0x5150b3(0x98),_0x29d480[_0x5150b3(0x70)]?String[_0x5150b3(0x7c)](0x200e)[_0x5150b3(0x7d)](0xfa1)+_0x29d480[_0x5150b3(0x70)]:''):_0x15ba20[_0x5150b3(0x6f)]||this[_0x5150b3(0x91)]||conn[_0x5150b3(0x91)]||_0x5150b3(0x74))['replace']('@user','@'+_0x5eb666[_0x5150b3(0x6d)]('@')[0x0]);let _0x4cb6db=_0x5150b3(0x71),_0x4421d6=_0x5150b3(0x84);await this[_0x5150b3(0x7f)](_0x4e9dc1,{'text':_0x206164,'contextInfo':{'mentionedJid':[_0x5eb666],'externalAdReply':{'title':await this['getName'](_0x4e9dc1),'body':_0x5150b3(0x97),'thumbnailUrl':_0x2c8055===_0x5150b3(0x93)?_0x4cb6db:_0x4421d6,'sourceUrl':'','mediaType':0x1,'renderLargerThumbnail':!![]}}},{'quoted':null});}}}break;case _0x5150b3(0x83):_0x206164=_0x15ba20[_0x5150b3(0x6e)]||this[_0x5150b3(0x86)]||conn[_0x5150b3(0x86)]||_0x5150b3(0x99);case _0x5150b3(0x7e):if(!_0x206164)_0x206164=_0x15ba20[_0x5150b3(0x6c)]||this[_0x5150b3(0x7b)]||conn[_0x5150b3(0x7b)]||_0x5150b3(0x90);_0x206164=_0x206164[_0x5150b3(0x87)](_0x5150b3(0x85),'@'+_0x576501[0x0][_0x5150b3(0x6d)]('@')[0x0]);if(_0x15ba20['detect'])this[_0x5150b3(0x7f)](_0x4e9dc1,{'text':_0x206164,'mentions':this['parseMention'](_0x206164)});break;}}
+export async function participantsUpdate( { id, participants, action }) {
+    if (opts['self'])
+        return
+    if (this.isInit)
+        return
+    let chat = global.db.data.chats[id] || {}
+    let text = ''
+    switch (action) {
+        case 'add':
+            case 'remove':
+                if (chat.welcome) {
+                    let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
+                    for (let user of participants) {
+                        let pp = fs.readFileSync('./src/avatar_contact.png')
+                        try {
+                            pp = await this.profilePictureUrl(user, 'image')
+                        } catch (e) {} finally {
+                            text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc ? String.fromCharCode(8206).repeat(4001) + groupMetadata.desc : '') :
+                                (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0])
+                                let wel = 'https://telegra.ph/file/6922e4375c183c8d1cfcb.jpg'  //https://telegra.ph/file/96c857aa540aef7d385eb.jpg
+                                let lea = 'https://telegra.ph/file/8c7792e78ed015a7d0a59.jpg'  //https://telegra.ph/file/999b3af6dac1b48769ee6.jpg
+                             
+                    await this.sendMessage(id, {
+                            text: text,
+                            contextInfo: {
+                            mentionedJid: [user],
+                            externalAdReply: {  
+                            title: await this.getName(id),
+                            body: '𝙶𝚛𝚘𝚞𝚙 𝙽𝚘𝚝𝚒𝚏𝚒𝚌𝚊𝚝𝚒𝚘𝚗',
+                            thumbnailUrl: action === 'add' ? wel : lea,
+                            sourceUrl: '',
+                            mediaType: 1,
+                            renderLargerThumbnail: true 
+                            }}}, { quoted: null})
+                        }
+                    }
+                }
+                break
+            case 'promote':
+                text = (chat.sPromote || this.spromote || conn.spromote || '@user ```is now Admin```')
+                case 'demote':
+                    if (!text)
+                        text = (chat.sDemote || this.sdemote || conn.sdemote || '@user ```is no longer Admin```')
+                    text = text.replace('@user', '@' + participants[0].split('@')[0])
+                    if (chat.detect)
+                        this.sendMessage(id, {
+                        text, mentions: this.parseMention(text)
+                        })
+                    break
+        }
+}
 /**
 * Handle groups update
 * @param {import('@adiwajshing/baileys').BaileysEventMap<unknown>['groups.update']} groupsUpdate
@@ -943,7 +1009,7 @@ global.dfail = (type, m, conn) => {
         rowner: 'This command is for *R-OWNER* Only',
         owner: 'This command is for *OWNER* Only',
         mods: 'This command is for *MODS* Only',
-        premium: '*Price Premium Akses*\n3 Day *IDR 5,000*\n14 Day *IDR 10,000*\n30 Day *IDR 15,000*\n1 Year *IDR 110,000*\n\nOrder : *.order*',
+        premium: 'This command is for *PREMIUM* Only\n\n Please send *.order* to purchase the *Premium* plan',
         group: 'This command is for *GROUP* Only',
         private: 'This command is for *PRIVATE* Only',
         admin: 'This command is for *ADMINS* Only',
@@ -956,7 +1022,14 @@ global.dfail = (type, m, conn) => {
         unreg: '*Indonesian*\nSilahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Maximus.19*\n══════════════════════\n*English*\nPlease register to use this feature by typing:\n\n*#register name.age*\n\nExample: *#register Maximus.19*'
     }[type]
 
-    if (msg) return m.reply(msg)
+    if (msg) return conn.reply(m.chat, msg, m, { contextInfo: {
+    forwardingScore: 1,
+    isForwarded: true,
+    forwardedNewsletterMessageInfo: {
+      newsletterJid: global.info.channel,
+      serverMessageId: 101,
+      newsletterName: global.info.namechannel
+    }}})
 }
 
 let file = global.__filename(import.meta.url, true)

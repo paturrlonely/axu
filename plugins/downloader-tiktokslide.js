@@ -1,42 +1,49 @@
 import fetch from 'node-fetch';
-let handler = async (m, { conn, args, usedPrefix, command }) => {
-  if (!args[0]) {
-    throw `Masukkan URL!\n\ncontoh:\n${usedPrefix + command} https://vt.tiktok.com/ZSNbrfcGw/`;
-  }
-    if (!args[0].match(/tiktok/gi)) {
-      throw `URL Tidak Ditemukan!`;
-    }
-    m.reply('*Mohon tunggu...*');
+
+let handler = async (m, {
+  conn,
+  text,
+  usedPrefix,
+  command
+}) => {
+  if (command == 'tiktokslide' || command == 'ttslide') {
+    if (!text) throw `Masukkan URL!\n\ncontoh: ${usedPrefix + command} https://vt.tiktok.com/ZSY8Me4jL/`;
     try {
-    const api = await fetch(`https://api.botcahx.eu.org/api/download/tiktokslide?url=${args[0]}&apikey=${btc}`);
-    const res = await api.json();
-    var {
-      id, 
-      region, 
-      title,
-      play
-    } = res.result.data
-    for (let i of res.result.data.images) {
-    await sleep(3000)
-    conn.sendFile(m.chat, i, null, `*Deskripsi:* ${title}\n*Region*: ${region}\n*ID:* ${id}\n*Audio:* ${play}`, m);
-        }
-  } catch (e) {
-    console.log(e);
-    throw `🚩 *Terjadi kesalahan!*`
+      const api = await fetch(`https://api.botcahx.eu.org/api/download/tiktokslide?url=${text}&apikey=${btc}`);
+      const res = await api.json();
+      for (let i of res.result.images) {
+        await sleep(3000);
+        conn.sendMessage(m.sender, { image :{ url : i } , caption : `*Title*: ${res.result.title}` }, { quoted: m });         
+      }
+        conn.sendMessage(m.sender, { audio: { url: res.result.audio[0] }, mimetype: 'audio/mpeg' }, { quoted: m });
+    } catch (e) {
+      console.log(e);
+      throw `🚩 *Terjadi kesalahan!*`;
+    }
+  }
+  if (command == 'douyinslide' || command == 'douyinfoto') { 
+    if (!text) throw `Masukkan URL!\n\ncontoh: ${usedPrefix + command} https://v.douyin.com/i2bPkLLo/`;
+    try {
+      const api = await fetch(`https://api.botcahx.eu.org/api/download/douyinslide?url=${text}&apikey=${btc}`);
+      const res = await api.json();
+      for (let i of res.result.images) {
+        await sleep(3000);
+        conn.sendMessage(m.sender, { image :{ url : i } , caption : `*Title*: ${res.result.title}` }, { quoted: m });         
+      }
+        conn.sendMessage(m.sender, { audio: { url: res.result.audio[0] }, mimetype: 'audio/mpeg' }, { quoted: m });
+    } catch (e) {
+      console.log(e);
+      throw `🚩 *Terjadi kesalahan!*`;
+    }
   }
 };
-handler.command = handler.help = ['tiktokslide','ttslide','slide'];
+
+handler.command = handler.help = ['douyinslide', 'douyinfoto','ttslide','tiktokslide'];
 handler.tags = ['downloader'];
 handler.limit = true;
-handler.group = false;
-handler.premium = false;
-handler.owner = false;
-handler.admin = false;
-handler.botAdmin = false;
-handler.fail = null;
-handler.private = false;
 
-export default handler
+export default handler;
+
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }

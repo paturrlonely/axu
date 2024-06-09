@@ -1,4 +1,4 @@
-import fetch from 'node-fetch'
+/*import fetch from 'node-fetch'
 let handler = async (m, { text, command, usedPrefix }) => {
     if (!text) throw `Contoh Penggunaan!\n\nContoh:\n${usedPrefix + command} sma|sejarah|siapakah penemu lampu?`
     let [kelas, pelajaran, pertanyaan] = text.split('|')
@@ -19,4 +19,4 @@ let handler = async (m, { text, command, usedPrefix }) => {
 handler.help = ['roboguru'].map(v => v + ' <grade>|<subject>|<query>')
 handler.tags = ['internet']
 handler.command = /^roboguru$/i
-export default handler
+export default handler*/

@@ -1,4 +1,4 @@
-import fetch from 'node-fetch'
+/*import fetch from 'node-fetch'
 
 let handler = async(m, { conn, text }) => {
   if (!text) throw `Mau Cari Apk Apa?`
@@ -17,4 +17,4 @@ handler.tags = ['internet']
 handler.command = /^(playstore)$/i
 handler.limit = true
 
-export default handler
+export default handler*/

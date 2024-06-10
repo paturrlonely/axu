@@ -4,7 +4,8 @@ const handler = async (m, { conn, args, text, usedPrefix, command }) => {
   if (!text) throw `Example: ${usedPrefix}${command} eula
   
 *-= LIST CHARACTERS =-*
-albedo, alhaitham, aloy, amber, anemo, arataki itto, baizhu, barbara, beidou, bennett, candace, charlotte, chevreuse, chiori, chongyun, collei, cyno, dehya, dendro, diluc, diona, dori, eula, faruzan, fischl, freminet, furina, ganyu, gaming, geo, gorou, hydro, hu tao, jean, kaedehara kazuha, kaeya, kamisato ayaka, kamisato ayato, kaveh, keqing, kirara, klee, kujou sara, kuki shinobu, layla, lisa, lynette, lyney, mika, mona, nahida, navia, neuvillette, nilou, ningguang, noelle, qiqi, raiden shogun, razor, rosaria, sangonomiya kokomi, sayu, shenhe, shikanoin heizou, sucrose, tartaglia, thoma, tighnari, venti, wanderer, wriothesley, xiangling, xianyun, xiao, xingqiu, xinyan, yae miko, yanfei, yaoyao, yelan, yoimiya, yun jin, zhongli
+
+albedo, alhaitham, aloy, amber, anemo, arataki itto, arlecchino, baizhu, barbara, beidou, bennett, candace, charlotte, chevreuse, chiori, chongyun, clorinde, collei, cyno, dehya, dendro, diluc, diona, dori, eula, faruzan, fischl, freminet, furina, ganyu, gaming, geo, gorou, hydro, hu tao, jean, kaedehara kazuha, kaeya, kamisato ayaka, kamisato ayato, kaveh, keqing, kirara, klee, kujou sara, kuki shinobu, layla, lisa, lynette, lyney, mika, mona, nahida, navia, neuvillette, nilou, ningguang, noelle, qiqi, raiden shogun, sethos, sigewinne, razor, rosaria, sangonomiya kokomi, sayu, shenhe, shikanoin heizou, sucrose, tartaglia, thoma, tighnari, venti, wanderer, wriothesley, xiangling, xianyun, xiao, xingqiu, xinyan, yae miko, yanfei, yaoyao, yelan, yoimiya, yun jin, zhongli
 `
   let Maximus;
   
@@ -39,6 +40,13 @@ albedo, alhaitham, aloy, amber, anemo, arataki itto, baizhu, barbara, beidou, be
        case 'Itto':
       Maximus = 'Arataki Itto';
       break;
+       case 'arlecchino':
+       case 'Arlecchino':
+       case 'ARLECCHINO':
+       case 'father':
+       case 'Father':
+      Maximus = 'Arlecchino';
+      break;
        case 'baizhu':
        case 'Baizhu':
       Maximus = 'Baizhu';
@@ -58,6 +66,10 @@ albedo, alhaitham, aloy, amber, anemo, arataki itto, baizhu, barbara, beidou, be
        case 'candace':
        case 'Candace':
       Maximus = 'Candace';
+      break;
+       case 'clorinde':
+       case 'clorin':
+      Maximus = 'Clorinde';
       break;
        case 'charlotte':
        case 'Charlotte':
@@ -101,6 +113,11 @@ albedo, alhaitham, aloy, amber, anemo, arataki itto, baizhu, barbara, beidou, be
       break;
        case 'dori':
       Maximus = 'Dori';
+      break;
+       case 'electro':
+       case 'travelers electro':
+       case 'electro travelers':
+      Maximus = 'Electro';
       break;
        case 'eula':
       Maximus = 'Eula';
@@ -243,6 +260,12 @@ albedo, alhaitham, aloy, amber, anemo, arataki itto, baizhu, barbara, beidou, be
        case 'sucrose':
       Maximus = 'Sucrose';
       break;
+       case 'sethos':
+      Maximus = 'Sethos';
+      break;
+       case 'sigewinne':
+      Maximus = 'Sigewinne';
+      break;
        case 'tartaglia':
        case 'childe':
       Maximus = 'Tartaglia';
@@ -310,7 +333,7 @@ albedo, alhaitham, aloy, amber, anemo, arataki itto, baizhu, barbara, beidou, be
 
 *-= LIST CHARACTERS =-*
 
-albedo, alhaitham, aloy, amber, anemo, arataki itto, baizhu, barbara, beidou, bennett, candace, charlotte, chevreuse, chiori, chongyun, collei, cyno, dehya, dendro, diluc, diona, dori, eula, faruzan, fischl, freminet, furina, ganyu, gaming, geo, gorou, hydro, hu tao, jean, kaedehara kazuha, kaeya, kamisato ayaka, kamisato ayato, kaveh, keqing, kirara, klee, kujou sara, kuki shinobu, layla, lisa, lynette, lyney, mika, mona, nahida, navia, neuvillette, nilou, ningguang, noelle, qiqi, raiden shogun, razor, rosaria, sangonomiya kokomi, sayu, shenhe, shikanoin heizou, sucrose, tartaglia, thoma, tighnari, venti, wanderer, wriothesley, xiangling, xianyun, xiao, xingqiu, xinyan, yae miko, yanfei, yaoyao, yelan, yoimiya, yun jin, zhongli
+albedo, alhaitham, aloy, amber, anemo, arataki itto, arlecchino, baizhu, barbara, beidou, bennett, candace, charlotte, chevreuse, chiori, chongyun, clorinde, collei, cyno, dehya, dendro, diluc, diona, dori, eula, faruzan, fischl, freminet, furina, ganyu, gaming, geo, gorou, hydro, hu tao, jean, kaedehara kazuha, kaeya, kamisato ayaka, kamisato ayato, kaveh, keqing, kirara, klee, kujou sara, kuki shinobu, layla, lisa, lynette, lyney, mika, mona, nahida, navia, neuvillette, nilou, ningguang, noelle, qiqi, raiden shogun, sethos, sigewinne, razor, rosaria, sangonomiya kokomi, sayu, shenhe, shikanoin heizou, sucrose, tartaglia, thoma, tighnari, venti, wanderer, wriothesley, xiangling, xianyun, xiao, xingqiu, xinyan, yae miko, yanfei, yaoyao, yelan, yoimiya, yun jin, zhongli
 `
 }
   let data = await cari(Maximus)

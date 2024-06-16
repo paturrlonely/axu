@@ -1,5 +1,5 @@
-const fetch = require('node-fetch');
-const uploadImage = require('../lib/uploadImage')
+import fetch from 'node-fetch';
+import uploadImage from '../lib/uploadImage.js';
 
 let handler = async (m, { conn, usedPrefix, command }) => {
   try {
@@ -9,12 +9,10 @@ let handler = async (m, { conn, usedPrefix, command }) => {
       const img = await q.download();
       const out = await uploadImage(img);
       m.reply(wait);
-    if (command === 'removebg' || command === 'nobg') {
-        const api = await fetch(`https://api.betabotz.eu.org/api/tools/removebg?url=${out}&apikey=${lann}`);
-        const image = await api.json();
-        const url = image.url.result;
+      const api = await fetch(`https://api.betabotz.eu.org/api/tools/removebg?url=${out}&apikey=${lann}`);
+      const image = await api.json();
+      const url = image.url.result;
         conn.sendFile(m.chat, url, null, wm, m);
-      }
     } else {
       m.reply(`Kirim gambar dengan caption *${usedPrefix + command}* atau tag gambar yang sudah dikirim.`);
     }
@@ -27,6 +25,6 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 handler.command = handler.help = ['removebg','nobg'];
 handler.tags = ['tools'];
 handler.premium = false;
-handler.limit = false;
+handler.limit = true;
 
-module.exports = handler;
+export default handler

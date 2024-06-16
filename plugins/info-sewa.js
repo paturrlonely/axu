@@ -1,5 +1,20 @@
 let handler = async(m, { conn, text, usedPrefix, command}) => {
-    if (!text) return conn.reply(m.chat, `*— YULA JOIN GROUP*\n\n*7 Day join the group*\n- Harga: Rp. 7.000 IDR\n- ID Pesanan: G7\n\n*30 Day join the group*\n- Harga: Rp. 15.000 IDR\n- ID Pesanan: G30\n\n*60 Day join the group*\n- Harga: Rp. 30.000 IDR\n- ID Pesanan: G60\n\n\n*— PREMIUM USER*\n\n*3 Day premium*\n- Harga: Rp. 5.000 IDR\n- ID Pesanan: 3day\n\n*7 Day premium*\n- Harga: Rp. 10.000 IDR\n- ID Pesanan: 7day\n\n*30 Day premium*\n- Harga: Rp. 15.000 IDR\n- ID Pesanan: 30day\n\n*60 Day premium*\n- Harga: Rp. 30.000 IDR\n- ID Pesanan: 60day\n\n\n*Example:* ${usedPrefix + command} <ID Pesanan>\n*Example:* ${usedPrefix + command} 30day`, m)
+    let pesan = `\n> 1. 30 Day join the group\n> 2. 3 Day Premium\n> 3. 30 Day Premium\n> 4. 7 Day join the group\n> 5. 3 Day Premium\n\nSilahkan pilih produk kami dengan mengeklik tombol dibawah ini`
+    const sections = [
+				[
+					'— ' + global.info.namebot + ' JOIN GROUP', [
+						['Harga: Rp. 7.000 IDR', '.sewa G7', '7 Day join the group'],
+						['Harga: Rp. 15.000 IDR', '.sewa G30', '30 Day join the group'],
+						['Harga: Rp. 30.000 IDR', '.sewa G60', '60 Day join the group']
+				]], [
+					'— PREMIUM USER', [
+						['Harga: Rp. 5.000 IDR', '.sewa 3day', '3 Day Premium'],
+						['Harga: Rp. 7.000 IDR', '.sewa 7day', '7 Day Premium'],
+						['Harga: Rp. 30.000 IDR', '.sewa 30day', '30 Day Premium'],
+						['Harga: Rp. 60.000 IDR', '.sewa 60day', '60 Day Premium'],
+				]],
+			]
+    if (!text) return conn.sendButtonList(m.chat, `— TOP 5 SELLING PRODUCTS`, pesan, global.wm, 'PRICE LIST', global.thum, sections, m)
     let orderID;
 
   switch(text) {

@@ -9,7 +9,7 @@
 - Fix QR code in terminal & pairing code
 - Use Pairing Code: ```node . --pairing```
 - Use QR Code: ```node .```
-- Added Features ```Store, Giveaway```
+- Added Features ```Store, Giveaway, ButtonList, ButtonReply, ButtonSlide ( COMING SOON )```
 
  ## SCRIPTS MUST USE THE WEB API BELOW
   

@@ -1,8 +1,10 @@
+import { getDevice } from '@adiwajshing/baileys'
+
 let handler = async(m, { conn, text, usedPrefix, command}) => {
-    let pesan = `\n> 1. 30 Day join the group\n> 2. 3 Day Premium\n> 3. 30 Day Premium\n> 4. 7 Day join the group\n> 5. 3 Day Premium\n\nSilahkan pilih produk kami dengan mengeklik tombol dibawah ini`
+    let pesan = `\n> *1.* 30 Day join the group\n> *2.* 3 Day Premium\n> *3.* 30 Day Premium\n\nSilahkan pilih produk kami dengan mengeklik tombol dibawah ini`
     const sections = [
 				[
-					'— ' + global.info.namebot + ' JOIN GROUP', [
+					'— YULA JOIN GROUP', [
 						['Harga: Rp. 7.000 IDR', '.sewa G7', '7 Day join the group'],
 						['Harga: Rp. 15.000 IDR', '.sewa G30', '30 Day join the group'],
 						['Harga: Rp. 30.000 IDR', '.sewa G60', '60 Day join the group']
@@ -14,7 +16,9 @@ let handler = async(m, { conn, text, usedPrefix, command}) => {
 						['Harga: Rp. 60.000 IDR', '.sewa 60day', '60 Day Premium'],
 				]],
 			]
-    if (!text) return conn.sendButtonList(m.chat, `— TOP 5 SELLING PRODUCTS`, pesan, global.wm, 'PRICE LIST', global.thum, sections, m)
+    if (!/all/.test(command) && await getDevice(m.key.id) == 'android') {
+    if (!text) return conn.sendButtonList(m.chat, `— TOP 3 SELLING PRODUCTS`, pesan, global.wm, 'PRICE LIST', global.thum, sections, m)
+    }
     let orderID;
 
   switch(text) {
@@ -74,6 +78,10 @@ let handler = async(m, { conn, text, usedPrefix, command}) => {
 *60 Day premium*
 - Harga: Rp. 30.000 IDR
 - ID Pesanan: 60day
+
+
+*Example:* ${usedPrefix + command} <ID Pesanan>
+*Example:* ${usedPrefix + command} 30day
 `;
   };
     let maximus = `*Ｋ Λ Ｒ Λ  O R D E R*\n\n*• Status:* _🟡 Pending_\n*• ID Pembelian:* ${text}\n*• Nominal:* ${orderID}\n*• Payment:* QRIS\n\n\n*TAHAP-TAHAP Pembayaran*\n*1.* Silahkan SCAN QRIS ini dengan M-Banking/E-Wallet kamu\n*2.* Masukan Nominal: ${orderID}\n*3.* Silahkan Kirim bukti pembayaran ke nomor ini wa.me/${global.info.nomorown}`

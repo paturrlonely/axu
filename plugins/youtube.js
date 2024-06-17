@@ -66,7 +66,7 @@ Sent By Assistant ${global.info.namebot}`;
 
      if (!/all/.test(command) && await getDevice(m.key.id) == 'android') {
   conn.sendButton(m.chat, infoText, global.wm, thumbnailUrl, [['🎵 AUDIO', `.ytmp3 ${args [0]}`],['📹 VIDEO', `.ytmp4 ${args[0]}`]], m)
-  } else conn.reply(m.chat, `*Silahkan tulis ini untuk mendownload audio:*\n > .ytmp3 linkYt\n\n*Silahkan tulis ini untuk mendownload Video:*\n > .ytmp4 linkYt`, m)
+  } else conn.reply(m.chat, `*Silahkan tulis ini untuk mendownload audio:*\n> .ytmp3 linkYt\n\n*Silahkan tulis ini untuk mendownload Video:*\n> .ytmp4 linkYt`, m)
 
   } catch (e) {
     console.log(e);

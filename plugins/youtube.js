@@ -2,7 +2,7 @@ import ytdl from 'ytdl-core';
 import fs from 'fs';
 import ffmpeg from 'fluent-ffmpeg';
 import search from 'yt-search';
-const { generateWAMessageFromContent, proto, prepareWAMessageMedia } = (await import('@adiwajshing/baileys')).default
+const { getDevice, generateWAMessageFromContent, proto, prepareWAMessageMedia } = (await import('@adiwajshing/baileys')).default
 
 let handler = async (m, { conn, text, args, command }) => {
   if (!args[0]) return m.reply(`*example*: .${command} YTURL`);
@@ -44,7 +44,29 @@ YTdl By https://github.com/fent/node-ytdl-core
 Search By https://github.com/talmobi/yt-search
 Sent By Assistant ${global.info.namebot}`;
 
+    /*var pesan = conn.relayMessage(m.chat, {
+                extendedTextMessage:{
+                text: infoText, 
+                contextInfo: {
+                     externalAdReply: {
+                        title: "AUDIO SEDANG DI KIRIM",
+                        body: `Youtube Play by Assisten ${global.info.namebot}`,
+                        mediaType: 1,
+                        previewType: 0,
+                        renderLargerThumbnail: true,
+                        thumbnailUrl: thumbnailUrl,
+                        sourceUrl: "https://youtube.com"
+                    }
+                }, mentions: [m.sender]
+}}, {});*/
+
+/*await conn.relayMessage(msg.key.remoteJid, msg.message, {
+        messageId: msg.key.id
+        })*/
+
+     if (!/all/.test(command) && await getDevice(m.key.id) == 'android') {
   conn.sendButton(m.chat, infoText, global.wm, thumbnailUrl, [['🎵 AUDIO', `.ytmp3 ${args [0]}`],['📹 VIDEO', `.ytmp4 ${args[0]}`]], m)
+  } else conn.reply(m.chat, `*Silahkan tulis ini untuk mendownload audio:*\n > .ytmp3 linkYt\n\n*Silahkan tulis ini untuk mendownload Video:*\n > .ytmp4 linkYt`, m)
 
   } catch (e) {
     console.log(e);

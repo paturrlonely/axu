@@ -1,15 +1,27 @@
-import uploadImage from '../lib/uploadImage.js';
-import axios from 'axios';
+import uploadFile from '../lib/uploadFile.js';
+import { rose as api } from '../lib/roseGet.js';
 
 async function handler(m, { conn, usedPrefix, command }) {
   try {
     const q = m.quoted ? m.quoted : m;
       const img = await q.download();
-      const out = await uploadImage(img);
-      const api = `https://api.itsrose.rest/image/recolor?url=${out}&accept=false`
-      const { data } = await axios.get(api, { headers: { Authorization: `${global.rose}` }, responseType: 'arraybuffer' });
-      const caption = `Sudah jadi, tuan!`;
-      conn.sendFile(m.chat, Buffer.from(data), 'result.jpg',   caption, m);
+      const url = await uploadFile(img);
+      const { data } = await api.get("https://api.itsrose.rest/image/recolor", {
+			url,
+			json: true,
+		});
+
+		const { status, message, result } = data;
+
+		if (!status) {
+			return m.reply(message);
+		}
+
+		await conn.sendMessage(
+			m.chat,
+			{ image: Buffer.from(result.base64Image, "base64") },
+			{ quoted: m }
+		);
   } catch (e) {
     console.error(e);
     m.reply(eror);

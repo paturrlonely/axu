@@ -5,13 +5,14 @@ const handler = async (m, { conn, args, text, usedPrefix, command }) => {
   
 *C H A R A C T E R S  L I S T*
 
-acheron, argenti, arlan, asta, aventurine, bailu, blackswan, blade, boothill, bronya, clara, caelus, danhengil, danheng, drratio, firetrailblazer, fuxuan, firefly, gallagher, gepard, guinaifen, hanya, herta, himeko, hook, huohuo, jade, jingyuan, jingliu, kafka, luka, luocha, lynx, march7th, misha, natasha, pela, physicaltrailblazer, qingque, ruanmei, robin, sampo, seele, serval, stelle, silverwolf, sparkle, sushang, tingyun, topaz, welt, xueyi, yanqing, yukong
+acheron, argenti, arlan, asta, aventurine, bailu, blackswan, blade, boothill, bronya, clara, caelus, destruction_caelus, destruction_stelle, danhengil, danheng, drratio, fuxuan, firefly, gallagher, gepard, guinaifen, harmony_caelus, harmony_stelle, hanya, herta, himeko, hook, huohuo, jade, jingyuan, jingliu, kafka, luka, luocha, lynx, march7th, misha, natasha, pela, preservation_caelus, preservation_stelle, qingque, ruanmei, robin, sampo, seele, serval, stelle, silverwolf, sparkle, sushang, tingyun, topaz, welt, xueyi, yanqing, yukong
 
 > JIKA TIDAK ADA SIKAHKAN HUBUNGI OWNER
 `
+  let teks = text.toLowerCase()
   let Maximus;
 
-  switch(text) {
+  switch(teks) {
        case 'acheron':
       Maximus = '1308';
       break;
@@ -45,8 +46,11 @@ acheron, argenti, arlan, asta, aventurine, bailu, blackswan, blade, boothill, br
        case 'clara':
       Maximus = '1107';
       break;
-       case 'caelus':
+       case 'harmony_caelus':
       Maximus = '8005';
+      break;
+       case 'harmony_stelle':
+      Maximus = '8006';
       break;
        case 'danhengil':
       Maximus = '1213';
@@ -60,8 +64,11 @@ acheron, argenti, arlan, asta, aventurine, bailu, blackswan, blade, boothill, br
        case 'firefly':
       Maximus = '1310';
       break;
-       case 'firetrailblazer':
+       case 'preservation_caelus':
       Maximus = '8003';
+      break;
+       case 'preservation_stelle':
+      Maximus = '8004';
       break;
        case 'fuxuan':
       Maximus = '1208';
@@ -123,8 +130,11 @@ acheron, argenti, arlan, asta, aventurine, bailu, blackswan, blade, boothill, br
        case 'pela':
       Maximus = '1106';
       break;
-       case 'physicaltrailblazer':
+       case 'destruction_caelus':
       Maximus = '8001';
+      break;
+       case 'destruction_stelle':
+      Maximus = '8002';
       break;
        case 'qingque':
       Maximus = '1201';
@@ -143,9 +153,6 @@ acheron, argenti, arlan, asta, aventurine, bailu, blackswan, blade, boothill, br
       break;
        case 'serval':
       Maximus = '1103';
-      break;
-       case 'stelle':
-      Maximus = '8006';
       break;
        case 'silverwolf':
       Maximus = '1006';
@@ -179,12 +186,14 @@ acheron, argenti, arlan, asta, aventurine, bailu, blackswan, blade, boothill, br
 
 *C H A R A C T E R S  L I S T*
 
-acheron, argenti, arlan, asta, aventurine, bailu, blackswan, blade, boothill, bronya, clara, caelus, danhengil, danheng, drratio, firetrailblazer, fuxuan, firefly, gallagher, gepard, guinaifen, hanya, herta, himeko, hook, huohuo, jingyuan, jingliu, kafka, luka, luocha, lynx, march7th, misha, natasha, pela, physicaltrailblazer, qingque, ruanmei, robin, sampo, seele, serval, stelle, silverwolf, sparkle, sushang, tingyun, topaz, welt, xueyi, yanqing, yukong`;
+acheron, argenti, arlan, asta, aventurine, bailu, blackswan, blade, boothill, bronya, clara, caelus, destruction_caelus, destruction_stelle, danhengil, danheng, drratio, fuxuan, firefly, gallagher, gepard, guinaifen, harmony_caelus, harmony_stelle, hanya, herta, himeko, hook, huohuo, jade, jingyuan, jingliu, kafka, luka, luocha, lynx, march7th, misha, natasha, pela, preservation_caelus, preservation_stelle, qingque, ruanmei, robin, sampo, seele, serval, stelle, silverwolf, sparkle, sushang, tingyun, topaz, welt, xueyi, yanqing, yukong
+
+> JIKA TIDAK ADA SIKAHKAN HUBUNGI OWNER`;
   };
   let data = await fetch(`https://raw.githubusercontent.com/FortOfFans/HSR/main/sheet/${Maximus}.jpg`)
   let image = await data.buffer()
   
-  conn.sendFile(m.chat, image, "mtype.jpg", `${text} - Cheat Sheet`, m)
+  conn.sendFile(m.chat, image, "mtype.jpg", `${text.toUpperCase()} - Cheat Sheet`, m)
 };
 
 handler.help = ['hsrsheet <characters>'];

@@ -5,7 +5,7 @@ const handler = async (m, { conn, args, text, usedPrefix, command }) => {
   
 *C H A R A C T E R S  L I S T*
 
-acheron, argenti, arlan, asta, aventurine, bailu, blackswan, blade, boothill, bronya, clara, danhengil, danheng, drratio, firetrailblazer, fuxuan, gallagher, gepard, guinaifen, hanya, herta, himeko, hook, huohuo, imaginarytrailblazer, jingyuan, jingliu, kafka, luka, luocha, lynx, march7th, natasha, pela, physicaltrailblazer, qingque, ruanmei, robin, sampo, seele, serval, silverwolf, sparkle, sushang, tingyun, topaz, welt, xueyi, yanqing, yukong
+acheron, argenti, arlan, asta, aventurine, bailu, blackswan, blade, boothill, bronya, clara, caelus, danhengil, danheng, drratio, firetrailblazer, fuxuan, firefly, gallagher, gepard, guinaifen, hanya, herta, himeko, hook, huohuo, jade, jingyuan, jingliu, kafka, luka, luocha, lynx, march7th, misha, natasha, pela, physicaltrailblazer, qingque, ruanmei, robin, sampo, seele, serval, stelle, silverwolf, sparkle, sushang, tingyun, topaz, welt, xueyi, yanqing, yukong
 
 > JIKA TIDAK ADA SIKAHKAN HUBUNGI OWNER
 `
@@ -45,6 +45,9 @@ acheron, argenti, arlan, asta, aventurine, bailu, blackswan, blade, boothill, br
        case 'clara':
       Maximus = '1107';
       break;
+       case 'caelus':
+      Maximus = '8005';
+      break;
        case 'danhengil':
       Maximus = '1213';
       break;
@@ -53,6 +56,9 @@ acheron, argenti, arlan, asta, aventurine, bailu, blackswan, blade, boothill, br
       break;
        case 'drratio':
       Maximus = '1305';
+      break;
+       case 'firefly':
+      Maximus = '1310';
       break;
        case 'firetrailblazer':
       Maximus = '8003';
@@ -84,11 +90,11 @@ acheron, argenti, arlan, asta, aventurine, bailu, blackswan, blade, boothill, br
        case 'huohuo':
       Maximus = '1217';
       break;
-       case 'imaginarytrailblazer':
-      Maximus = '8005';
-      break;
        case 'jingyuan':
       Maximus = '1204';
+      break;
+       case 'jade':
+      Maximus = '1314';
       break;
        case 'jingliu':
       Maximus = '1212';
@@ -110,6 +116,9 @@ acheron, argenti, arlan, asta, aventurine, bailu, blackswan, blade, boothill, br
       break;
        case 'natasha':
       Maximus = '1105';
+      break;
+       case 'misha':
+      Maximus = '1312';
       break;
        case 'pela':
       Maximus = '1106';
@@ -134,6 +143,9 @@ acheron, argenti, arlan, asta, aventurine, bailu, blackswan, blade, boothill, br
       break;
        case 'serval':
       Maximus = '1103';
+      break;
+       case 'stelle':
+      Maximus = '8006';
       break;
        case 'silverwolf':
       Maximus = '1006';
@@ -167,7 +179,7 @@ acheron, argenti, arlan, asta, aventurine, bailu, blackswan, blade, boothill, br
 
 *C H A R A C T E R S  L I S T*
 
-acheron, argenti, arlan, asta, aventurine, bailu, blackswan, blade, boothill, bronya, clara, danhengil, danheng, drratio, firetrailblazer, fuxuan, gallagher, gepard, guinaifen, hanya, herta, himeko, hook, huohuo, imaginarytrailblazer, jingyuan, jingliu, kafka, luka, luocha, lynx, march7th, natasha, pela, physicaltrailblazer, qingque, ruanmei, robin, sampo, seele, serval, silverwolf, sparkle, sushang, tingyun, topaz, welt, xueyi, yanqing, yukong`;
+acheron, argenti, arlan, asta, aventurine, bailu, blackswan, blade, boothill, bronya, clara, caelus, danhengil, danheng, drratio, firetrailblazer, fuxuan, firefly, gallagher, gepard, guinaifen, hanya, herta, himeko, hook, huohuo, jingyuan, jingliu, kafka, luka, luocha, lynx, march7th, misha, natasha, pela, physicaltrailblazer, qingque, ruanmei, robin, sampo, seele, serval, stelle, silverwolf, sparkle, sushang, tingyun, topaz, welt, xueyi, yanqing, yukong`;
   };
   let data = await fetch(`https://raw.githubusercontent.com/FortOfFans/HSR/main/sheet/${Maximus}.jpg`)
   let image = await data.buffer()

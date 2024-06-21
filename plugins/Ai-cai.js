@@ -1,12 +1,11 @@
 import axios from 'axios'
 import fetch from 'node-fetch'
-import { translate } from '@vitalets/google-translate-api';
-const indo = 'id'
-const eangrais = 'en'
+
 const payloads = {
     character_id: "8cda8312-1cbd-4b82-8069-7d47b1ae42d2",
     message: "",
-    enable_nsfw: true
+    enable_nsfw: true,
+    model: "rs_v8_72b"
 };
 
 const handler = async (m, { conn, args, text, usedPrefix, command, isOwner }) => {
@@ -38,9 +37,7 @@ const handler = async (m, { conn, args, text, usedPrefix, command, isOwner }) =>
   }
 }
   await sleep(2000)
-  const mmk = await translate(text, { to: eangrais, autoCorrect: true }).catch(_ => null)     
-  //const mmk = await( await fetch(`https://api.lolhuman.xyz/api/translate/auto/en?apikey=${global.lolkey}&text=${text}`)).json()
-  const updatedPayloads = { ...payloads, message: mmk.text.toString() };
+  const updatedPayloads = { ...payloads, message: text };
   const { data } = await axios.request({
     baseURL: "https://api.itsrose.rest",
     url: "/cai/chat",
@@ -55,10 +52,7 @@ const handler = async (m, { conn, args, text, usedPrefix, command, isOwner }) =>
     return m.reply(message); 
   } else {
     const { message } = result;
-    const maxim = await translate(message, { to: indo, autoCorrect: true }).catch(_ => null)     
-    //const maxim = await( await fetch(`https://api.lolhuman.xyz/api/translate/auto/id?apikey=${global.lolkey}&text=${message}`)).json()
-          //m.reply(maxim.text.toString())
-          m.reply(maxim.text.toString())
+    m.reply(message)
    }
 };
 

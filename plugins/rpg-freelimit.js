@@ -5,8 +5,8 @@ let handler = async(m, { conn }) => {
     let timers = clockString(_timers) 
     if (new Date - user.freelimit > 79200000) {
     if (user.limit >= 1) throw '_Limit Kamu Harus 0 Untuk Mengambil Free Limit_'
-    m.reply(`_Sukses Mendapatkan_\n_+${rpg.emoticon('limit')}10 Limit_`)
-    user.limit += 10
+    m.reply(`_Sukses Mendapatkan_\n_+${rpg.emoticon('limit')}5 Limit_`)
+    user.limit += 5
     user.freelimit = new Date * 1
     } else m.reply(`_Silahkan Tunggu Selama_ _*${timers}*_ _Untuk Mengambil Limit Kembali..._`)
 }

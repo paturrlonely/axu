@@ -17,7 +17,7 @@
   
 - Botcahx API [`RestApi`](https://api.botcahx.eu.org) ```Must Use```
 
-- Itsrose API [`RestApi`](https://docs.itsrose.rest) ```Must Use```
+- Itsrose API [`RestApi`](https://dash.itsrose.rest) ```Must Use```
 
 ## MY GROUPS & NUMBERS
 - My Number [`Contact me`](https://wa.me/6281283516246)

@@ -1,30 +1,23 @@
-import api from 'btch-downloader'
+import axios from 'axios';
 
-let handler = async (m, {
-	conn,
-	args,
-	usedPrefix,
-	command
-}) => {
-if (!args[0]) throw `Masukan URL!\n\ncontoh:\n${usedPrefix + command} https://vm.tiktok.com/ZGJAmhSrp/`;
-if (!args[0].match(/tiktok/gi)) throw `URL Yang Tuan Berikan *Salah!!!*`;
-try {
-let maximus = await api.ttdl(args[0]);
-let caption = `◥ *T I K T O K  D O W N L O A D* ◤
-
-• *Name Videos:* 
-— ${maximus.title}
-
-• *Name Audio:* 
-— ${maximus.title_audio}
-
-_Sedang mengirim Audio video. harap tunggu sebentar_\n`;
-await conn.sendMessage(m.chat, { video: { url: maximus.video[0] }, caption: caption })
-await conn.sendFile(m.chat, maximus.audio[0], 'kasar.mp3', null, m)
-      } catch (e) {
-		console.log(e)
-		m.reply(eror)
-	}
+let handler = async (m, { conn, text, usedPrefix, command }) => {
+    if (!text) throw `Masukan URL!\n\ncontoh:\n${usedPrefix + command} https://vm.tiktok.com/ZGJAmhSrp/`;    
+    try {
+        if (!text.match(/tiktok/gi)) throw `URL Tidak Ditemukan!`;        
+        m.reply(wait);      
+        const response = await axios.get(`https://api.botcahx.eu.org/api/dowloader/tiktok?url=${text}&apikey=${btc}`);        
+        const res = response.data.result;      
+        var { video, title, title_audio, audio } = res;
+        let capt = `乂 *T I K T O K*\n\n`;
+        capt += `◦ *Title* : ${title}\n`;
+        capt += `◦ *Audio* : ${title_audio}\n`;
+        capt += `\n`;        
+        await conn.sendFile(m.chat, video, null, capt, m);
+        conn.sendMessage(m.chat, { audio: { url: audio[0] }, mimetype: 'audio/mpeg' }, { quoted: m });         
+    } catch (e) {
+        console.log(e);
+        throw `🚩 ${eror}`;
+    }
 };
 handler.help = ['tiktok'].map(v => v + ' <url>');
 handler.tags = ['downloader'];

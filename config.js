@@ -45,33 +45,34 @@ global.info = {
 global.owner = [
 ['6281283516246', 'Maximus', 'true']
 ]
-global.mods = ['6288225750488']
-global.prems = ['6281283516246', '6288225750488']
+// CONTOH EDIT: ['NOMORLU', 'NAMALU', 'true']
+
+global.mods = ['6288225750488'] // Opsional boleh ganti atau tidak 
+global.prems = ['6281283516246', '6288225750488'] // Opsional boleh ganti atau tidak 
 
 
 
 /*=========== WATERMARK ===========*/
 // BOLEH DI EDIT ASALKAN JANGAN ADA SIMBOL YANG DI HAPUS
-global.wm = 'ᴀꜱꜱɪꜱᴛᴇɴ ʏᴜʟᴀ 🌐'
-global.author = 'XM4ZE'
-global.stickpack = 'ᴀꜱꜱɪꜱᴛᴇɴ ʏᴜʟᴀ 🌐'
-global.stickauth = 'XM4ZE'
+global.wm = 'ᴀꜱꜱɪꜱᴛᴇɴ ʏᴜʟᴀ 🌐' // Opsional boleh ganti atau tidak 
+global.author = 'XM4ZE' // Opsional boleh ganti atau tidak 
+global.stickpack = 'ᴀꜱꜱɪꜱᴛᴇɴ ʏᴜʟᴀ 🌐' // Opsional boleh ganti atau tidak 
+global.stickauth = 'XM4ZE' // Opsional boleh ganti atau tidak 
 
 
 
 /*=========== TEXT & IMAGE ===========*/
 // BOLEH DI EDIT ASALKAN JANGAN ADA SIMBOL YANG DI HAPUS
-global.nameown = 'Maximus Store'
-global.waown = 'wa.me/6281283516246'
-global.mail = 'maximusstoreindonesia@gmail.com'
-global.fb = 'https://facebook.com/maximusstoreindonesia'
-global.ig = 'https://instagram.com/maximusstore.id'
-global.gcbot = 'https://whatsapp.com/channel/0029VaL28ZqFSAtCdSU5EX0M'
-global.thum = 'https://telegra.ph/file/f4f24dc6ce5247f6abb6d.png' //'https://telegra.ph/file/754c704194ef0d84c6419.jpg'
-global.wm = 'ᴀꜱꜱɪꜱᴛᴇɴ ʏᴜʟᴀ 🌐'
-global.qris = 'https://telegra.ph/file/f11ccd2ca8a5136aacfb3.jpg' // Wajib isi untuk pembayaran
-global.welcome = 'https://telegra.ph/file/6922e4375c183c8d1cfcb.jpg'
-global.leave = 'https://telegra.ph/file/8c7792e78ed015a7d0a59.jpg'
+global.nameown = 'Maximus Store' // Ganti jadi nama kalian
+global.waown = 'wa.me/6281283516246' // ganti nomor tanpa menghilangkan wa.me/
+global.mail = 'maximusstoreindonesia@gmail.com' // boleh taruh email kalian
+global.fb = 'https://facebook.com/maximusstoreindonesia' // boleh taruh link fb kalian
+global.ig = 'https://instagram.com/maximusstore.id' // boleh taruh link ig kalian
+global.gcbot = 'https://whatsapp.com/channel/0029VaL28ZqFSAtCdSU5EX0M' // boleh taruh link group kalian
+global.thum = 'https://telegra.ph/file/f4f24dc6ce5247f6abb6d.png' // Bagian thumbnail menu
+global.qris = 'https://telegra.ph/file/f11ccd2ca8a5136aacfb3.jpg' // Wajib isi untuk pembayaran. isi dengan qris
+global.welcome = 'https://telegra.ph/file/6922e4375c183c8d1cfcb.jpg' // Welcome Group 
+global.leave = 'https://telegra.ph/file/8c7792e78ed015a7d0a59.jpg' // Leave Group
 
 
 

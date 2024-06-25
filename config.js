@@ -4,28 +4,15 @@ import { fileURLToPath } from 'url'
 
 
 /*========= GLOBAL APIKEY =========*/
-global.btc = 'Enter your apikey'
-global.rose = 'Enter your apikey'
-global.lann = 'Enter your apikey'
+// ISI APIKEY KALIAN DI BAGIAN 'ENTER YOUR APIKEY' SIMBOL JANGAN DI HAPUS
+global.btc = 'Enter your apikey' // apikey Botchax
+global.rose = 'Enter your apikey' // apikey Rose
+global.lann = 'Enter your apikey' // apikey Beta
 
-/*============ NOMOR ============*/
-global.info = {
-	nomorbot: '62882257504889',
-	nomorown: '6281283516246',
-	namebot: 'Assisten YuLa',
-	nameown: 'Maximus Store',
-	channel: '120363241570452835@newsletter',
-	namechannel: 'YULA | Whatsapp Bots'
-}
 
-/*============ OWNER ============*/
-global.owner = [
-['6281283516246', 'Maximus', 'true']
-]
-global.mods = ['6288225750488']
-global.prems = ['6281283516246', '6288225750488']
 
 /*============== API ==============*/
+// ISI APIKEY KALIAN DI BAGIAN 'ENTER YOUR APIKEY' SIMBOL JANGAN DI HAPUS
 global.APIs = {
   rose: 'https://api.itsrose.rest',
   TioXD: 'https://api.botcahx.eu.org',
@@ -38,33 +25,83 @@ global.APIKeys = {
   'https://api.itsrose.rest': 'Enter your apikey',
 }
 
+
+
+/*============ NOMOR ============*/
+// BOLEH DI EDIT ASALKAN JANGAN ADA SIMBOL YANG DI HAPUS
+global.info = {
+	nomorbot: '62882257504889',
+	nomorown: '6281283516246',
+	namebot: 'Assisten YuLa',
+	nameown: 'Maximus Store',
+	channel: '120363241570452835@newsletter',
+	namechannel: 'YULA | Whatsapp Bots'
+}
+
+
+
+/*============ OWNER ============*/
+// BOLEH DI EDIT ASALKAN JANGAN ADA SIMBOL YANG DI HAPUS
+global.owner = [
+['6281283516246', 'Maximus', 'true']
+]
+global.mods = ['6288225750488']
+global.prems = ['6281283516246', '6288225750488']
+
+
+
 /*=========== WATERMARK ===========*/
+// BOLEH DI EDIT ASALKAN JANGAN ADA SIMBOL YANG DI HAPUS
 global.wm = 'ᴀꜱꜱɪꜱᴛᴇɴ ʏᴜʟᴀ 🌐'
 global.author = 'XM4ZE'
 global.stickpack = 'ᴀꜱꜱɪꜱᴛᴇɴ ʏᴜʟᴀ 🌐'
 global.stickauth = 'XM4ZE'
-global.multiplier = 38 // The higher, The harder levelup
 
-/*============== NO EDIT ==============*/
-function pickRandom(list) {
-  return list[Math.floor(list.length * Math.random())]
-}
+
+
 /*=========== TEXT & IMAGE ===========*/
+// BOLEH DI EDIT ASALKAN JANGAN ADA SIMBOL YANG DI HAPUS
 global.nameown = 'Maximus Store'
 global.waown = 'wa.me/6281283516246'
 global.mail = 'maximusstoreindonesia@gmail.com'
 global.fb = 'https://facebook.com/maximusstoreindonesia'
 global.ig = 'https://instagram.com/maximusstore.id'
 global.gcbot = 'https://whatsapp.com/channel/0029VaL28ZqFSAtCdSU5EX0M'
-global.wait = '*Starting Processing . . .*'
-global.eror = '*Failed to process . . .*'
-global.maxwarn = '2'
 global.thum = 'https://telegra.ph/file/f4f24dc6ce5247f6abb6d.png' //'https://telegra.ph/file/754c704194ef0d84c6419.jpg'
 global.wm = 'ᴀꜱꜱɪꜱᴛᴇɴ ʏᴜʟᴀ 🌐'
 global.qris = 'https://telegra.ph/file/f11ccd2ca8a5136aacfb3.jpg' // Wajib isi untuk pembayaran
 global.welcome = 'https://telegra.ph/file/6922e4375c183c8d1cfcb.jpg'
 global.leave = 'https://telegra.ph/file/8c7792e78ed015a7d0a59.jpg'
+
+
+
+
+
+
+
+
+/*===================DO NOT EDIT=====================*/
+
+
+
+
+
+
+
+
+// DI BAWAH INI JANGAN DI EDIT
+/*============== NO EDIT ==============*/
+function pickRandom(list) {
+  return list[Math.floor(list.length * Math.random())]
+}
+
+global.multiplier = 38
+global.wait = '*Starting Processing . . .*'
+global.eror = '*Failed to process . . .*'
+global.maxwarn = '2'
 global.pricelist = '*LIMIT* kamu habis. kamu bisa order akses premium\n\n*PREMIUM USER PRICE LIST*\n\n*3 Day premium*\n- Harga: Rp. 5.000 IDR\n- ID Pesanan: 3day\n\n*7 Day premium*\n- Harga: Rp. 10.000 IDR\n- ID Pesanan: 7day\n\n*30 Day premium*\n- Harga: Rp. 15.000 IDR\n- ID Pesanan: 30day\n\n*60 Day premium*\n- Harga: Rp. 30.000 IDR\n- ID Pesanan: 60day\n\n\n*Example:* .premium <ID Pembayaran>\n*Example:* .premium 30day'
+
+
 
 /*========== TYPE DOCUMENT ==========*/
 global.doc = {
@@ -75,6 +112,7 @@ global.doc = {
     rtf: 'text/rtf'
 }
 
+// DI BAWAH INI JANGAN DI EDIT LAGI PULA GAK DI PAKAI
 /*============= HIASAN ==============*/
 global.decor = {
 	menut: '❏═┅═━–〈',
@@ -330,6 +368,7 @@ global.hwaifu = [
     'https://i.pinimg.com/originals/80/4f/1a/804f1a05f9996c96a2d492b4854b7fd5.jpg'
 ]
 
+// DI BAWAH INI JANGAN DI EDIT!!!
 /*============== EMOJI ==============*/
 global.rpg = {
     emoticon(string) {

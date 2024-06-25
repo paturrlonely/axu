@@ -22,9 +22,9 @@
 ## MY GROUPS & NUMBERS
 - Report/Ask [`My Whatsapp`](https://wa.me/6281283516246)
 
-- My Bot Group [`My Whatsapp Groups`](https://chat.whatsapp.com/FJRtTzRKxP8A2wT6fcCW3s)
+- My Bot Group [`Whatsapp Groups`](https://chat.whatsapp.com/FJRtTzRKxP8A2wT6fcCW3s)
 
-- My Genshin impact Group [`My Whatsapp Groups Genshin impact`](https://chat.whatsapp.com/LZCnnSQFPkF3C6zrDcH5n8)
+- My Genshin impact Group [`Whatsapp Groups`](https://chat.whatsapp.com/LZCnnSQFPkF3C6zrDcH5n8)
 
 ## FOR WINDOWS/VPS/RDP USERS
 

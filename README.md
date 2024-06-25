@@ -13,18 +13,18 @@
 
  ## SCRIPTS MUST USE THE WEB API BELOW
   
-- BetaBotz API [`RestApi`](https://api.betabotz.eu.org) ```Must Use```
+- BetaBotz API [`Website`](https://api.betabotz.eu.org) ```Must Use```
   
-- Botcahx API [`RestApi`](https://api.botcahx.eu.org) ```Must Use```
+- Botcahx API [`Website`](https://api.botcahx.eu.org) ```Must Use```
 
-- Itsrose API [`RestApi`](https://dash.itsrose.rest) ```Must Use```
+- Itsrose API [`Website`](https://dash.itsrose.rest) ```Must Use```
 
 ## MY GROUPS & NUMBERS
-- Report/Ask [`Contact me`](https://wa.me/6281283516246)
+- Report/Ask [`My Whatsapp`](https://wa.me/6281283516246)
 
-- My Bot Group [`Join`](https://chat.whatsapp.com/FJRtTzRKxP8A2wT6fcCW3s)
+- My Bot Group [`My Whatsapp Groups`](https://chat.whatsapp.com/FJRtTzRKxP8A2wT6fcCW3s)
 
-- My Genshin impact Group [`Join`](https://chat.whatsapp.com/LZCnnSQFPkF3C6zrDcH5n8)
+- My Genshin impact Group [`My Whatsapp Groups Genshin impact`](https://chat.whatsapp.com/LZCnnSQFPkF3C6zrDcH5n8)
 
 ## FOR WINDOWS/VPS/RDP USERS
 

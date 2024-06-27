@@ -1,6 +1,8 @@
 import { getDevice } from '@adiwajshing/baileys'
 
 let handler = async(m, { conn, text, usedPrefix, command}) => {
+    let xm4ze = await( await fetch(xmenus)).json()
+    let thum = xm4ze[Math.floor(Math.random() * xm4ze.length)]
     let pesan = `\n> *1.* 30 Day join the group\n> *2.* 3 Day Premium\n> *3.* 30 Day Premium\n\nSilahkan pilih produk kami dengan mengeklik tombol dibawah ini`
     const sections = [
 				[
@@ -17,7 +19,7 @@ let handler = async(m, { conn, text, usedPrefix, command}) => {
 				]],
 			]
     if (!/all/.test(command) && await getDevice(m.key.id) == 'android') {
-    if (!text) return conn.sendButtonList(m.chat, `— TOP 3 SELLING PRODUCTS`, pesan, global.wm, 'PRICE LIST', global.thum, sections, m)
+    if (!text) return conn.sendButtonList(m.chat, `— TOP 3 SELLING PRODUCTS`, pesan, global.wm, 'PRICE LIST', thum, sections, m)
     }
     let orderID;
 
@@ -91,7 +93,7 @@ let handler = async(m, { conn, text, usedPrefix, command}) => {
 }
 handler.help = ['sewa', 'order']
 handler.tags = ['info']
-handler.command =  /(order|sewa|premium)/i
+handler.command =  /(order|sewa)/i
 handler.register = false;
 handler.premium = false;
 

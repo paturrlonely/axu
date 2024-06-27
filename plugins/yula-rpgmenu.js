@@ -181,6 +181,9 @@ let tags = {
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     
  let fkon = { key: { fromMe: false, participant: `${m.sender.split`@`[0]}@s.whatsapp.net`, ...(m.chat ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { contactMessage: { displayName: `${name}`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${name}\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}}
+ 
+ let xm4ze = await( await fetch(xmenus)).json()
+ let thum = xm4ze[Math.floor(Math.random() * xm4ze.length)]
 
 conn.sendMessage(m.chat, {
             text: text,
@@ -195,8 +198,8 @@ conn.sendMessage(m.chat, {
                    externalAdReply: {
                    title: global.info.namebot + `© 2024`,
                    body: 'Powered By Maximus',
-                   thumbnailUrl: global.thum,
-                   sourceUrl: global.gcbot,
+                   thumbnailUrl: thum,
+                   sourceUrl: pickRandom(["https://chat.whatsapp.com/LZCnnSQFPkF3C6zrDcH5n8","https://chat.whatsapp.com/EWxOwlaJXTsIhj706JsfmZ"]),
                    mediaType: 1,
                    renderLargerThumbnail: true
                    },

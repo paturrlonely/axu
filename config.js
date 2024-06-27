@@ -43,9 +43,9 @@ global.info = {
 /*============ OWNER ============*/
 // BOLEH DI EDIT ASALKAN JANGAN ADA SIMBOL YANG DI HAPUS
 global.owner = [
-['6281283516246', 'Maximus', 'true']
+['6281283516246', 'Maximus', 'true'], // Boleh di ganti
+['6281283516246', 'Maximus', 'true'] // Jangan di ganti 
 ]
-// CONTOH EDIT: ['NOMORLU', 'NAMALU', 'true']
 
 global.mods = ['6288225750488'] // Opsional boleh ganti atau tidak 
 global.prems = ['6281283516246', '6288225750488'] // Opsional boleh ganti atau tidak 
@@ -69,10 +69,12 @@ global.mail = 'maximusstoreindonesia@gmail.com' // boleh taruh email kalian
 global.fb = 'https://facebook.com/maximusstoreindonesia' // boleh taruh link fb kalian
 global.ig = 'https://instagram.com/maximusstore.id' // boleh taruh link ig kalian
 global.gcbot = 'https://whatsapp.com/channel/0029VaL28ZqFSAtCdSU5EX0M' // boleh taruh link group kalian
-global.thum = 'https://telegra.ph/file/f4f24dc6ce5247f6abb6d.png' // Bagian thumbnail menu
 global.qris = 'https://telegra.ph/file/f11ccd2ca8a5136aacfb3.jpg' // Wajib isi untuk pembayaran. isi dengan qris
 global.welcome = 'https://telegra.ph/file/6922e4375c183c8d1cfcb.jpg' // Welcome Group 
 global.leave = 'https://telegra.ph/file/8c7792e78ed015a7d0a59.jpg' // Leave Group
+global.vn = 'https://github.com/XM4ZE/DATABASE/raw/master/wallpaper/KARA.mp3?raw=true' // Allmenu Voice
+global.thumvid = 'https://github.com/XM4ZE/DATABASE/raw/master/wallpaper/Vid_20240220_073653.mp4?raw=true' // Allmenu Video thumbnail
+global.xmenus = 'https://raw.githubusercontent.com/XM4ZE/DATABASE/master/wallpaper/menus.json' // Json thumbnail simple menu
 
 
 

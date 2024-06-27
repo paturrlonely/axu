@@ -1,5 +1,6 @@
 import PhoneNumber from 'awesome-phonenumber'
 import { promises } from 'fs'
+import { getDevice } from '@adiwajshing/baileys'
 import { join } from 'path'
 import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
@@ -40,7 +41,6 @@ let tags = {
   'islamic': '𝙸𝚂𝙻𝙰𝙼𝙸𝙲',
   'owner': '𝙾𝚆𝙽𝙴𝚁', 
   'info': '𝙸𝙽𝙵𝙾',
-  'random': '𝚁𝙰𝙽𝙳𝙾𝙼',
 }
 const defaultMenu = {
   before: `Hi %name.\nMy name is ${global.info.namebot}. I am the Assistant for this Group. I'm here to help you with tasks like searching for information online, retrieving data, etc. By utilizing innovative features, I will help you to move more quickly and productively in completing your work.
@@ -61,7 +61,7 @@ const defaultMenu = {
   after: 'ɢᴇɴꜱʜɪɴ ɪᴍᴘᴀᴄᴛ ᴅɪꜱᴄᴜꜱꜱɪᴏɴ',
 }
 
-let vn = "https://github.com/XM4ZE/DATABASE/raw/master/wallpaper/KARA.mp3?raw=true" //"https://github.com/Neder11ndeu/Music2/blob/main/Yula%20intro.mp3?raw=true"
+//"https://github.com/XM4ZE/DATABASE/raw/master/wallpaper/KARA.mp3?raw=true",."https://github.com/Neder11ndeu/Music2/blob/main/Yula%20intro.mp3?raw=true"
 
 let handler = async (m, { conn, usedPrefix, __dirname }) => {
   try {
@@ -175,7 +175,7 @@ ptt: true,
 });
 /*conn.sendMessage(m.chat, { video: { url: "https://github.com/XM4ZE/DATABASE/raw/master/wallpaper/Vid_20240220_073653.mp4?raw=true" }, gifPlayback: true, gifAttribution: ~~(Math.random() * 2), caption: text, contextInfo: { mentionedJid: [m.sender], externalAdReply: { showAdAttribution: false, title: global.info.namebot + `© 2024`, body: 'Jangan Lupa Sewa', thumbnailUrl: 'https://telegra.ph/file/7689cc923faef69aa9772.jpg', mediaType: 1, sourceUrl: 'https://chat.whatsapp.com/LZCnnSQFPkF3C6zrDcH5n8', renderLargerThumbnail: false }}}, { quoted: m })*/
 conn.sendMessage(m.chat, { video:
-            { url: "https://github.com/XM4ZE/DATABASE/raw/master/wallpaper/Vid_20240220_073653.mp4?raw=true" },
+            { url: thumvid },
             gifPlayback: true,
             gifAttribution: null,
             seconds: 9999,

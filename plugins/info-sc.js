@@ -2,7 +2,9 @@ import fetch from 'node-fetch';
 
 let handler = async (m, { conn, usedPrefix, command }) => {
 	try {
-   let maximus = `*RECODED BY MAXIMUS*
+   let xm4ze = await( await fetch(xmenus)).json()
+   let thum = xm4ze[Math.floor(Math.random() * xm4ze.length)]
+   let maximus = `*XMYULA-MD BY XM4ZE*
 
 > https://github.com/XM4ZE/XMYULA-MD
 
@@ -20,7 +22,7 @@ _Don't forget to give me 5 Stars 🙂_`
                    externalAdReply: {
                    title: global.info.namebot + `© 2024`,
                    body: 'Powered By Maximus',
-                   thumbnailUrl: global.thum,
+                   thumbnailUrl: thum,
                    sourceUrl: 'https://github.com/XM4ZE/XMYULA-MD',
                    mediaType: 1,
                    renderLargerThumbnail: true

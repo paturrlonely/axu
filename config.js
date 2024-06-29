@@ -74,8 +74,7 @@ global.welcome = 'https://telegra.ph/file/6922e4375c183c8d1cfcb.jpg' // Welcome 
 global.leave = 'https://telegra.ph/file/8c7792e78ed015a7d0a59.jpg' // Leave Group
 global.vn = 'https://github.com/XM4ZE/DATABASE/raw/master/wallpaper/KARA.mp3?raw=true' // Allmenu Voice
 global.thumvid = 'https://github.com/XM4ZE/DATABASE/raw/master/wallpaper/Vid_20240220_073653.mp4?raw=true' // Allmenu Video thumbnail
-global.xmenus = 'https://raw.githubusercontent.com/XM4ZE/DATABASE/master/wallpaper/publicmenus.json' // Json thumbnail simple menu. ganti link error jika bukan json
-
+global.maximus = '' // [OPSIONAL] isi dengan link thumbnail kalian. link ini akan muncul di semua menu dan taruh di tengah-tengah simbol itu
 
 
 
@@ -97,7 +96,7 @@ global.xmenus = 'https://raw.githubusercontent.com/XM4ZE/DATABASE/master/wallpap
 function pickRandom(list) {
   return list[Math.floor(list.length * Math.random())]
 }
-
+global.xmenus = 'https://raw.githubusercontent.com/XM4ZE/DATABASE/master/wallpaper/publicmenus.json'
 global.multiplier = 38
 global.wait = '*Starting Processing . . .*'
 global.eror = '*Failed to process . . .*'

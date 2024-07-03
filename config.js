@@ -5,9 +5,9 @@ import { fileURLToPath } from 'url'
 
 /*========= GLOBAL APIKEY =========*/
 // ISI APIKEY KALIAN DI BAGIAN 'ENTER YOUR APIKEY' SIMBOL JANGAN DI HAPUS
-global.btc = 'Enter your apikey' // apikey Botchax
-global.rose = 'Enter your apikey' // apikey Rose
-global.lann = 'Enter your apikey' // apikey Beta
+global.btc = 'VyPdbgV5' // apikey Botchax
+global.rose = 'Rk-f44507d2201ab0b7eb5e89d48245e483' // apikey Rose
+global.lann = 'BOKEPJEPANG' // apikey Beta
 
 
 
@@ -20,9 +20,9 @@ global.APIs = {
 } 
 
 global.APIKeys = {
-  'https://api.betabotz.eu.org': 'Enter your apikey',
-  'https://api.botcahx.eu.org': 'Enter your apikey',
-  'https://api.itsrose.rest': 'Enter your apikey',
+  'https://api.betabotz.eu.org': 'BOKEPJEPANG',
+  'https://api.botcahx.eu.org': 'VyPdbgV5',
+  'https://api.itsrose.rest': 'Rk-f44507d2201ab0b7eb5e89d48245e483',
 }
 
 
@@ -30,8 +30,8 @@ global.APIKeys = {
 /*============ NOMOR ============*/
 // BOLEH DI EDIT ASALKAN JANGAN ADA SIMBOL YANG DI HAPUS
 global.info = {
-	nomorbot: '62882257504889',
-	nomorown: '6281283516246',
+	nomorbot: '6283195893959',
+	nomorown: '6283849469400',
 	namebot: 'Assisten YuLa',
 	nameown: 'Maximus Store',
 	channel: '120363241570452835@newsletter',
@@ -43,12 +43,12 @@ global.info = {
 /*============ OWNER ============*/
 // BOLEH DI EDIT ASALKAN JANGAN ADA SIMBOL YANG DI HAPUS
 global.owner = [
-['6281283516246', 'Maximus', 'true'], // Boleh di ganti
-['6281283516246', 'Maximus', 'true'] // Jangan di ganti 
+['6283849469400', 'Maximus', 'true'], // Boleh di ganti
+['6283195893959', 'Maximus', 'true'] // Jangan di ganti 
 ]
 
-global.mods = ['6288225750488'] // Opsional boleh ganti atau tidak 
-global.prems = ['6281283516246', '6288225750488'] // Opsional boleh ganti atau tidak 
+global.mods = ['6283849469400'] // Opsional boleh ganti atau tidak 
+global.prems = ['6283195893959', '6288225750488'] // Opsional boleh ganti atau tidak 
 
 
 
@@ -64,17 +64,17 @@ global.stickauth = 'XM4ZE' // Opsional boleh ganti atau tidak
 /*=========== TEXT & IMAGE ===========*/
 // BOLEH DI EDIT ASALKAN JANGAN ADA SIMBOL YANG DI HAPUS
 global.nameown = 'Maximus Store' // Ganti jadi nama kalian
-global.waown = 'wa.me/6281283516246' // ganti nomor tanpa menghilangkan wa.me/
-global.mail = 'maximusstoreindonesia@gmail.com' // boleh taruh email kalian
-global.fb = 'https://facebook.com/maximusstoreindonesia' // boleh taruh link fb kalian
-global.ig = 'https://instagram.com/maximusstore.id' // boleh taruh link ig kalian
-global.gcbot = 'https://whatsapp.com/channel/0029VaL28ZqFSAtCdSU5EX0M' // boleh taruh link group kalian
-global.qris = 'https://telegra.ph/file/f11ccd2ca8a5136aacfb3.jpg' // Wajib isi untuk pembayaran. isi dengan qris
+global.waown = 'wa.me/6283849469400' // ganti nomor tanpa menghilangkan wa.me/
+global.mail = 'busarderemik@gmail.com' // boleh taruh email kalian
+global.fb = 'https://facebook.com/berto ananta' // boleh taruh link fb kalian
+global.ig = 'https://instagram.com/berto ananta' // boleh taruh link ig kalian
+global.gcbot = 'https://chat.whatsapp.com/ERCurMZ0ns8CqHkdG7AeSf' // boleh taruh link group kalian
+global.qris = 'https://telegra.ph/file/f8b50564e912e758444ad.jpg' // Wajib isi untuk pembayaran. isi dengan qris
 global.welcome = 'https://telegra.ph/file/6922e4375c183c8d1cfcb.jpg' // Welcome Group 
 global.leave = 'https://telegra.ph/file/8c7792e78ed015a7d0a59.jpg' // Leave Group
 global.vn = 'https://github.com/XM4ZE/DATABASE/raw/master/wallpaper/KARA.mp3?raw=true' // Allmenu Voice
 global.thumvid = 'https://github.com/XM4ZE/DATABASE/raw/master/wallpaper/Vid_20240220_073653.mp4?raw=true' // Allmenu Video thumbnail
-global.maximus = '' // [OPSIONAL] isi dengan link thumbnail kalian. link ini akan muncul di semua menu dan taruh di tengah-tengah simbol itu
+global.maximus = 'https://telegra.ph/file/c64b1a4f5b6c41c3fa766.jpg' // [OPSIONAL] isi dengan link thumbnail kalian. link ini akan muncul di semua menu dan taruh di tengah-tengah simbol itu
 
 
 

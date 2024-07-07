@@ -9,7 +9,7 @@
 - Fix QR code in terminal & pairing code
 - Use Pairing Code: ```node . --pairing```
 - Use QR Code: ```node .```
-- Buy for Script no encryption ```main.js & index.js```.
+- Buy for Script no encryption ```main.js & index.js```
 
  ## SCRIPTS MUST USE THE WEB API BELOW
   

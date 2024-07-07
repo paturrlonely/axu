@@ -14,6 +14,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
 *• antilinkkick*
 *• antilinkdelete*
 *• antilinkwa* 
+*• antiporn* 
 *• antitoxic* 
 *• antibadword*
 *• antidelete*
@@ -177,6 +178,15 @@ case 'antifoto':
                 }
             }
             chat.antiLinkWa = isEnable
+            break
+        case 'antiporn':
+            if (m.isGroup) {
+                if (!(isAdmin || isOwner)) {
+                    global.dfail('admin', m, conn)
+                    throw false
+                }
+            }
+            chat.antiPorn = isEnable
             break
         case 'nsfw':
             if (m.isGroup) {

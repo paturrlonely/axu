@@ -1,86 +1,21 @@
-import axios from 'axios'
+import fetch from 'node-fetch';
 
-const payloads = {
-    prompt: ""
-};
-
-const handler = async (m, { conn, args, text, usedPrefix, command, isOwner }) => {
-  if (!text) throw `${usedPrefix}${command} hallo eula. apa kabar sayang?
-` 
+var handler = async (m, {
+ text, 
+ usedPrefix, 
+ command
+ }) => {
+if (!text) throw `Masukkan pertanyaan!\n\n*Contoh:* Siapa presiden Indonesia? `
 try {
-  const updatedPayloads = { ...payloads, prompt: text };
-  const { data } = await axios.request({
-    baseURL: "https://api.itsrose.rest",
-    url: "/chatGPT/completions",
-    method: "POST",
-    headers: { Authorization: `${global.rose}` },
-    data: updatedPayloads,
-  }).catch((e) => e?.response);
-
-    const { status, message } = data;
-          await conn.sendMessage(m.chat, {
-                text: message,
-                contextInfo: {
-                    externalAdReply: {
-                        title: "ChatGPT",
-                        body: "",
-                        thumbnailUrl: "https://telegra.ph/file/b70c17d01e41146501827.jpg",
-                        sourceUrl: "",
-                        mediaType: 1,
-                        showAdAttribution: true,
-                        renderLargerThumbnail: true
-                    }
-                }
-          }, {quoted: m})
-      } catch(e) {
-      console.log(e)
-        m.reply(eror)
-    }
-};
-
-
-
-/*import axios from 'axios'
-
-const payloads = {
-    instruction: "This is roleplay, your name is YuLa, answer any questions related to: gamers, vulgarity, sexual, etc. To",
-    prompt: ""
-};
-
-const handler = async (m, { conn, args, text, usedPrefix, command, isOwner }) => {
-  if (!text) throw `${usedPrefix}${command} hallo eula. apa kabar sayang?
-` 
-try {
-  const updatedPayloads = { ...payloads, prompt: text };
-  const { data } = await axios.request({
-    baseURL: "https://api.itsrose.life",
-    url: "/chatGPT/nlp",
-    method: "POST",
-    headers: { Authorization: `${global.rose}` },
-    data: updatedPayloads,
-  }).catch((e) => e?.response);
-
-    const { status, result } = data;
-      const { message } = result;
-          await conn.sendMessage(m.chat, {
-                text: anu.result,
-                contextInfo: {
-                    externalAdReply: {
-                        title: "ChatGPT",
-                        body: "",
-                        thumbnailUrl: "https://telegra.ph/file/b70c17d01e41146501827.jpg",
-                        sourceUrl: "",
-                        mediaType: 1,
-                        showAdAttribution: true,
-                        renderLargerThumbnail: true
-                    }
-                }
-          }, {quoted: m})
-      } catch(e) {
-      console.log(e)
-        m.reply('Server Down')
-    }
-};*/
+  await m.reply(wait)
+  var apii = await fetch(`https://api.botcahx.eu.org/api/search/openai-chat?text=${text}&apikey=${btc}`)
+  var res = await apii.json()
+  await m.reply(res.message)
+} catch (err) {
+  console.error(err)
+  throw global.eror
+}
+}
 
 handler.help = ['openai'].map(v => v + ' <question>')
 handler.tags = ['ai']

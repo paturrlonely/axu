@@ -472,6 +472,8 @@ export async function handler(chatUpdate) {
                     chat.antiSticker = false
                 if (!('antiLinkWa' in chat))
                     chat.antiLinkWa = false
+                if (!('antiPorn' in chat))
+                    chat.antiPorn = false
                 if (!('viewonce' in chat))
                     chat.viewonce = false
                 if (!('antiVirtex' in chat))
@@ -511,6 +513,7 @@ export async function handler(chatUpdate) {
                 antiLinkdelete: false,
                 pembatasan: false,
                 antiLinkWa: false,
+                antiPorn: false,
                 antiSticker: false,
                 viewonce: false,
                 antiToxic: false,
@@ -783,6 +786,11 @@ export async function handler(chatUpdate) {
                 	this.reply(m.chat, `[💬] Umurmu harus diatas ${plugin.age} Tahun untuk menggunakan fitur ini...`, m)	
                     continue
                 }
+                let isCmddd =/^[°•π÷×¶∆£¢€¥®™+✓_=|~!?@#$%^&.©^]/gi.test(m.text)
+                if ( isCmddd && !isPrems && !m.isGroup ) {
+                    //this.sendMessage(m.chat, { text: `⚠️ Menggunakan bot dalam obrolan pribadi hanya untuk pengguna premium.\n\n*PREMIUM USER PRICE LIST*\n\n*3 Day premium*\n- OrderID: 3\n- Price: Rp. 5.000 IDR\n\n*7 Day premium*\n- OrderID: 7\n- Price: Rp. 10.000 IDR\n\n*30 Day premium*\n- OrderID: 30\n- Price: Rp. 15.000 IDR\n\n*60 Day premium*\n- OrderID: 60\n- Price: Rp. 30.000 IDR\n\n*90 Day premium*\n- OrderID: 90\n- Price: Rp. 40.000 IDR\n\n*365 Day premium*\n- OrderID: 365\n- Price: Rp. 115.000 IDR\n\nTolong ikuti cara pembayaran ini.\n\nSilahkan tulis seperti ini : *.order <OrderID>*\nContoh: *.order 30*\n\nJika anda terlalu bodoh. anda bisa langsung menghubungi nomor owner kami melalui link di bawah ini:\nwa.me/${global.info.nomorown}\n\nThank you for using our bot #MaximusStore`, contextInfo: { mentionedJid: [m.sender], externalAdReply: { title: '', body: '', thumbnailUrl: "https://telegra.ph/file/0b32e0a0bb3b81fef9838.jpg", sourceUrl: "", mediaType: 1, renderLargerThumbnail: true }} })
+                    continue
+                }
                 let extra = {
                     match,
                     usedPrefix,
@@ -835,6 +843,8 @@ export async function handler(chatUpdate) {
                             console.error(e)
                         }
                     }
+                    /*if (m.limit)
+                       await m.reply('Kamu menggunakan fitur limit\n╰► - 1 Limit')*/// lain kali jangan lupa tanda kurung nya ya! ... fixed by Fokusdotid (Fokus ID)
                 }
                 break
             }
@@ -921,8 +931,8 @@ export async function participantsUpdate( { id, participants, action }) {
                         } catch (e) {} finally {
                             text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc ? String.fromCharCode(8206).repeat(4001) + groupMetadata.desc : '') :
                                 (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0])
-                                let wel = global.welcome
-                                let lea = global.leave
+                                let wel = 'https://telegra.ph/file/6922e4375c183c8d1cfcb.jpg'  //https://telegra.ph/file/96c857aa540aef7d385eb.jpg
+                                let lea = 'https://telegra.ph/file/8c7792e78ed015a7d0a59.jpg'  //https://telegra.ph/file/999b3af6dac1b48769ee6.jpg
                              
                     await this.sendMessage(id, {
                             text: text,
@@ -988,7 +998,7 @@ export async function deleteUpdate(message) {
             return
         await this.reply(msg.chat, `
 ⧻Terdeteksi @${participant.split`@`[0]} telah menghapus pesan
-Untuk mematikan fitur ini, ketik
+Untuk mematikan fitur ini, Admin harus mengetik 
 *.disable antidelete*
 `.trim(), msg, { mentions: [participant] })
         this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))

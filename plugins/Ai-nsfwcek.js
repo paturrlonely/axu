@@ -9,10 +9,9 @@ let handler = async (m, { conn, usedPrefix, command, args }) => {
      try {
        let media = await q.download();
         let url = await uploadImage(media);
-         let data = await( await fetch(`https://api.betabotz.eu.org/api/tools/nsfw-detect?url=${url}&apikey=${global.lann}`)
+         let data = await( await fetch(`https://api.betabotz.eu.org/api/tools/nsfw-detect?url=${url}&apikey=${global.lann}`)).json()
     
-   let cap = `*Label Name:* ${data.labelName}
-*NSFW Results:* ${data.confidence}`
+   let cap = `*Label Name:* ${data.labelName}\n*NSFW Results:* ${data.confidence}`
 
    m.reply(cap)
          } catch (e) {

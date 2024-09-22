@@ -9,7 +9,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 		let txt = `*${anu.result.title}*\n\n`
 		+ `⌲ Resolution : 360p\n`
 		+ `⌲ Duration : ${anu.result.duration}`
-		await conn.sendFile(m.chat, anu.mp4, `${anu.result.title}.mp4`, txt, m)
+		await conn.sendFile(m.chat, anu.result.mp4, `${anu.result.title}.mp4`, txt, m)
     } catch (e) {
 		console.log(e)
         try {

@@ -1,18 +1,21 @@
-import { googleImage } from '@bochilteam/scraper'
-const isHent = /18?|sepon(g|k)?|desah|xnxx|mia|khalifah|sexy|bikini|bugil|r34|xx(x)?|sex|porno|tete|payudara|penis|montok|ngocok|oppai|naked|bikini|sex?(y|i)|boha?(y|i)|tete?k|titi?t|hent(ai|ao)?|animeh|pussy|dick|xnxx|kontol|col?mek|co?li|cum|hot|me?me?(k|g)|neocoil?l|yame?te|kimochi|boke?p|nsfw|rule?34|telanjang|crot|peju/i
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-    if (!text) throw `Masukan Query!\n\nContoh:\n${usedPrefix + command} Elaina`
-    let isHentai = isHent.exec(text)
-    if (!isHentai) {
-        const res = await googleImage(text)
-        let image = res.getRandom()
-        let link = image
-        await conn.sendFile(m.chat, link, text + '.jpeg', `🔎 *Result:* ${text}\n🌎 *Source:* Google`, m, false)
-    } else return m.reply('Jangan Mencari Hal Aneh!, Ketahuan Owner Bakal Di Banned')
-}
-handler.help = ['gimage <query>']
-handler.tags = ['internet']
-handler.command = /^(gimage)$/i
-handler.limit = true
+    if (!text) throw `Use example ${usedPrefix}${command} Minecraft`;  
+    try {
+    const res = await (await fetch(`https://api.botcahx.eu.org/api/search/googleimage?text1=${encodeURIComponent(text)}&apikey=${btc}`)).json();
+    if (!res.status) throw eror
+    let image = pickRandom(res.result).url;
+    conn.sendFile(m.chat, image, 'google.jpg', `*G O O G L E*\n*Result:* ${text}\n*Source:* https://google.com`, m);
+   } catch (e) {
+   throw eror
+  }
+};
 
-export default handler
+handler.help = ['gimage <query>'];
+handler.tags = ['internet'];
+handler.command = /^(gimage)$/i;
+
+export default handler;
+
+function pickRandom(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
+}

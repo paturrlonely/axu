@@ -39,10 +39,7 @@ global.info = {
 
 /*============ OWNER ============*/
 // BOLEH DI EDIT ASALKAN JANGAN ADA SIMBOL YANG DI HAPUS
-global.owner = [
-['6281283516246', 'Maximus', 'true'], // Boleh di ganti
-['6281283516246', 'Maximus', 'true'] // Jangan di ganti 
-]
+global.owner = ['6281283516246'] // Ganti pakai nomor kalian
 
 global.mods = ['6288225750488'] // Opsional boleh ganti atau tidak 
 global.prems = ['6281283516246', '6288225750488'] // Opsional boleh ganti atau tidak 
@@ -115,30 +112,7 @@ global.doc = {
     rtf: 'text/rtf'
 }
 
-// DI BAWAH INI JANGAN DI EDIT LAGI PULA GAK DI PAKAI
-/*============= HIASAN ==============*/
-global.decor = {
-	menut: '❏═┅═━–〈',
-	menub: '┊•',
-	menub2: '┊',
-	menuf: '┗––––––––––✦',
-	hiasan: '꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷',
-
-	menut: '––––––『',
-    menuh: '』––––––',
-    menub: '┊☃︎ ',
-    menuf: '┗━═┅═━––––––๑\n',
-	menua: '',
-	menus: '☃︎',
-
-	htki: '––––––『',
-	htka: '』––––––',
-	haki: '┅━━━═┅═❏',
-	haka: '❏═┅═━━━┅',
-	lopr: 'Ⓟ',
-	lolm: 'Ⓛ',
-	htjava: '❃'
-}
+/*========== RANDOM IMAGE ============*/
 
 global.elainajpg = [
     'https://telegra.ph/file/3e43fcfaea6dc1ba95617.jpg',

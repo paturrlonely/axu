@@ -112,6 +112,30 @@ global.doc = {
     rtf: 'text/rtf'
 }
 
+/*============ DEKORASI =============*/
+global.decor = {
+	menut: '❏═┅═━–〈',
+	menub: '┊•',
+	menub2: '┊',
+	menuf: '┗––––––––––✦',
+	hiasan: '꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷',
+
+	menut: '––––––『',
+    menuh: '』––––––',
+    menub: '┊☃︎ ',
+    menuf: '┗━═┅═━––––––๑\n',
+	menua: '',
+	menus: '☃︎',
+
+	htki: '––––––『',
+	htka: '』––––––',
+	haki: '┅━━━═┅═❏',
+	haka: '❏═┅═━━━┅',
+	lopr: 'Ⓟ',
+	lolm: 'Ⓛ',
+	htjava: '❃'
+}
+
 /*========== RANDOM IMAGE ============*/
 
 global.elainajpg = [

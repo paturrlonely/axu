@@ -14,6 +14,8 @@
 
  ## Change NAME, NUMBER Owner and add THUMBNAILS
 
+- Open the config.js file and change it as you wish.
+
 ```javascript
 /*============ NOMOR ============*/
 // BOLEH DI EDIT ASALKAN JANGAN ADA SIMBOL YANG DI HAPUS

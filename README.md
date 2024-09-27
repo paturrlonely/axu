@@ -12,9 +12,11 @@
 - Use Pairing Code: ```node . --pairing```
 - Use QR Code: ```node . or npm start```
 
+
+
  ## Change NAME, NUMBER Owner and add THUMBNAILS
 
-- Open the config.js file and change it as you wish.
+- Open the ```config.js``` file and change it as you wish.
 
 ```javascript
 /*============ NOMOR ============*/
@@ -100,7 +102,10 @@ global.APIKeys = {
 }
 ```
 
+
+
 ## MY GROUPS & NUMBERS
+
 - Report/Ask [`My Whatsapp`](https://wa.me/6281283516246)
 
 - My Bot Group [`Whatsapp Groups`](https://chat.whatsapp.com/FJRtTzRKxP8A2wT6fcCW3s)
@@ -108,6 +113,9 @@ global.APIKeys = {
 - My Channel [`Whatsapp Channel`](https://whatsapp.com/channel/0029VaL28ZqFSAtCdSU5EX0M)
 
 - My Genshin impact Group [`Whatsapp Groups`](https://chat.whatsapp.com/LZCnnSQFPkF3C6zrDcH5n8)
+
+
+
 
 ## FOR WINDOWS/VPS/RDP USERS
 

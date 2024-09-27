@@ -12,7 +12,62 @@
 - Use Pairing Code: ```node . --pairing```
 - Use QR Code: ```node . or npm start```
 
- ## SCRIPTS MUST USE THE WEB API BELOW
+ ## Change NAME, NUMBER Owner and add THUMBNAILS
+
+```javascript
+/*============ NOMOR ============*/
+// BOLEH DI EDIT ASALKAN JANGAN ADA SIMBOL YANG DI HAPUS
+global.info = {
+        nomorbot: '62882257504889',
+        nomorown: '6281283516246',
+        namebot: 'Assisten YuLa',
+        nameown: 'Maximus Store',
+        channel: '120363241570452835@newsletter',
+        namechannel: 'XM4ZE | Whatsapp Bots'
+}
+
+
+
+/*============ OWNER ============*/
+// BOLEH DI EDIT ASALKAN JANGAN ADA SIMBOL YANG DI HAPUS
+global.owner = ['6281283516246'] // Ganti pakai nomor kalian
+
+global.mods = ['6288225750488'] // Opsional boleh ganti atau tidak 
+global.prems = ['6281283516246', '6288225750488'] // Opsional boleh ganti atau tidak 
+
+
+
+/*=========== WATERMARK ===========*/
+// BOLEH DI EDIT ASALKAN JANGAN ADA SIMBOL YANG DI HAPUS
+global.wm = 'XMYULA' // Opsional boleh ganti atau tidak 
+global.author = 'XM4ZE' // Opsional boleh ganti atau tidak 
+global.stickpack = 'XMYULA' // Opsional boleh ganti atau tidak 
+global.stickauth = 'XM4ZE' // Opsional boleh ganti atau tidak 
+
+
+
+/*=========== TEXT & IMAGE ===========*/
+// BOLEH DI EDIT ASALKAN JANGAN ADA SIMBOL YANG DI HAPUS
+global.nameown = 'Maximus Store' // Ganti jadi nama kalian
+global.waown = 'wa.me/6281283516246' // ganti nomor tanpa menghilangkan wa.me/
+global.mail = 'maximusstoreindonesia@gmail.com' // boleh taruh email kalian
+global.fb = 'https://facebook.com/maximusstoreindonesia' // boleh taruh link fb kalian
+global.ig = 'https://instagram.com/maximusstore.id' // boleh taruh link ig kalian
+global.gcbot = 'https://whatsapp.com/channel/0029VaL28ZqFSAtCdSU5EX0M' // boleh taruh link group kalian
+global.qris = 'https://telegra.ph/file/f11ccd2ca8a5136aacfb3.jpg' // Wajib isi untuk pembayaran. isi dengan qris
+global.vn = 'https://github.com/XM4ZE/DATABASE/raw/master/wallpaper/KARA.mp3?raw=true' // Allmenu Voice
+
+
+
+/*=========== THUMBNAIL ===========*/
+global.thumvid = 'https://github.com/XM4ZE/DATABASE/raw/master/wallpaper/Vid_20240220_073653.mp4?raw=true' // Allmenu Video thumbnail
+global.welcome = '' // [OPSIONAL] isi dengan link thumbnail welcome kalian
+global.leave = '' // [OPSIONAL] isi dengan link thumbnail leave kalian
+global.maximus = '' // [OPSIONAL] isi dengan link thumbnail kalian. link ini akan muncul di semua menu dan taruh di tengah-tengah simbol itu
+```
+
+
+ ## Scripts Must Use The Web API Below
   
 - BetaBotz API [`Website`](https://api.betabotz.eu.org) ```Must Use```
   

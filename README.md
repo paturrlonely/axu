@@ -1,15 +1,16 @@
-## YULA-MD BOT SCRIPT INFORMATION
+## XMYULA-MD WhatsApp Bot
 
 <div id="header" align="center">
   <img src="https://github.com/XM4ZE/DATABASE/blob/master/wallpaper/3d2470d056100ddb151b3bb30f9ec277_2149578633960802861.gif?raw=true" width="200" height="200"/>
 </div>
 
-**Update :**
+**Information:**
 - Have used multi auth sessions 
-- Fix QR code in terminal & pairing code
+- Using Qrcode on the terminal or using pairing code
+
+**Run script:**
 - Use Pairing Code: ```node . --pairing```
 - Use QR Code: ```node . or npm start```
-- Fix game & add Snakes and ladders
 
  ## SCRIPTS MUST USE THE WEB API BELOW
   

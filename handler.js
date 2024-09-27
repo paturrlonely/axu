@@ -918,6 +918,12 @@ export async function handler(chatUpdate) {
 					chat.antiLinkWa = false
 				if (!('antiFoto' in chat))
 					chat.antiFoto = false
+			    if (!('antiVideo' in chat))
+					chat.antiVideo = false
+				if (!('antiPolling' in chat))
+					chat.antiPolling = false
+				if (!('antiAudio' in chat))
+					chat.antiAudio = false
 				if (!('antiPorn' in chat))
 					chat.antiPorn = false
 				if (!('viewonce' in chat))
@@ -960,6 +966,9 @@ export async function handler(chatUpdate) {
 					pembatasan: false,
 					antiLinkWa: false,
 					antiFoto: false,
+					antiVideo: false,
+					antiPolling: false,
+					antiAudio: false,
 					antiPorn: false,
 					antiSticker: false,
 					viewonce: false,

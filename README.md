@@ -21,6 +21,28 @@
 
 After registering and getting an apikey, you can paste your apikey in config.js 
 
+```javascript
+
+/*========= GLOBAL APIKEY =========*/
+// ISI APIKEY KALIAN DI BAGIAN 'ENTER YOUR APIKEY' SIMBOL JANGAN DI HAPUS
+global.btc = 'Enter your apikey' // apikey Botchax
+global.lann = 'Enter your apikey' // apikey Beta
+
+
+
+/*============== API ==============*/
+// ISI APIKEY KALIAN DI BAGIAN 'ENTER YOUR APIKEY' SIMBOL JANGAN DI HAPUS
+global.APIs = {
+  btc: 'https://api.botcahx.eu.org',
+  lann: 'https://api.betabotz.org'
+} 
+
+global.APIKeys = {
+  'https://api.betabotz.eu.org': 'Enter your apikey',
+  'https://api.botcahx.eu.org': 'Enter your apikey'
+}
+```
+
 ## MY GROUPS & NUMBERS
 - Report/Ask [`My Whatsapp`](https://wa.me/6281283516246)
 

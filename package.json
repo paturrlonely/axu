@@ -12,7 +12,8 @@
     "scripts": {
         "start": "node index.js",
         "start2": "node main.js --pairing",
-        "test": "nodemon index.js"
+        "test": "nodemon index.js",
+        "test2": "node test.js"
     },
     "keywords": [
         "whatsapp-bot",

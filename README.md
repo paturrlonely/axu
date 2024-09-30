@@ -120,7 +120,7 @@ global.APIKeys = {
 ## FOR WINDOWS/VPS/RDP USERS
 
 * Unduh & Instal Git [`Click here`](https://git-scm.com/downloads)
-* Unduh & Instal NodeJS [`Click here`](https://nodejs.org/en/download)
+* Unduh & Instal NodeJS [`Click here`](https://nodejs.org/en/download) (**Jangan Gunakan Nodejs Versi 20**)
 * Unduh & Instal FFmpeg [`Click here`](https://ffmpeg.org/download.html) (**Jangan Lupa Tambahkan FFmpeg ke variabel lingkungan PATH**)
 * Unduh & Instal ImageMagick [`Click here`](https://imagemagick.org/script/download.php)
 

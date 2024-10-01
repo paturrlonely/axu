@@ -13,8 +13,15 @@ let handler = async (m, {
 		const out = await uploadFile(img);
 		m.reply(wait);
 		try {
-			const api = await fetch(`https://api.botcahx.eu.org/api/tools/remini?url=${out}&apikey=${btc}`);
-			const image = await api.json();
+			const api = await fetch(`https://api.betabotz.eu.org/api/tools/remini-v2?url=${out}&apikey=${lann}`);
+			const response = await api.text();
+			let image;
+			try {
+				image = JSON.parse(response);
+			} catch (error) {
+				console.error(`parse: ${error}`);
+				return;
+			}
 			const {
 				url
 			} = image;
@@ -38,15 +45,8 @@ let handler = async (m, {
 				} catch (e) {
 					console.log(e)
 					try {
-						const api = await fetch(`https://api.betabotz.eu.org/api/tools/remini-v2?url=${out}&apikey=${lann}`);
-						const response = await api.text();
-						let image;
-						try {
-							image = JSON.parse(response);
-						} catch (error) {
-							console.error(`parse: ${error}`);
-							return;
-						}
+						const api = await fetch(`https://api.botcahx.eu.org/api/tools/remini?url=${out}&apikey=${btc}`);
+						const image = await api.json();
 						const {
 							url
 						} = image;

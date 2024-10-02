@@ -35,6 +35,7 @@ global.info = {
 /*============ OWNER ============*/
 // BOLEH DI EDIT ASALKAN JANGAN ADA SIMBOL YANG DI HAPUS
 global.owner = ['6281283516246'] // Ganti pakai nomor kalian
+global.xmaze = ['6281283516246'] // Ganti pakai nomor kalian
 
 global.mods = ['6288225750488'] // Opsional boleh ganti atau tidak 
 global.prems = ['6281283516246', '6288225750488'] // Opsional boleh ganti atau tidak 

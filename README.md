@@ -10,7 +10,7 @@
 
 **Run script:**
 - Use Pairing Code: ```node . --pairing```
-- Use QR Code: ```node . or npm start```
+- Use QR Code: ```node index.js or npm start```
 
 
 

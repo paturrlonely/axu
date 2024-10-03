@@ -12,7 +12,9 @@
 - Use Pairing Code: ```node . --pairing```
 - Use QR Code: ```node index.js or npm start```
 
-##
+
+
+
 ## MY GROUPS & NUMBERS
 
 - Report/Ask [`My Whatsapp`](https://wa.me/6281283516246)
@@ -23,8 +25,10 @@
 
 - Genshin impact Group WhatsApp [`Here`](https://chat.whatsapp.com/LZCnnSQFPkF3C6zrDcH5n8)
 
-##
- ## Change NAME, NUMBER Owner and add THUMBNAILS
+
+
+
+## Change NAME, NUMBER Owner and add THUMBNAILS
 
 - Open the ```config.js``` file and change it as you wish.
 
@@ -82,7 +86,9 @@ global.maximus = '' // [OPSIONAL] isi dengan link thumbnail kalian. link ini aka
 ```
 
 
- ## Scripts Must Use The Web API Below
+
+
+## Scripts Must Use The Web API Below
   
 - BetaBotz API [`Website`](https://api.betabotz.eu.org) ```Must Use```
   
@@ -114,6 +120,8 @@ global.APIKeys = {
 ```
 
 
+
+
 ## FOR WINDOWS/VPS/RDP USERS
 
 * Unduh & Instal Git [`Click here`](https://git-scm.com/downloads)
@@ -127,6 +135,8 @@ cd XMYULA-MD
 npm install
 npm start
 ```
+
+
 
 
 ##### All Contributors

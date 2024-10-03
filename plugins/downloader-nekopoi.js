@@ -64,11 +64,9 @@ ${down2.synopsis}
 
 ========================
 `
-  //for (let xmaze of down2.urls) {
-  for (let xmaze of down2.download) { // delete kalau dah update
-    //cap2 += `\n*${xmaze.quality}*\n`
-    //cap2 += `\n*${xmaze.download}*\n`
-    cap2 += `*Download:* ${xmaze}\n` // delete kalau dah update
+  for (let xmaze of down2.urls) {
+    cap2 += `\n*${xmaze.quality}*\n`
+    cap2 += `\n*${xmaze.download}*\n\n`
   }
         conn.sendMessage(m.chat, {
 				text: cap2,

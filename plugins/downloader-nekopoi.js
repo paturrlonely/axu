@@ -55,18 +55,15 @@ for (let xxx of down.url) {
 		let down2 = get2.result;
 		let cap2 = `*${down2.title.toUpperCase()}*
 
-*Synopsis:*
-${down2.synopsis}
-
-*Producer:* ${down2.producer}
-*Duration:* ${down2.duration}
-*Gendre:* ${down2.genre}
+${down2.info}
 
 ========================
+
 `
+
   for (let xmaze of down2.urls) {
     cap2 += `\n*${xmaze.quality}*\n`
-    cap2 += `\n*${xmaze.download}*\n\n`
+    cap2 += `*Download:* ${xmaze.download}\n`
   }
         conn.sendMessage(m.chat, {
 				text: cap2,

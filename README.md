@@ -13,6 +13,16 @@
 - Use QR Code: ```node index.js or npm start```
 
 
+## MY GROUPS & NUMBERS
+
+- Report/Ask [`My Whatsapp`](https://wa.me/6281283516246)
+
+- My Bot Group [`Whatsapp Groups`](https://chat.whatsapp.com/FJRtTzRKxP8A2wT6fcCW3s)
+
+- WhatsApp Channel [`Here`](https://whatsapp.com/channel/0029VaL28ZqFSAtCdSU5EX0M)
+
+- Genshin impact Group WhatsApp [`Here`](https://chat.whatsapp.com/LZCnnSQFPkF3C6zrDcH5n8)
+
 
  ## Change NAME, NUMBER Owner and add THUMBNAILS
 
@@ -102,20 +112,6 @@ global.APIKeys = {
   'https://api.botcahx.eu.org': 'Enter your apikey'
 }
 ```
-
-
-
-## MY GROUPS & NUMBERS
-
-- Report/Ask [`My Whatsapp`](https://wa.me/6281283516246)
-
-- My Bot Group [`Whatsapp Groups`](https://chat.whatsapp.com/FJRtTzRKxP8A2wT6fcCW3s)
-
-- My Channel [`Whatsapp Channel`](https://whatsapp.com/channel/0029VaL28ZqFSAtCdSU5EX0M)
-
-- My Genshin impact Group [`Whatsapp Groups`](https://chat.whatsapp.com/LZCnnSQFPkF3C6zrDcH5n8)
-
-
 
 
 ## FOR WINDOWS/VPS/RDP USERS

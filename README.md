@@ -9,7 +9,7 @@
 - Using Qrcode on the terminal or using pairing code
 
 **Run script:**
-- Use Pairing Code: ```node . --pairing```
+- Use Pairing Code: ```node index.js --pairing```
 - Use QR Code: ```node index.js or npm start```
 
 

@@ -28,7 +28,6 @@
 
 ## Price Script No Encryption 
 
-|---|---|---|---|---|
 |Name|Plugins github|Plugins Private|Payment getway|harga|
 |---|---|---|---|---|
 |Free Script|✔️|❌|❌|Free|

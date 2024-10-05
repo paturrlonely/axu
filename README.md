@@ -28,7 +28,7 @@
 
 ## Price Script No Encryption 
 
-| Name | Index js | Main.js | Plugins github | Plugins Scraper | Payment getway|harga |
+| Name | Index.js | Main.js | Plugins github | Plugins Scraper | Payment getway|harga |
 |-------------|-----|------|-----|-----|-----|-----|
 | Free Script | ❌ | ❌ | ✔️ | ❌ | ❌| Free |
 | Script V1 | ✔️ | ✔️ | ✔️ | ❌ | ✔️ | 150.000 |

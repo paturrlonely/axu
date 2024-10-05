@@ -1,7 +1,7 @@
 import fetch from 'node-fetch';
 const { getDevice, generateWAMessageFromContent, proto, prepareWAMessageMedia } = (await import('@adiwajshing/baileys')).default
 
-let handler = async (m, { conn, text, args, command }) => {
+let handler = async (m, { conn, text, args, usedPrefix, command }) => {
   if (!(args[0] || '').match(new RegExp(/(?:https?:\/\/)?(?:youtu\.be\/|(?:www\.|m\.)?youtube\.com\/(?:watch|v|embed|shorts)(?:\.php)?(?:\?.*v=|\/))([a-zA-Z0-9\_-]+)/, 'gi'))) return m.reply(`*Example:* \n${usedPrefix}${command} https://youtu.be/pvlDjh_UgvA`)
   try {
     let results = await (await fetch(`https://api.betabotz.eu.org/api/download/ytmp3?url=${args[0]}&apikey=${lann}`)).json()

@@ -29,7 +29,7 @@
 ## Price Script No Encryption 
 
 |Name|Plugins github|Plugins Scraper|Payment getway|harga|
-||||||
+|---|---|---|---|---|
 |Free Script|✔️|❌|❌|Free|
 |---|---|---|---|---|
 |Script V1|✔️|❌|✔️|150.000|

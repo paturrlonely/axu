@@ -26,7 +26,14 @@
 - Genshin impact Group WhatsApp [`Here`](https://chat.whatsapp.com/LZCnnSQFPkF3C6zrDcH5n8)
 
 
+## Price Script No Encryption 
 
+|---|---|---|---|---|
+|Name|Plugins github|Plugins Private|Payment getway|harga|
+|Free Script|✔️|❌|❌|Free|
+|Script V1|✔️|❌|✔️|150.000|
+|Script V2|✔️|✔️|✔️|420.000|
+|---|---|---|---|---|
 
 ## Change NAME, NUMBER Owner and add THUMBNAILS
 

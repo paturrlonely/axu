@@ -28,10 +28,11 @@
 
 ## Price Script No Encryption 
 
-|Name|Plugins github|Plugins Scraper|Payment getway|harga|
-|Free Script|✔️|❌|❌|Free|
-|Script V1|✔️|❌|✔️|150.000|
-|Script V2|✔️|✔️|✔️|420.000|
+| Name | Plugins github | Plugins Scraper | Payment getway|harga |
+|-------------|-----|-----|-----|-----|
+| Free Script | ✔️ | ❌ | ❌| Free |
+| Script V1 |✔️| ❌ | ✔️ | 150.000 |
+| Script V2 |✔️| ✔️ | ✔️ | 420.000 |
 
 ## Change NAME, NUMBER Owner and add THUMBNAILS
 

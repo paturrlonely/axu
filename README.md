@@ -30,8 +30,11 @@
 
 |---|---|---|---|---|
 |Name|Plugins github|Plugins Private|Payment getway|harga|
+|---|---|---|---|---|
 |Free Script|✔️|❌|❌|Free|
+|---|---|---|---|---|
 |Script V1|✔️|❌|✔️|150.000|
+|---|---|---|---|---|
 |Script V2|✔️|✔️|✔️|420.000|
 |---|---|---|---|---|
 

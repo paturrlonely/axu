@@ -40,7 +40,7 @@ try {
         mentions: conn.parseMention(teks)
 })}
 } catch (e) {
-throw m.reply('Gak bisa cok!')}
+throw m.reply('❌ *GAGAL*')}
 }
 handler.help = ['add', '+'].map(v => v + ' nomor')
 handler.tags = ['group']

@@ -9,6 +9,27 @@ export async function all(m) {
 			let list = Object.entries(global.db.data.users);
 			let lim = 10;
 			list.map(([user, data], i) => (Number(data.limit = lim)));
+			let anu = {
+				"key": {
+					"fromMe": false,
+					"participant": "0@s.whatsapp.net",
+					"remoteJid": "0@s.whatsapp.net"
+				},
+				"message": {
+					"groupInviteMessage": {
+						"groupJid": "6282389924037-1610340626@g.us",
+						"inviteCode": "mememteeeekkeke",
+						"groupName": "Purple Ocean",
+						"caption": "Jangan nyerah dulu ya! Kamu masih punya masa depan yang penuh harapan.",
+						'jpegThumbnail': ""
+					}
+				}
+			}
+			conn.sendMessage(m.chat, {
+				text: `*Berhasil mereset setiap limit user menjadi ${lim}*`
+			}, {
+				quoted: anu
+			})
 
 			const msg = {
 				conversation: `*Berhasil mereset setiap limit user menjadi ${lim}*`

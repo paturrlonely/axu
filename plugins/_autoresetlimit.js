@@ -17,15 +17,15 @@ export async function all(m) {
 				},
 				"message": {
 					"groupInviteMessage": {
-						"groupJid": "6282389924037-1610340626@g.us",
-						"inviteCode": "mememteeeekkeke",
-						"groupName": "Purple Ocean",
-						"caption": "Jangan nyerah dulu ya! Kamu masih punya masa depan yang penuh harapan.",
+						"groupJid": "120363158076828888@g.us",
+						"inviteCode": "XMYULA-MD",
+						"groupName": "XMYULA-MD Powered by XM4ZE",
+						"caption": "https://github.com/XM4ZE/XMYULA-MD",
 						'jpegThumbnail': ""
 					}
 				}
 			}
-			conn.sendMessage(m.chat, {
+			conn.sendMessage(global.info.nomorown + '@s.whatsapp.net', {
 				text: `*Berhasil mereset setiap limit user menjadi ${lim}*`
 			}, {
 				quoted: anu

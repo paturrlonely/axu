@@ -29,24 +29,23 @@
 
 | features |
 |----------|
-| aimenu |
-| animemenu |
-| downloadmenu |
-| funmenu |
-| gamemenu |
-| groupmenu |
-| infomenu |
-| internetmenu |
-| islamicmenu |
-| allmenu |
-| mainmenu |
-| makermenu |
-| premiummenu |
-| ownermenu |
-| quotesmenu |
-| rpgmenu |
-| stikermenu |
-| toolsmenu |
+| Ai Menu |
+| Anime Menu |
+| Download Menu |
+| Fun Menu |
+| Game Menu |
+| Group Menu |
+| info Menu |
+| Internet Menu |
+| Islamic Menu |
+| Main Menu |
+| Maker Menu |
+| Premium Menu |
+| Owner Menu |
+| Quotes Menu |
+| Rpg Menu |
+| Stiker Menu |
+| Tools Menu |
 
 ## Price Script No Encryption 
 

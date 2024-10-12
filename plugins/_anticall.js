@@ -7,6 +7,7 @@ handler.before = async function (m) {
         quoted: call[0]
       });
       await this.rejectCall(call[0].id, call[0].from);
+      global.db.data.users[call[0].from].banned = true;
       await this.updateBlockStatus(call[0].from, "block");
     }
   });

@@ -96,7 +96,6 @@
     "optionalDependencies": {
         "@xct007/frieren-scraper": "npm:@xct007/frieren-scraper@latest",
         "acrcloud": "^1.4.0",
-        "wa-sticker-formatter": "^4.3.2",
-        "ytdl-core": "github:Neder11ndeu/yt-donglot"
+        "wa-sticker-formatter": "^4.3.2"
     }
 }

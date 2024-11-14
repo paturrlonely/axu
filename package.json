@@ -11,8 +11,7 @@
     },
     "scripts": {
         "start": "node index.js",
-        "test": "node test.js",
-        "test2": "nodemon index.js"
+        "test": "node test.js"
     },
     "keywords": [
         "termux-whatsapp-bot",
@@ -26,7 +25,7 @@
         "MD",
         "baileys-md"
     ],
-    "homepage": "https://github.com/XM4ZE/XMYULA",
+    "homepage": "https://github.com/XM4ZE/XMYULA-MD",
     "author": {
         "name": "XM4ZE"
     },

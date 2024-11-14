@@ -1,7 +1,7 @@
 {
     "name": "XMCodes",
     "version": "4.5.0",
-    "description": "Assisten Yula by Maximus",
+    "description": "Assisten Yula recode by Maximus",
     "main": "index.js",
     "type": "module",
     "directories": {

@@ -14,11 +14,11 @@
 
 ## SCAMMER NUMBER
 
-Whatsapp: ```6282227154858```
-WhatsApp2: ```6282241066793```
-No Dana: ```082227154858```
-No Gopay: ```082227154858```
-A/N: ```MUHAMAD SAIFUL ANWAR```
+- Whatsapp: ```6282227154858```
+- WhatsApp2: ```6282241066793```
+- No Dana: ```082227154858```
+- No Gopay: ```082227154858```
+- A/N: ```MUHAMAD SAIFUL ANWAR```
 
 ## MY GROUPS & NUMBERS
 

@@ -20,6 +20,8 @@
 - No Gopay: ```082227154858```
 - A/N: ```MUHAMAD SAIFUL ANWAR```
 
+```SC INI DI JUAL 30K JIR 😂```
+
 ## MY GROUPS & NUMBERS
 
 - Report/Ask [`My Whatsapp`](https://wa.me/6281283516246)

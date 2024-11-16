@@ -12,8 +12,13 @@
 - Use QR Code: ```node index.js```
 - Use Pairing Code: ```node index.js --pairing```
 
+## SCAMMER NUMBER
 
-
+Whatsapp: ```6282227154858```
+WhatsApp2: ```6282241066793```
+No Dana: ```082227154858```
+No Gopay: ```082227154858```
+A/N: ```MUHAMAD SAIFUL ANWAR```
 
 ## MY GROUPS & NUMBERS
 

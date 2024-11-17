@@ -13,7 +13,7 @@ var handler = async (m, {
         const maxTextLength = 151 - emojiText.length;  // Mengurangi panjang emoji dari batas teks
         let clippedText = text.substring(0, maxTextLength);
 
-        let req = `https://api.botcahx.eu.org/api/maker/brat?text=${encodeURIComponent(clippedText)}&apikey=${lann}`
+        let req = `https://api.botcahx.eu.org/api/maker/brat?text=${encodeURIComponent(clippedText)}&apikey=${btc}`
         let stiker = await createSticker(req, false, '', '')
     	await conn.sendFile(m.chat, stiker, '', '', m, '')
 	} catch (e) {

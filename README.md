@@ -12,15 +12,10 @@
 - Use QR Code: ```node index.js```
 - Use Pairing Code: ```node index.js --pairing```
 
-## SCAMMER NUMBER
+## SCAMMER NUMBER FREE
 
-- Whatsapp1: ```6285183396693```
-- Whatsapp2: ```6282227154858```
-- WhatsApp3: ```6282241066793```
-- No Dana1: ```088212898608```
-- No Dana2: ```082227154858```
-- No Gopay: ```082227154858```
-- A/N: ```MUHAMAD SAIFUL ANWAR```
+- Whatsapp: ```6285183396693```
+- No Dana: ```088212898608```
 
 ```SC INI DI JUAL 30K JIR. PADAHAL FREE 😂```
 

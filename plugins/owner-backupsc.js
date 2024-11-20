@@ -8,8 +8,6 @@ const handler = async (m, { conn, isROwner }) => {
    try {
       let zipFileName = `XMYULA-MD.zip`;
 
-      m.reply("Sedang memulai proses backup. Harap tunggu...");
-
       setTimeout(() => {
          if (fs.existsSync("node_modules")) {
             m.reply("Folder 'node_modules & tmp' tidak ikut di backup.");

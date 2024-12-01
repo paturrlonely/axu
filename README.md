@@ -6,7 +6,7 @@
 
 **Information:**
 - Have used multi auth sessions 
-- Using Qrcode on the terminal or using pairing code
+- Using the latest baileys
 
 **Run script:**
 ```npm start```

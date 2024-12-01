@@ -9,8 +9,7 @@
 - Using Qrcode on the terminal or using pairing code
 
 **Run script:**
-- Use QR Code: ```node index.js```
-- Use Pairing Code: ```node index.js --pairing```
+```npm start```
 
 ## SCAMMER NUMBER FREE
 

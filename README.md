@@ -11,6 +11,9 @@
 **Run script:**
 ```npm start```
 
+**Test script:**
+```npm test```
+
 ## Script features
 
 || features ||

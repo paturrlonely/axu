@@ -7,6 +7,7 @@
 **Information:**
 - Have used multi auth sessions 
 - Using the latest baileys
+- Update  [`Newsletter`](https://whatsapp.com/channel/0029VaL28ZqFSAtCdSU5EX0M)
 
 **Run script:**
 ```npm start```
@@ -145,8 +146,6 @@ npm start
 - Report/Ask [`My Whatsapp`](https://wa.me/6281283516246)
 
 - WhatsApp Group[`Here`](https://chat.whatsapp.com/FJRtTzRKxP8A2wT6fcCW3s)
-
-- WhatsApp Channel [`Here`](https://whatsapp.com/channel/0029VaL28ZqFSAtCdSU5EX0M)
 
 - Genshin impact Group WhatsApp [`Here`](https://chat.whatsapp.com/LZCnnSQFPkF3C6zrDcH5n8)
 

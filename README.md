@@ -7,7 +7,7 @@
 **Information:**
 - Have used multi auth sessions 
 - Using the latest baileys
-- Update  [`Newsletter`](https://whatsapp.com/channel/0029VaL28ZqFSAtCdSU5EX0M)
+- Update Information [`Whatsapp Newsletter`](https://whatsapp.com/channel/0029VaL28ZqFSAtCdSU5EX0M)
 
 **Run script:**
 ```npm start```

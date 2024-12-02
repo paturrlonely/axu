@@ -13,8 +13,8 @@
 
 ## Script features
 
-| features |
-|----------|
+|----------| features |----------|
+|----------|----------|----------|
 | Ai Menu | Anime Menu | Download Menu |
 | Fun Menu | Game Menu | Group Menu |
 | info Menu | Internet Menu | Islamic Menu |

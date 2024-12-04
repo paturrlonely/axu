@@ -29,7 +29,7 @@
 ## Price Script No Encryption 
 
 | Name | Index.js | Main.js | Plugins github | Payment getway|harga |
-|-------------|-----|------|-----|-----|-----|-----|
+|-------------|-----|------|-----|-----|-----|
 | Free Script | ❌ | ❌ | ✔️ | ❌| 0 IDR |
 | Paid script | ✔️ | ✔️ | ✔️ | ✔️ | 150.000 IDR |
 

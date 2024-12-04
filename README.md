@@ -28,11 +28,10 @@
 
 ## Price Script No Encryption 
 
-| Name | Index.js | Main.js | Plugins github | Plugins Scraper | Payment getway|harga |
+| Name | Index.js | Main.js | Plugins github | Payment getway|harga |
 |-------------|-----|------|-----|-----|-----|-----|
-| Free Script | ❌ | ❌ | ✔️ | ❌ | ❌| Free |
-| Script V1 | ✔️ | ✔️ | ✔️ | ❌ | ✔️ | 150.000 IDR |
-| Script V2 | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | 420.000 IDR |
+| Free Script | ❌ | ❌ | ✔️ | ❌| 0 IDR |
+| Paid script | ✔️ | ✔️ | ✔️ | ✔️ | 150.000 IDR |
 
 ## Change NAME, NUMBER Owner and add THUMBNAILS
 

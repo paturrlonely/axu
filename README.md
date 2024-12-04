@@ -31,7 +31,7 @@
 | Name | Index.js | Main.js | Payment getway| Price |
 |-------------|-----|------|-----|-----|
 | Free Script | ❌ | ❌ | ❌| 0 IDR |
-| Paid script | ✔️ | ✔️ | ✔️ | 150.000 IDR |
+| Paid Script | ✔️ | ✔️ | ✔️ | 150.000 IDR |
 
 ## Change NAME, NUMBER Owner and add THUMBNAILS
 

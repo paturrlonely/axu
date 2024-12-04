@@ -129,8 +129,8 @@ global.APIKeys = {
 
 * Download & Install Git [`Click here`](https://git-scm.com/downloads)
 * Download & Install NodeJS [`Click here`](https://nodejs.org/en/download)
-* Download & Install FFmpeg [`Click here`](https://ffmpeg.org/download.html) (**Don't Forget to Add FFmpeg to the PATH environment variable**)
 * Download & Install ImageMagick [`Click here`](https://imagemagick.org/script/download.php)
+* Download & Install FFmpeg [`Click here`](https://ffmpeg.org/download.html) (**Don't Forget to Add FFmpeg to the PATH environment variable**)
 
 ```bash
 git clone https://github.com/XM4ZE/XMYULA-MD

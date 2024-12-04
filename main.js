@@ -4,4 +4,6 @@ const _0x18d18a=_0x5785;(function(_0x5ec977,_0x239c21){const _0x48a188=_0x5785,_
  * Yang dec
  * Mandul 7
  * Turunan
+ * NAME: XMYULA-MD
+ * AUTHOR: XM4ZE
  */

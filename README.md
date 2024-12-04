@@ -99,7 +99,7 @@ global.maximus = '' // [OPSIONAL] isi dengan link thumbnail kalian. link ini aka
   
 - Botcahx API [`Website`](https://api.botcahx.eu.org) ```Must Use```
 
-After registering and getting an apikey, you can paste your apikey in config.js 
+After registering and getting an apikey, you can paste your apikey in ```config.js```
 
 ```javascript
 

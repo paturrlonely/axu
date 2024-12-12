@@ -15,7 +15,7 @@
 
 ```npm pairing``` **Used Pairing Code**
 
-```npm test``` **Test script:**
+```npm test``` **Test script**
 
 ## Script features
 
